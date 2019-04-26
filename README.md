@@ -86,15 +86,15 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     ![newContents](./img/new.png)
 
 1. ## float
-    floatを使い、100px四方のdiv群を以下のように並べてください。
+    floatを使い、100px四方のdiv群を以下のように並べてください。  
     ![float](./img/float.PNG)
 
 1. ## flexbox
-    flexboを使い、100px四方のdiv群を以下のように並べてください。
+    flexboを使い、100px四方のdiv群を以下のように並べてください。  
     ![flexbox](./img/flexbox.PNG)
 
 1. ## drawing
-    CSSを使ってキャラクターを1人描いてください。皆さんの力作をお待ちしております。画像は最低限のアンパンマン。
+    CSSを使ってキャラクターを1人描いてください。皆さんの力作をお待ちしております。画像は最低限のアンパンマン。  
     ![drawing](./img/drawing.PNG)
 
 ---
