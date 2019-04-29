@@ -90,7 +90,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     ![float](./img/float.PNG)
 
 1. ## flexbox
-    flexboを使い、100px四方のdiv群を以下のように並べてください。  
+    flexboxを使い、100px四方のdiv群を以下のように並べてください。  
     ![flexbox](./img/flexbox.PNG)
 
 1. ## drawing
