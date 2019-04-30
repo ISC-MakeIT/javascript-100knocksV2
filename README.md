@@ -93,6 +93,10 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     flexboxを使い、100px四方のdiv群を以下のように並べてください。  
     ![flexbox](./img/flexbox.PNG)
 
+1. ## position
+    スクロールしても動かないdivと、途中から途中まで固定されるdivを作ってください。
+    ![position](./img/position.gif)
+
 1. ## drawing
     CSSを使ってキャラクターを1人描いてください。皆さんの力作をお待ちしております。画像は最低限のアンパンマン。  
     ![drawing](./img/drawing.PNG)
@@ -153,6 +157,9 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     自動に画面端で折り返すようにする
     ```
 
+1. ## switch
+    switch caseを使い、ランダムに数種類の画像が現れるボタンを作ってください。
+    ![switch](./img/switch.gif)
 
 1. ## 3sec
     3秒後にalert()を実行するボタンを作ってください。
@@ -170,6 +177,10 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 1. ## pulldown
     0から200まで選択できるプルダウンメニューを作ってください。javascript:document.createElement()を使うこと
+
+1. ## storage
+    互いに遷移しても、選択しているプルダウンが残るHTMLファイルを2作りなさい。
+    ![storage](./img/storage.gif)
 
 
 1. ## fizzbuzz
