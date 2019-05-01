@@ -93,6 +93,10 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     flexboxを使い、100px四方のdiv群を以下のように並べてください。  
     ![flexbox](./img/flexbox.PNG)
 
+1. ## CSS Grid
+    CSS Gridを使い、以下のようなレイアウトを作りなさい。文字・画像は任意で。
+    ![grid](./img/grid.PNG)
+
 1. ## position
     スクロールしても動かないdivと、途中から途中まで固定されるdivを作ってください。
     ![position](./img/position.gif)
