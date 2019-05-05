@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .main {
+            margin-top: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <input type="text" id="in1" placeholder="val1">
+        <input type="text" id="in2" placeholder="val2">
+        <input type="button" value="to conmp" onclick="comp()">
+    </div>
+    <script>
+        function comp() {
+            var in1 = document.getElementById('in1').value;
+            var in2 = document.getElementById('in2').value;
+            if (in1 && in2) {
+                if (in1 === in2) {
+                    alert('true');
+                } else {
+                    alert('false');
+                }
+            } else {
+                alert('empty');
+            }
+        }
+    </script>
+</body>
+
+</html>
