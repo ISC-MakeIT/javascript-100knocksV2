@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+</head>
+
+<body>
+  <a href="https://www.yahoo.co.jp/">Yahoo!</a>
+  <br>
+  <a href="https://www.yahoo.co.jp/">Yahoo!@New window</a>
+  <p>
+    <a class="wopen" href="#">Yahoo!@js</a>
+  </p>
+
+  <script>
+    let txt = document.getElementsByClassName('wopen')[0];
+    txt.addEventListener('click', function () {
+      window.open('https://yahoo.co.jp', "_blank");
+    });
+  </script>
+
+</body>
+
+</html>

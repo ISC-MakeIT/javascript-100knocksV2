@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Shrikhand');
+    </style>
+    <style>
+        .main p {
+            /* font-family: 'Shrikhand', 'cursive', 'Meiryo', 'monospace', 'arial unicode ms'; */
+            font-family: 'Shrikhand', cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <p id="date">10/10</p>
+    </div>
+    <script>
+        (function () {
+            setInterval('clock()', 10);
+        })();
+
+        /**
+         * @param {number} w - 0~6
+         */
+
+        function getWeek(w) {
+            const week = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+            return week[w];
+        }
+
+        function clock() {
+            let date = new Date();
+            let now = date.getFullYear();
+            now += ' / ' + date.getMonth();
+            now += ' / ' + date.getDate();
+            now += ' / ' + getWeek(date.getDay());
+            now += ' / ' + date.getHours();
+            now += ' / ' + date.getMinutes();
+            now += ' / ' + date.getSeconds();
+            now += ' / ' + date.getMilliseconds();
+            document.getElementById('date').innerText = now;
+        }
+    </script>
+
+</body>
+
+</html>

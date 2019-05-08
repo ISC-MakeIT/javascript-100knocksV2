@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <style>
+    div {
+      cursor: pointer;
+      text-align: center;
+      right: 0px;
+      left: 0px;
+      margin: auto;
+      text-decoration: underline #CCC;
+    }
+
+    .add_c {
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="a">class a</div>
+  <div class="b">class b</div>
+  <div class="c">class c</div>
+  <script>
+    // whatever fine
+    $('.a').on({
+      'click': function () {
+        $(this).css('background-color', 'green')
+      }
+    });
+
+    $('.b').click(function () {
+      $(this).css('background-color', 'yellow');
+    });
+
+    $('.c').click(function () {
+      $(this).addClass('add_c');
+    })
+
+    // where is black?
+  </script>
+</body>
+
+</html>

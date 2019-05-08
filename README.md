@@ -55,6 +55,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 1. ## shadow
     hover時box-shadowでハイライトするようにして下さい。
+
     ![shadow](./img/shadow.gif)
 
 
@@ -70,6 +71,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 1. ## onImage
     画面に画像を表示し、その画像の上に一回り縮小させた同じ画像を重ねて表示、その縮小画像の上に「AAAA」と表示してください。一番大きな画像の外下側中央に画像のタイトルを設置してください。画像のタイトルだけかっこいいフォントを使ってください。
+    ![onImage](./img/onImage.PNG)
 
 
 1. ## new
@@ -384,6 +386,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 1. ## jquery
     ボタンを押すと「Cosmos」が「Chaos」に書き換わるようにしてください。  
     jqueryのCDNを読み込んでjqueryを使って実装してください。
+    
     [ノンプログラマーのためのjQuery入門](https://www.slideshare.net/hayatomizuno/jquery-7665168?ref=http://weboook.blog22.fc2.com/blog-entry-349.html)
 
 
