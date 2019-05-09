@@ -11,7 +11,7 @@
 <body onload="setSelectNumber()">
     <select name="name" id="pulldown"></select>
     <script>
-        setSelectNumber = () => {
+        function setSelectNumber(){
             var selectElement = document.getElementById("pulldown");
             for (var i = 0; i <= 200; i++) {
                 var option = document.createElement("option");
