@@ -1,5 +1,5 @@
 'use strict';
-var rensouhairetu = {
+const rensouhairetu = {
     'color': 'red',
     'size': '100'
 };

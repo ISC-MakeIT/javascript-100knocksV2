@@ -12,9 +12,9 @@
     <select name="name" id="pulldown"></select>
     <script>
         function setSelectNumber(){
-            var selectElement = document.getElementById("pulldown");
-            for (var i = 0; i <= 200; i++) {
-                var option = document.createElement("option");
+            const selectElement = document.getElementById("pulldown");
+            for (let i = 0; i <= 200; i++) {
+                const option = document.createElement("option");
                 option.value = i;
                 option.innerText = i;
                 selectElement.appendChild(option);

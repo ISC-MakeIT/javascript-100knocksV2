@@ -12,9 +12,9 @@
     <input type="text" id="n" placeholder="n" onkeyup="sum()">
     <script>
         function sum() {
-            var total = 0;
-            var n = document.getElementById('n').value;
-            for (var i = 1; i <= n; i++) {
+            let total = 0;
+            const n = document.getElementById('n').value;
+            for (let i = 1; i <= n; i++) {
                 total += i;
             }
             console.log(total);

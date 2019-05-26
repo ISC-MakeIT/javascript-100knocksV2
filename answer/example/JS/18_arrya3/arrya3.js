@@ -1,7 +1,7 @@
 'use strict';
-var ary = [];
-var num = 1;
-var obj = {};
+const ary = [];
+const num = 1;
+const obj = {};
 
 console.log(Array.isArray(ary)); //=>true
 console.log(Array.isArray(num)); //=>false
