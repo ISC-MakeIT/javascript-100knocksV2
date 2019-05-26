@@ -1,5 +1,5 @@
 'use strict';
-var n = 1;
+let n = 1;
 
 function add() {
     console.log(n++);

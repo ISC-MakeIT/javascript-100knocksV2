@@ -1,9 +1,10 @@
 'use strict';
-var rensouhairetu = {
+const rensouhairetu = {
     'color': 'red',
     'size': '100'
 };
 rensouhairetu.count = '5';
+
 Object.keys(rensouhairetu).forEach(function (key) {
-    console.log('keyは: ', key, 'valueは: ', rensouhairetu[key]);
+    console.log( `key: ${ key }, value: ${ rensouhairetu[ key ] }` );
 });
