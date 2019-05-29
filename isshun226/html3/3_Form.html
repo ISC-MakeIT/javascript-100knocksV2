@@ -12,19 +12,19 @@
   <form action="form.php" method="post">
     <div>
       <label for="name">name:</label><br>
-      <input type="text" />
+      <input type="text" required />
     </div>
     <div>
       <label for="email">email:</label><br>
-      <input type="email" />
+      <input type="email" required />
     </div>
     <div>
       <label for="password">password:</label><br>
-      <input type="password" />
+      <input type="password" required />
     </div>
     <div>
       <label for="age">age:</label><br>
-      <select name="age">
+      <select name="age" required>
         <option value="">-</option>
         <option value="0">0</option>
         <option value="1">1</option>
@@ -232,8 +232,8 @@
     <div>
       <p>
         <label for="sex">sex:</label><br>
-        <input type="radio" name="q1" value="Male"> Male
-        <input type="radio" name="q1" value="Female"> Female
+        <input type="radio" name="q1" value="Male" required> Male
+        <input type="radio" name="q1" value="Female" required> Female
       </p>
     </div>
     <div class="button">
