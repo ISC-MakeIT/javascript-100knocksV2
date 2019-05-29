@@ -180,6 +180,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 1. ## sumSequence
     1からnまでの和をコンソール出力するプログラムを作成してください。nはフォームに入力された値である。for文を使用すること。
     
+    
 
 1. ## pulldown
     0から200まで選択できるプルダウンメニューを作ってください。javascript:document.createElement()を使うこと
