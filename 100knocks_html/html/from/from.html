@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form</title>
+</head>
+<body>
+    <h1>name:</h1>
+    <a><input type="text" name="user-name" placeholder="Yamada Tarou"></a>
+
+    <h1>email:</h1>
+    <a><input type="email" name="mail" placeholder="example@mail.com"></a>
+
+    <h1>password:</h1>
+    <a><input type="password" name="password" placeholder="p@ssword"></a>
+
+    <h1>age:</h1>
+    <select name="age" id = "age" size="1"></select>
+    
+    <script>
+       let p;
+       for (let i = 0; i <= 200; i++){
+        p = document.createElement('option')
+        p.text = i;
+        document.getElementById('age').appendChild(p)
+       }
+    
+    </script>
+    
+
+
+
+
+
+</body>
+</html>
