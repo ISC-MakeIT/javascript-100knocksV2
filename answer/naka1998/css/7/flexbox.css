@@ -1,0 +1,29 @@
+.oya-flex{
+    display: flex;
+    width: 200px;
+    flex-wrap: wrap-reverse;
+}
+.oya-flex > div{
+    width: 50%;
+    height: 100px;
+    text-align: center;
+    font-size: 50px;
+}
+.fle1{
+    background-color: red;
+}
+.fle2{
+    background-color: green;
+}
+.fle3{
+    background-color: blue;
+}
+.fle4{
+    background-color: yellow;
+}
+.fle5{
+    background-color: pink;
+}
+.fle6{
+    background-color: skyblue;
+}

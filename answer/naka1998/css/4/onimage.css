@@ -1,0 +1,21 @@
+#img1{
+    position: relative;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#img2{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#text{
+    position: absolute;
+}
+#title{
+    font-family: "HGP行書体";
+    color: red;
+    text-align: center;
+}

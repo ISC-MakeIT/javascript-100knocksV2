@@ -1,0 +1,30 @@
+.oya{
+    display: flex;
+}
+.box1{
+    background-color: red;
+    width: 150px;
+    height: 150px;
+    box-shadow: 1px;
+}
+.box2{
+    background-color: green;
+    width: 150px;
+    height: 150px;
+    box-shadow: 1px;
+}
+.box3{
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    box-shadow: 1px;
+}
+.box1:hover{
+    box-shadow: 0 0 5px grey;
+}
+.box2:hover{
+    box-shadow: 0 0 5px grey;
+}
+.box3:hover{
+    box-shadow: 0 0 5px grey;
+}
