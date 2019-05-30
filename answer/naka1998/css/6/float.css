@@ -1,0 +1,34 @@
+.oya-float{
+    width: 200px;
+    height: 300px;
+}
+.oya-float > div{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 50px;
+}
+.flo1{
+    float: left;
+    background-color: red;
+}
+.flo2{
+    float: left;
+    background-color: green;
+}
+.flo3{
+    float: left;
+    background-color: blue;
+}
+.flo4{
+    float: left;
+    background-color: yellow;
+}
+.flo5{
+    float: left;
+    background-color: pink;
+}
+.flo6{
+    float: left;
+    background-color: skyblue;
+}

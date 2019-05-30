@@ -1,0 +1,9 @@
+.new::after{
+    content:"NEW!";
+    font-size: 0.7em;
+    padding: 0.5em;
+    color:white;
+    background-color: orange;
+    border-radius: 5px;
+    margin-left: 1em;
+}

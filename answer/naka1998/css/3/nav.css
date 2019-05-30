@@ -1,0 +1,22 @@
+.oya{
+    background-color: grey;
+}
+.nav1{
+    display: flex;
+}
+.nav1 li{
+    list-style: none;
+}
+.hidari{
+    margin-left: -40px;
+}
+.nav1 li a{
+    display: block;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.nav1 li:hover{
+    background-color: pink;
+}
