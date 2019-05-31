@@ -1,0 +1,15 @@
+version: 2
+
+jobs:
+  htmllint:
+    docker:
+      - image: kakakakakku/htmllint-cli
+    steps:
+      - checkout
+      - run: htmllint --cwd .
+
+workflows:
+  version: 2
+  ci:
+    jobs:
+      - htmllint
