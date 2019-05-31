@@ -10,6 +10,32 @@ jobs:
           htmllint  ./answer/example/HTML/01_helloTable/helloTable.html
       - run: 
           htmllint  ./answer/example/HTML/02_anchor/anchor.html
+  stylelint:
+    docker:
+      - image: circleci/node:8.11.3
+    stepls:
+      - checkout
+      - run:
+          name:
+            install modules
+          command: 
+            node install stylelint stylelint-config-standard --save-dev
+      - run: 
+          name: 
+            Test CSS/01
+          command:
+            stylelint answer/example/CSS/01_centerDiv/
+      - run: 
+          name: 
+            Test CSS/02
+          command:
+            stylelint answer/example/CSS/02_shadow/
+      - run: 
+          name: 
+            Test CSS/03
+          command:
+            stylelint answer/example/CSS/03_nav/
+
 workflows:
   version: 2
   ci:
