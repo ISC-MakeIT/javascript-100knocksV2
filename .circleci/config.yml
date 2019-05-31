@@ -7,9 +7,21 @@ jobs:
     steps:
       - checkout
       - run:
-          htmllint  ./answer/example/HTML/01_helloTable/helloTable.html
+          name:
+            Test HTML/01
+          command:
+            htmllint  ./answer/example/HTML/01_helloTable/helloTable.html
       - run: 
-          htmllint  ./answer/example/HTML/02_anchor/anchor.html
+          name:
+            Test HTML/02
+          command:
+            htmllint  ./answer/example/HTML/02_anchor/anchor.html
+      - run: 
+          name:
+            Test HTML/03
+          command:
+            htmllint  ./answer/example/HTML/03_form/form.html
+
   stylelint_eslint_test:
     docker:
       - image: circleci/node:12.3.1
