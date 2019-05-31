@@ -30,11 +30,15 @@ jobs:
             Test CSS/02
           command:
             ./node_modules/.bin/stylelint answer/example/CSS/02_shadow/
+          when:
+            always
       - run: 
           name: 
             Test CSS/03
           command:
             ./node_modules/.bin/stylelint answer/example/CSS/03_nav/
+          when:
+            always
 
 workflows:
   version: 2
