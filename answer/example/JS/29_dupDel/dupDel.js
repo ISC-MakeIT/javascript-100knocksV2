@@ -1,71 +1,42 @@
-'use strict';
-let data = [];
-let error = 'error: Can\'t deleted';
-
-
-(function () {
-    let data = randomization(25, 75);
-    console.log(data);
-    reload(data);
-})();
-
-/*
- * @param {number} has_order
- * @param {number} max
- */
-function randomization(has_order, max) {
-    while (data.length < has_order) {
-        let n = ~~(Math.random() * (max + 1));
-        if (!(0 === n)) {
-            if (!isExistArray(n, data)) {
-                data.push(n);
-            }
-        }
-    }
-    mySort(data);
-    return data;
-}
-
+const data = [];
 /**
- * @param {number} x 
- * @param {Array} ary 
+ * @param {number} x
+ * @param {Array} ary
  * @returns {boolean}
  */
 function isExistArray(x, ary) {
-    let res = ary.some(function (v) {
-        return v === x;
-    });
-    return res;
+  return ary.some(v => v === x);
 }
 
 /**
  * @param {Array} ary
  * @return {Array}
  */
-function mySort(ary) {
-    ary.sort(function (a, b) {
-        return (a < b ? -1 : 1);
-    });
+function sort(ary) {
+  ary.sort((a, b) => (a < b ? -1 : 1));
 }
 
-
-function del() {
-    let order = parseInt(document.getElementById('order').value, 10);
-    let idx = data.indexOf(order);
-    console.log(idx);
-    if (!(-1 === idx)) {
-        let res = data.splice(idx, 1);
-        console.log('delete ' + res);
-    } else {
-        console.log(error);
+/*
+ * @param {number} hasOrder
+ * @param {number} max
+ */
+function randomization(hasOrder, max) {
+  while (data.length < hasOrder) {
+    const n = ~~(Math.random() * (max + 1));
+    if (!(n === 0)) {
+      if (!isExistArray(n, data)) { data.push(n); }
     }
-    reload(data);
+  }
+  sort(data);
+  return data;
 }
 
 /**
  * @param {any} d - out put data
  */
 function reload(d) {
-    let e = document.getElementById('out');
-    e.textContent = d;
+  const e = document.getElementById('out');
+  e.textContent = d;
 }
+
+reload(randomization(25, 75));

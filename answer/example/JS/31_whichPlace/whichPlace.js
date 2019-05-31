@@ -6,14 +6,15 @@ const data = [];
  * @returns {boolean}
  */
 function isExistArray(x, ary) {
-  return ary.some(v => v === x);
+  const res = ary.some(v => v === x);
+  return res;
 }
 
 /**
  * @param {Array} ary
  * @return {Array}
  */
-function sort(ary) {
+function mySort(ary) {
   ary.sort((a, b) => (a < b ? -1 : 1));
 }
 
@@ -30,19 +31,20 @@ function randomization(hasOrder, max) {
       }
     }
   }
-  sort(data);
+  mySort(data);
   return data;
 }
 
 
-function addTable(n) {
+function addTable(e) {
   const main = document.getElementById('main');
   const table = document.createElement('table');
   for (let i = 0; i < 5; i++) {
     const tr = document.createElement('tr');
     for (let j = 0; j < 5; j++) {
       const td = document.createElement('td');
-      td.textContent = n[j * 5 + i];
+      td.textContent = e[j * 5 + i];
+      td.addEventListener('click', () => alert(this.textContent));
       tr.appendChild(td);
     }
     table.appendChild(tr);
