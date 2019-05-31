@@ -1,0 +1,12 @@
+.btn{
+float:left;
+padding:20px;
+background-color:gray;
+font-size:10px;
+}
+
+
+
+.btn:hover{
+  background-color:pink;
+}
