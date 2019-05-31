@@ -1,0 +1,45 @@
+version: 2
+
+jobs:
+  lint_test:
+    docker:
+      - image: circleci/node:12.3.1
+    steps:
+      - checkout
+      - run:
+          name:
+            install modules
+          command: 
+            npm install htmllint-cli stylelint stylelint-config-standard eslint eslint-plugin-html --save-dev
+      - run:
+          name:
+            USERNAME ADD
+          command:
+            echo 'export USERNAME=$(ls answer/ | grep -v example | tr -d /)' >> $BASH_ENV
+      - run:
+          name:
+            Test HTML
+          command:
+            ./node_modules/.bin/htmllint answer/$USERNAME/HTML/*/*.html
+          when:
+            always
+      - run: 
+          name: 
+            Test CSS
+          command:
+            ./node_modules/.bin/stylelint answer/$USERNAME/CSS/*/*.html
+          when:
+            always
+      - run: 
+          name: 
+            Test JS
+          command:
+            node_modules/.bin/eslint -c .eslintrc.json --ext .html,.js answer/$USERNAME/JS/*
+          when:
+            always
+
+workflows:
+  version: 2
+  ci:
+    jobs:
+      - lint_test
