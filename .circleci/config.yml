@@ -6,8 +6,10 @@ jobs:
       - image: kakakakakku/htmllint-cli
     steps:
       - checkout
-      - run: htmllint  ./answer/example/HTML/01_helloTable/helloTable.html
-
+      - run:
+          htmllint  ./answer/example/HTML/01_helloTable/helloTable.html
+      - run: 
+          htmllint  ./answer/example/HTML/02_anchor/anchor.html
 workflows:
   version: 2
   ci:
