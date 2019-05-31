@@ -19,7 +19,7 @@ jobs:
           name:
             install modules
           command: 
-            node install stylelint stylelint-config-standard --save-dev
+            npm install stylelint stylelint-config-standard --save-dev
       - run: 
           name: 
             Test CSS/01
