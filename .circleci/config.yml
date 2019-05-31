@@ -24,17 +24,17 @@ jobs:
           name: 
             Test CSS/01
           command:
-            stylelint answer/example/CSS/01_centerDiv/
+            ./node_modules/.bin/stylelint answer/example/CSS/01_centerDiv/
       - run: 
           name: 
             Test CSS/02
           command:
-            stylelint answer/example/CSS/02_shadow/
+            ./node_modules/.bin/stylelint answer/example/CSS/02_shadow/
       - run: 
           name: 
             Test CSS/03
           command:
-            stylelint answer/example/CSS/03_nav/
+            ./node_modules/.bin/stylelint answer/example/CSS/03_nav/
 
 workflows:
   version: 2
