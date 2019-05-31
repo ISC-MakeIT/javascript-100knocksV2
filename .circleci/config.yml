@@ -13,7 +13,7 @@ jobs:
   stylelint:
     docker:
       - image: circleci/node:8.11.3
-    stepls:
+    steps:
       - checkout
       - run:
           name:
