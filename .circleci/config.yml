@@ -10,16 +10,16 @@ jobs:
           htmllint  ./answer/example/HTML/01_helloTable/helloTable.html
       - run: 
           htmllint  ./answer/example/HTML/02_anchor/anchor.html
-  stylelint:
+  test:
     docker:
-      - image: circleci/node:12.3.1
+    - image: circleci/node:12.3.1
     steps:
-      - checkout
-      - run:
-          name:
-            install modules
-          command: 
-            npm install stylelint stylelint-config-standard --save-dev
+    - checkout
+    - run:
+        name:
+          install modules
+        command: 
+          npm install stylelint stylelint-config-standard eslint eslint-plugin-html --save-dev
       - run: 
           name: 
             Test CSS/01
@@ -39,6 +39,28 @@ jobs:
             ./node_modules/.bin/stylelint answer/example/CSS/03_nav/
           when:
             always
+      - run: 
+          name: 
+            Test JS/01
+          command:
+            node_modules/.bin/eslint -c .eslintrc.json --ext .html,.js answer/example/JS/01_wTime/
+          when:
+            always
+      - run: 
+          name: 
+            Test JS/02
+          command:
+            node_modules/.bin/eslint -c .eslintrc.json --ext .html,.js answer/example/JS/02_add/
+          when:
+            always
+      - run: 
+          name: 
+            Test JS/03
+          command:
+            node_modules/.bin/eslint -c .eslintrc.json --ext .html,.js answer/example/JS/03_toBin/
+          when:
+            always
+
 
 workflows:
   version: 2
