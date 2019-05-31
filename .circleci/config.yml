@@ -10,17 +10,17 @@ jobs:
           name:
             Test HTML/01
           command:
-            htmllint  ./answer/example/HTML/01_helloTable/helloTable.html
+            htmllint  ./answer/$CIRCLE_PR_USERNAME/HTML/01_helloTable/helloTable.html
       - run: 
           name:
             Test HTML/02
           command:
-            htmllint  ./answer/example/HTML/02_anchor/anchor.html
+            htmllint  ./answer/$CIRCLE_PR_USERNAME/HTML/02_anchor/anchor.html
       - run: 
           name:
             Test HTML/03
           command:
-            htmllint  ./answer/example/HTML/03_form/form.html
+            htmllint  ./answer/$CIRCLE_PR_USERNAME/HTML/03_form/form.html
 
   stylelint_eslint_test:
     docker:
