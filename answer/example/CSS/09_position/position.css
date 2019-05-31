@@ -1,52 +1,53 @@
-*{
-    margin :0;
-}
-.divA{
-    width : 25vw;
-    height : 100vh;
-    background-color: aqua;
-    font-size: 50px;
-    text-align: center;
-    position: fixed;
+* {
+  margin: 0;
 }
 
-.divB{
-    width : 75vw;
-    height : 100vh;
-    background-color: blue;
-    font-size: 50px;
-    text-align: center;
-    margin-left: 25vw;
+.divA {
+  width: 25vw;
+  height: 100vh;
+  background-color: aqua;
+  font-size: 50px;
+  text-align: center;
+  position: fixed;
 }
 
-.divCandD{
-    display: flex;
-    margin-left : 25vw;
+.divB {
+  width: 75vw;
+  height: 100vh;
+  background-color: blue;
+  font-size: 50px;
+  text-align: center;
+  margin-left: 25vw;
 }
 
-.divC{
-    position: sticky;
-    width : 25vw;
-    height : 100vh;
-    background-color: crimson;
-    font-size: 50px;
-    text-align: center;
-    top : 0;
+.divCandD {
+  display: flex;
+  margin-left: 25vw;
 }
 
-.divD{
-    width : 50vw;
-    height: 200vh;
-    background-color: cornflowerblue;
-    font-size: 50px;
-    text-align: center;
+.divC {
+  position: sticky;
+  width: 25vw;
+  height: 100vh;
+  background-color: crimson;
+  font-size: 50px;
+  text-align: center;
+  top: 0;
 }
 
-.divE{
-    width : 75vw;
-    height : 100vh;
-    margin-left: 25vw;
-    background-color: yellow;
-    font-size: 50px;
-    text-align: center;
+.divD {
+  width: 50vw;
+  height: 200vh;
+  background-color: cornflowerblue;
+  font-size: 50px;
+  text-align: center;
+}
+
+.divE {
+  width: 75vw;
+  height: 100vh;
+  margin-left: 25vw;
+  background-color: yellow;
+  font-size: 50px;
+  text-align: center;
 }
