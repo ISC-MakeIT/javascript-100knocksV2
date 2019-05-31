@@ -7,17 +7,18 @@
     <title>form</title>
 </head>
 <body>
+    <form id="entryFrom" action="#" method="POST">
     <h1>name:</h1>
-    <a><input type="text" name="user-name" placeholder="Yamada Tarou"></a>
+    <a><input type="text" name="user-name" placeholder="Yamada Tarou" required></a>
 
     <h1>email:</h1>
-    <a><input type="email" name="mail" placeholder="example@mail.com"></a>
+    <a><input type="email" name="mail" placeholder="example@mail.com" required></a>
 
     <h1>password:</h1>
-    <a><input type="password" name="password" placeholder="p@ssword"></a>
+    <a><input type="password" name="password" placeholder="p@ssword" required></a>
 
     <h1>age:</h1>
-    <select name="age" id = "age" size="1"></select>
+    <select name="age" id = "age" size="1" required></select>
     
     <script>
        let p;
@@ -25,14 +26,17 @@
         p = document.createElement('option')
         p.text = i;
         document.getElementById('age').appendChild(p)
-       }
-    
+       } 
+
     </script>
     
+    <h1>sex:</h1>
+    <p>
+        <input type="radio" name="sex" value="0" checked required>Male
+        <input type="radio" name="sex" value="0" required>Female
+    </p>
 
-
-
-
-
+    <input type="submit" value="submit">
+</form>
 </body>
 </html>
