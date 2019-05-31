@@ -12,14 +12,14 @@ jobs:
           htmllint  ./answer/example/HTML/02_anchor/anchor.html
   stylelint_eslint_test:
     docker:
-    - image: circleci/node:12.3.1
+      - image: circleci/node:12.3.1
     steps:
       - checkout
       - run:
-        name:
-          install modules
-        command: 
-          npm install stylelint stylelint-config-standard eslint eslint-plugin-html --save-dev
+          name:
+            install modules
+          command: 
+            npm install stylelint stylelint-config-standard eslint eslint-plugin-html --save-dev
       - run: 
           name: 
             Test CSS/01
