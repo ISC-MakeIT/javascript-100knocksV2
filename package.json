@@ -1,0 +1,30 @@
+{
+  "name": "javascript-100knocksv2",
+  "version": "1.0.0",
+  "description": "MakeIT 研修用プログラム",
+  "main": "index.js",
+  "scripts": {
+    "htmllint": "npx htmllint answer/**/HTML/*/*.html",
+    "stylelint": "npx stylelint answer/**/CSS/*/*.css",
+    "eslint": "npx eslint -c .eslintrc --ext .html,.js answer/**/JS/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ISC-MakeIT/javascript-100knocksV2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ISC-MakeIT/javascript-100knocksV2/issues"
+  },
+  "homepage": "https://github.com/ISC-MakeIT/javascript-100knocksV2#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-html": "^5.0.5",
+    "eslint-plugin-import": "^2.17.3",
+    "htmllint-cli": "0.0.7",
+    "stylelint": "^10.0.1",
+    "stylelint-config-standard": "^18.3.0"
+  }
+}

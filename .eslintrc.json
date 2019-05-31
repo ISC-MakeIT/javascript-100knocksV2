@@ -1,5 +1,6 @@
 {
-    "plugins": [
-        "html"
-    ]
+    "parserOptions": { "ecmaVersion": 2015 },
+    "plugins": [ "html" ],
+    "extends": "airbnb-base",
+    "env": { "browser": true }
 }

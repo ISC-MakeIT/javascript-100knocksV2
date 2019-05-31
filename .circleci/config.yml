@@ -9,8 +9,8 @@ jobs:
       - run:
           name:
             install modules
-          command: 
-            npm install htmllint-cli stylelint stylelint-config-standard eslint eslint-plugin-html --save-dev
+          command:
+            npm install htmllint-cli stylelint stylelint-config-standard eslint eslint-plugin-html eslint-config-airbnb-base eslint-plugin-import --save-dev
       - run:
           name:
             USERNAME ADD
@@ -23,15 +23,15 @@ jobs:
             ./node_modules/.bin/htmllint answer/$USERNAME/HTML/*/*.html
           when:
             always
-      - run: 
-          name: 
+      - run:
+          name:
             Test CSS
           command:
             ./node_modules/.bin/stylelint answer/$USERNAME/CSS/*/*.html
           when:
             always
-      - run: 
-          name: 
+      - run:
+          name:
             Test JS
           command:
             node_modules/.bin/eslint -c .eslintrc.json --ext .html,.js answer/$USERNAME/JS/*
