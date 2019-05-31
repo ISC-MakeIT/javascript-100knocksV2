@@ -6,7 +6,7 @@
   "scripts": {
     "htmllint": "npx htmllint answer/**/HTML/*/*.html",
     "stylelint": "npx stylelint answer/**/CSS/*/*.css",
-    "eslint": "npx eslint -c .eslintrc --ext .html,.js answer/**/JS/*"
+    "eslint": "npx eslint -c .eslintrc answer/**/JS/*.js"
   },
   "repository": {
     "type": "git",
