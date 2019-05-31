@@ -1,28 +1,7 @@
 version: 2
 
 jobs:
-  htmllint:
-    docker:
-      - image: kakakakakku/htmllint-cli
-    steps:
-      - checkout
-      - run:
-          name:
-            Test HTML/01
-          command:
-            htmllint  ./answer/$CIRCLE_PR_USERNAME/HTML/01_helloTable/helloTable.html
-      - run: 
-          name:
-            Test HTML/02
-          command:
-            htmllint  ./answer/$CIRCLE_PR_USERNAME/HTML/02_anchor/anchor.html
-      - run: 
-          name:
-            Test HTML/03
-          command:
-            htmllint  ./answer/$CIRCLE_PR_USERNAME/HTML/03_form/form.html
-
-  stylelint_eslint_test:
+  lint_test:
     docker:
       - image: circleci/node:12.3.1
     steps:
@@ -31,52 +10,31 @@ jobs:
           name:
             install modules
           command: 
-            npm install stylelint stylelint-config-standard eslint eslint-plugin-html --save-dev
+            npm install htmllint-cli stylelint stylelint-config-standard eslint eslint-plugin-html --save-dev
+      - run:
+          name:
+            USERNAME ADD
+          command:
+            export USERNAME=$(ls answer/ | grep -v example | tr -d /)
+      - run:
+          name:
+            Test HTML
+          command:
+            htmllint answer/$USERNAME/HTML/*/*.html
       - run: 
           name: 
-            Test CSS/01
+            Test CSS
           command:
-            ./node_modules/.bin/stylelint answer/example/CSS/01_centerDiv/
+            ./node_modules/.bin/stylelint answer/$USERNAME/CSS/*/*.html
       - run: 
           name: 
-            Test CSS/02
-          command:
-            ./node_modules/.bin/stylelint answer/example/CSS/02_shadow/
+            Test JS          command:
+            node_modules/.bin/eslint -c .eslintrc.json --ext .html,.js answer/$USERNAME/JS/*
           when:
             always
-      - run: 
-          name: 
-            Test CSS/03
-          command:
-            ./node_modules/.bin/stylelint answer/example/CSS/03_nav/
-          when:
-            always
-      - run: 
-          name: 
-            Test JS/01
-          command:
-            node_modules/.bin/eslint -c .eslintrc.json --ext .html,.js answer/example/JS/01_wTime/
-          when:
-            always
-      - run: 
-          name: 
-            Test JS/02
-          command:
-            node_modules/.bin/eslint -c .eslintrc.json --ext .html,.js answer/example/JS/02_add/
-          when:
-            always
-      - run: 
-          name: 
-            Test JS/03
-          command:
-            node_modules/.bin/eslint -c .eslintrc.json --ext .html,.js answer/example/JS/03_toBin/
-          when:
-            always
-
 
 workflows:
   version: 2
   ci:
     jobs:
-      - htmllint
-      - stylelint_eslint_test
+      - lint_test
