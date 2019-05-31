@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+
+</head>
+<body>
+
+  <script>
+    for (let count = 1; count < 101; count++) {
+      //document.write(count);
+      let x = count % 3;
+      let y = count % 5;
+      let z = count % 15;
+      if (z === 0) {
+        console.log("fizzbazz");
+      }
+      else if (x === 0) {
+        console.log("fizz");
+      }
+      else if (y === 0) {
+        console.log("buzz");
+      } else {
+        console.log(count);
+      }
+
+    }
+
+  </script>
+
+
+</body>
+</html>
