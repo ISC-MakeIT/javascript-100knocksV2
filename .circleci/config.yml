@@ -15,7 +15,7 @@ jobs:
           name:
             USERNAME ADD
           command:
-            export USERNAME=$(ls answer/ | grep -v example | tr -d /)
+            export USERNAME=$(ls answer/ | grep -v example | tr -d /) >> $BASH_ENV
       - run:
           name:
             Test HTML

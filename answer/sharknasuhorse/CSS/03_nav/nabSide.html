@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"></script>
+
+  <style>
+    .nber {
+      width: 100%;
+      text-align: center;
+      background-color: gray;
+      /* float: left; */
+    }
+
+    .nber ul {
+      padding: 0;
+      text-align: center;
+      overflow: hidden;
+      list-style-type: none;
+    }
+
+    .nber li {
+      width: clac(100%/6);
+      display: block;
+      float: left;
+    }
+
+    .nber a {
+      text-align: center;
+      display: block;
+      text-decoration-line: none;
+      padding: 0 14px;
+      min-width: 100px;
+    }
+
+    /* 
+** 4つの疑似クラスの順番に気をつけよう
+** 覚え方はLoVe HAte
+ */
+
+    .nber a:link {
+      color: white;
+    }
+
+    .nber a:visited {
+      color: white;
+    }
+
+    .nber a:hover {
+      background-color: pink;
+    }
+
+    .nber a:active {
+      color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nber">
+    <ul>
+      <li>
+        <a href="#">Top</a>
+      </li>
+      <li>
+        <div>
+          <a href="#">HTML</a>
+        </div>
+      </li>
+      <li>
+        <a href="#">CSS</a>
+      </li>
+      <li>
+        <a href="#">JS</a>
+      </li>
+      <li>
+        <a href="#">Node</a>
+      </li>
+      <li>
+        <a href="#">PHP</a>
+      </li>
+    </ul>
+  </nav>
+</body>
+
+</html>

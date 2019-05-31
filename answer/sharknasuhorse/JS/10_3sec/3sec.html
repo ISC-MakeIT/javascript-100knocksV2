@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .timer_area {
+            text-align: center;
+            margin-top: 200px;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background: #fa9118;
+            color: #FFF;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: none;
+            text-align: center;
+            font-weight: bold;
+            vertical-align: bottom;
+            overflow: hidden;
+            box-shadow: 0px 14px 14px rgba(129, 166, 214, 0.29);
+            text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.65);
+            cursor: pointer;
+            outline: none;
+            font-size: 20px;
+        }
+
+        .btn:active {
+            -ms-transform: translateY(2px);
+            -webkit-transform: translateY(2px);
+            transform: translateY(6px);
+            box-shadow: 1 1 1 1px rgba(0, 0, 0, 0.1);
+            border-bottom: none;
+        }
+
+        .btn_after {}
+    </style>
+</head>
+
+<body>
+    <div class="timer_area">
+        <input type="button" class="btn" value="押すなよ" />
+    </div>
+    <script>
+        (function () {
+            document.getElementsByClassName('btn')[0].addEventListener('click', function () {
+                start(this);
+            });
+        })();
+
+
+
+        function start(e) {
+            setTimeout(() => {
+                alert('おしちゃったか～');
+            }, 3000);
+        }
+    </script>
+</body>
+
+</html>
