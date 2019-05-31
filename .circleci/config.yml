@@ -6,7 +6,7 @@ jobs:
       - image: kakakakakku/htmllint-cli
     steps:
       - checkout
-      - run: htmllint --cwd .
+      - run: htmllint  ./answer/example/HTML/01_helloTable/helloTable.html
 
 workflows:
   version: 2
