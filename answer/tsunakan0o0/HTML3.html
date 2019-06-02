@@ -8,17 +8,18 @@
 </head>
 <body>
     <form id="entry" method="GET" action="#"> 
-        <p> <h1>name:</h1><br><input type="text" name="NAME" required placeholder="Ymada　Taro"></p>
+        <p><label><font size="5">name:</font><br><input type="text" name="NAME" required placeholder="Ymada　Taro"></label></p>
 
-        <p> <h1>e-mail:</h1><br><input type="e-mail" name="e-mail" required placeholder="example@mail.com"></p>
+        <p><label><font size="5">e-mail:</font><br><input type="e-mail" name="e-mail" required placeholder="example@mail.com"></label></p>
 
-        <p> <h1>passeword:</h1><br><input type="passeword" name="passeword" required placeholder="p@ssw0rd" ></p>
+        <p> <label><font size="5">passeword:</font><br><input type="passeword" name="passeword" required placeholder="p@ssw0rd" ></label></p>
 
         <p>
-            <h1>age:</h1>
+           <font size="5"> age:</font>
         </p>
             <select name="" id="eee" size="0"></select>
-            <font size="6">year</font>
+            <font size="4">year</font>
+    </label>
         <script>
             let p;
             for (let i=0; i<=200; i++){
@@ -28,9 +29,11 @@
             }
 
         </script>
+        
 
-        <p><h1>SEX:</h1><br><input type="radio" name="sex" value="0" required>Male
-                   <input type="radio" name="sex" value="1" required>female
+        <p><font size="5">sex:</font><br>
+            <label><font size="4"><input type="radio" name="sex" value="0" required>Male</label>
+            <label><input type="radio" name="sex" value="1" required>female</label></font>
         </p>
        
         <input type="submit" value="submit">
