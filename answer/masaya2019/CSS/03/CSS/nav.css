@@ -1,0 +1,13 @@
+#nav {
+    list-style: none;
+}
+#nav li {
+    width: 100px;
+    color: white;
+    background-color: gray;
+    text-align: center;
+    float: left;
+}
+#nav li:hover {
+    background-color: pink;
+}

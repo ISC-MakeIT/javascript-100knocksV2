@@ -1,0 +1,30 @@
+body {
+    background-color: grey;
+}
+#boxRed {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    float: left;
+}
+#boxGreen {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    float: left;
+}
+#boxBlue {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    float: left;
+}
+#boxRed:hover {
+    box-shadow: 0 0 5px white;
+}
+#boxGreen:hover {
+    box-shadow: 0 0 5px white;
+}
+#boxBlue:hover {
+    box-shadow: 0 0 5px white;
+}
