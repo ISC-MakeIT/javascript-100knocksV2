@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form id="entry" method="GET" action="#"> 
+        <p><label><font size="5">name:</font><br><input type="text" name="NAME" required placeholder="Ymada　Taro"></label></p>
+
+        <p><label><font size="5">e-mail:</font><br><input type="e-mail" name="e-mail" required placeholder="example@mail.com"></label></p>
+
+        <p> <label><font size="5">passeword:</font><br><input type="passeword" name="passeword" required placeholder="p@ssw0rd" ></label></p>
+
+        <p>
+           <font size="5"> age:</font>
+        </p>
+            <select name="" id="eee" size="0"></select>
+            <font size="4">year</font>
+    </label>
+        <script>
+            let p;
+            for (let i=0; i<=200; i++){
+            p= document.createElement('option');
+            p.text= i;
+            document.getElementById("eee").appendChild(p);
+            }
+
+        </script>
+        
+
+        <p><font size="5">sex:</font><br>
+            <label><font size="4"><input type="radio" name="sex" value="0" required>Male</label>
+            <label><input type="radio" name="sex" value="1" required>female</label></font>
+        </p>
+       
+        <input type="submit" value="submit">
+    </form>        
+</body>
+</html>
