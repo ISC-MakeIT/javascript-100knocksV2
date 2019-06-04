@@ -1,0 +1,44 @@
+.parta{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30%;
+    background-color: skyblue;
+}
+.wrap{
+    left: 30%;
+    width: 70%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 600px 600px 600px;
+    grid-template-areas: 
+    "areaB areaB"
+    "areaC areaD"
+    "areaE areaE";  
+}
+p{
+    text-align: center;
+    font-size: 40px;
+    top: 0;
+}
+.partb{
+    background-color: blue;
+    grid-area: areaB;
+}
+.partc{
+    background-color: red;
+    grid-area: areaC;
+}
+.partc p{
+    position: sticky;
+}
+.partd{
+    background-color: purple;
+    grid-area: areaD;
+}
+.parte{
+    background-color: yellow;
+    grid-area: areaE;
+}
