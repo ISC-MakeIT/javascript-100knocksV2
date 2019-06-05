@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form</title>
+</head>
+<body>
+    <form method-get>
+        <h3>name:</h3>
+        <div style="position:relative; left:30px;"><input type="text" name="name" required></div>
+
+        <h3>email:</h3>
+        <div style="position:relative; left:30px;"><input type="email" name="email"></div>
+
+        <h3>password:</h3>
+        <div style="position:relative; left:30px;"><input type="password" name="password"></div>
+
+        <h3>age:</h3>
+        <div style="position:relative; left:30px;"><select id="age">
+        <script>    
+            var i;
+            for(i=0;i<=200;i++){
+                document.write('<option value="'+i+'">'+i+'</option>');
+            }
+        </script>
+        </select>
+        year
+        </div>
+
+        <h3>sex:</h3>
+        <div style="position:relative; left:30px;"><label><input type="radio" name="sex" checked="checked" id="male">male</label>
+            <label><input type="radio" name="sex" id="female">female</label>
+        </div>
+
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
