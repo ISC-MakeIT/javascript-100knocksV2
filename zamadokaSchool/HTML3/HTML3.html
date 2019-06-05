@@ -21,24 +21,25 @@
                 <select name="age" id="age">
                 </select>year
             </div>
-                <script>
-                        function age() {
-                            var selectElement = document.getElementById("age");
-                            for(var i = 0; i <= 200; i ++){
-                                var option = document.createElement("option"); 
-                                option.value = i; 
-                                option.innerText = i; 
-                                selectElement.appendChild(option); 
-                            }
-                        }
-                        age();
-                </script>
+                
             <div>
                 <label for="sex">sex:</label>
-                <input type="radio" value="Male" name="sex" >Male
-                <input type="radio" value="Female" name="sex">Female
+                <label><input type="radio" value="Male" name="sex" >Male</label>
+                <label><input type="radio" value="Female" name="sex">Female</label>
             </div>
             <input type="submit" value="submit">
         </form>
+        <script>
+            function createAgeOptionTagsToAgeSelector() {
+                let selectElement = document.getElementById("age");
+                for(let i = 0; i <= 200; i ++){
+                    let option = document.createElement("option"); 
+                    option.value = i; 
+                    option.innerText = i; 
+                    selectElement.appendChild(option); 
+                }
+            }
+            createAgeOptionTagsToAgeSelector();
+        </script>
     </body>
 </html>
