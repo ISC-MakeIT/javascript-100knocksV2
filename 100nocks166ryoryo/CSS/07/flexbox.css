@@ -28,4 +28,7 @@
   height:100px;
   background:rgb(4, 248, 207);
 }
-
+#box{  display: flex;
+  flex-wrap: wrap;
+  height : 300px;
+  width : 200px;}
