@@ -8,13 +8,13 @@
 </head>
 <body>
     <input type="number" name="" id="in">入力<br>
-    <button onclick="button()">2進数変換↓</button><br>
-    <input type="number" name="" id="out">出力
+    <button onclick="button()">16進数変換↓</button><br>
+    <input type="text" name="" id="out">出力
 
     <script>
         function button(){
             let num = parseInt(document.getElementById("in").value);
-            let result = num.toString(2);
+            let result = num.toString(16);
             document.getElementById("out").value = result;
         }
     </script>
