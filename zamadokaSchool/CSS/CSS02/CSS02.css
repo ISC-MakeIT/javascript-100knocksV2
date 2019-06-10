@@ -1,0 +1,20 @@
+body{
+    background-color: gray;
+}
+.square{
+    width: 300px;
+    height: 300px;
+    float: left;
+}
+.red{
+    background: red;
+}
+.green{
+    background: green;
+}
+.blue{
+    background: blue;
+}
+.square:hover{
+   box-shadow: -3px -3px 6px white;
+}
