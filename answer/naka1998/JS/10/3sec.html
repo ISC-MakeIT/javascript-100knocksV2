@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        button{
+            color: white;
+            font-size: 50px;
+            background-color: red;
+            border-radius: 20px;
+        }
+    </style>
 </head>
 <body>
     <button onclick="alert_button()">非常ボタン</button>
     <script>
         function alert_button(){
-            
+            function wait(time){
+                let start = new Date().getTime();
+                while(start + time > new Date().getTime()){}
+            }
+            wait(3000);
             alert("ジリリリリリリリリリリリｒ");
         }
     </script>

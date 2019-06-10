@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="form1"><br>
+        <input type="text" id="form2"><br>
+        <button onclick="button_click()">比較</button>
+    </form>
+    <script>
+    function button_click(){
+        let text1 = document.getElementById("form1").value;
+        let text2 = document.getElementById("form2").value;
+        if(text1 === text2){
+            alert("true");
+        }else{
+            alert("false");
+        }
+    }
+    </script>
+</body>
+</html>

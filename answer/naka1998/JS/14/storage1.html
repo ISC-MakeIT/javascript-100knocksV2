@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a href="storage2.html" onclick="link_click()">ページ２へGO</a><br>
+    <select name="aaa" id="menu1">
+        <option value="1">なんやと！</option>
+        <option value="2">なんやねん！</option>
+        <option value="3">なんやて！</option>
+    </select>
+    <script>
+        let target;
+        send();
+        if(boukenbook1 >=1){
+        }else{
+            boukenbook1 = 1;
+        }
+        function send(){
+            boukenbook1 = sessionStorage.getItem("save1");
+            document.getElementById("menu1").value= boukenbook1;
+        }
+        function link_click(){
+            target = document.getElementById("menu1").value;
+            sessionStorage.setItem("save1",target);
+        }
+    </script>
+    
+</body>
+</html>
