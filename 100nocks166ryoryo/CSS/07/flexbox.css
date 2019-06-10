@@ -1,32 +1,32 @@
 #aka {
     width:100px;
     height:100px;
-    background:rgba(230, 8, 8, 0.952);
+    background:rgba(253, 0, 0, 0.952);
   }
 #midori {
     width:100px;
     height:100px;
-    background:#27C42A;
+    background:rgb(0, 255, 4);
   }
 #ao {
       width:100px;
       height:100px;
-      background:rgb(16, 29, 207);
+      background:rgb(0, 17, 255);
     }
 #kiiro {
   width:100px;
   height:100px;
-  background:rgb(240, 236, 16);
+  background:rgb(255, 251, 0);
 }
 #murasaki {
   width:100px;
   height:100px;
-  background:rgb(232, 11, 240);
+  background:rgb(247, 1, 255);
 }
 #mizuiro{
   width:100px;
   height:100px;
-  background:rgb(4, 248, 207);
+  background:rgb(0, 255, 213);
 }
 #box{  display: flex;
   flex-wrap: wrap;
