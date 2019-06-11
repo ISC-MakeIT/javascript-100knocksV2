@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="form">
+    <button onclick="fukugo()">復号！</button>
+    <div id="output"></div>
+    <script>
+        function fukugo() {
+            let crypto = document.getElementById("form").value;
+            let ary = [];
+            while (crypto.length > 0) {
+                ary.unshift(crypto.charAt(0));
+                crypto = crypto.slice(3);
+            }
+            ary.reverse();
+            let out_number = ary.join("");
+            console.log(out_number);
+            document.getElementById("output").innerHTML = "元の文は：" + out_number;
+        }
+    </script>
+</body>
+
+</html>
