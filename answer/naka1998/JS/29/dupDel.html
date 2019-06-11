@@ -16,8 +16,7 @@
         ary.sort((a, b) => a - b);
         console.log(ary);
         document.getElementById("button1").addEventListener("click", function () {
-            let in_num = document.getElementById("form").value;
-            console.log(typeof(in_num));
+            let in_num = document.getElementById("form").valueAsNumber;
             let index = ary.findIndex(item => item === in_num);
             console.log(index);
             if (index === -1) {
