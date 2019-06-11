@@ -14,18 +14,18 @@
     <div id="output"></div>
     <script>
         function angou() {
-            let in_num = document.getElementById("form").value;
+            let inNum = document.getElementById("form").value;
             let ary = [];
-            while (in_num > 0) {
-                let kari = in_num % 10;
-                in_num = Math.floor(in_num / 10);
+            while (inNum > 0) {
+                let kari = inNum % 10;
+                inNum = Math.floor(inNum / 10);
                 ary.unshift(Math.floor(Math.random() * 9));
                 ary.unshift(Math.floor(Math.random() * 9));
                 ary.unshift(kari);
             }
-            let out_number = ary.join("");
-            console.log(out_number);
-            document.getElementById("output").innerHTML = "暗号は：" + out_number;
+            let outNumber = ary.join("");
+            console.log(outNumber);
+            document.getElementById("output").innerHTML = "暗号は：" + outNumber;
         }
     </script>
 </body>

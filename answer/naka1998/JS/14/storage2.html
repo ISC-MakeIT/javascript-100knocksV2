@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <a href="storage1.html" onclick="link_click()">ページ１へGO</a><br>
+    <a href="storage1.html" onclick="linkClick()">ページ１へGO</a><br>
     <select name="" id="menu1">
         <option value="1">なんやと！</option>
         <option value="2">なんやねん！</option>
@@ -27,7 +27,7 @@
             boukenbook2 = sessionStorage.getItem("save2");
             document.getElementById("menu1").value = boukenbook2;
         }
-        function link_click() {
+        function linkClick() {
             target = document.getElementById("menu1").value;
             sessionStorage.setItem("save2", target);
         }

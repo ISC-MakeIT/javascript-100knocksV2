@@ -9,10 +9,10 @@
 </head>
 
 <body>
-    <button onclick="random_weather()">天気をコンソールに表示</button>
+    <button onclick="randomWeather()">天気をコンソールに表示</button>
     <script>
         const ary = ['晴れ', '雨', '曇り', '槍'];
-        function random_weather() {
+        function randomWeather() {
             let num = Math.floor(Math.random() * 3);
             console.log("今日の天気は " + ary[num] + " です");
         }
