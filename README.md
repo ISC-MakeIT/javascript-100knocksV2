@@ -104,7 +104,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     ![position](./img/position.gif)
 
 1. ## drawing
-    CSSを使ってキャラクターを1人描いてください。皆さんの力作をお待ちしております。画像は最低限のアンパンマン。  
+    CSSを使ってキャラクターを1人描いてください。皆さんの力作をお待ちしております。ドット絵は無しでお願いします。  
     ![drawing](./img/drawing.PNG)
 
 ---
