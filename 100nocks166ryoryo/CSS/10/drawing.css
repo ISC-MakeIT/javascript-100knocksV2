@@ -9,11 +9,9 @@
   position: absolute;
   top: -4px;
   left: -4px;
-
   width: 4px;
   height: 4px;
   background: transparent;
-
   box-shadow:4px 4px 0 transparent,
 8px 4px 0 transparent,
 12px 4px 0 transparent,
