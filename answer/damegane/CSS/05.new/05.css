@@ -1,0 +1,10 @@
+ul{
+  background-color: greenyellow;
+  list-style: none;
+}
+
+.new::after{
+  content: "NEW!";
+  color: white;
+  background-color: orange;
+}
