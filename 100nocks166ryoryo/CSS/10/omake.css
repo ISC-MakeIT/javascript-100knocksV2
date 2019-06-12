@@ -1,14 +1,13 @@
 .dot::before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: -10px;
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 10px;
+  height: 10px;
+  background: transparent;
   
-    width: 10px;
-    height: 10px;
-    background: transparent;
-  
-    box-shadow:10px 10px 0 transparent,
+  box-shadow:10px 10px 0 transparent,
   20px 10px 0 transparent,
   30px 10px 0 transparent,
   40px 10px 0 transparent,
@@ -332,4 +331,4 @@
   160px 180px 0 transparent,
   170px 180px 0 transparent,
   180px 180px 0 transparent;
-  }
+}
