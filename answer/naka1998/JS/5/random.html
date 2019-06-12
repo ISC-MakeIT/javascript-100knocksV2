@@ -10,9 +10,9 @@
     <button onclick="button()" style="width: 100px;height: 70px;">ポチっとな</button>
 <script>
     function button(){
-        let random1 = Math.floor( Math.random()*256);
-        let random2 = Math.floor( Math.random()*256);
-        let random3 = Math.floor( Math.random()*256);
+        let random1 = Math.floor( Math.random()*256),
+            random2 = Math.floor( Math.random()*256),
+            random3 = Math.floor( Math.random()*256);
         let rgb = "#"+random1.toString(16)+random2.toString(16)+random3.toString(16); 
         document.body.style.backgroundColor=rgb;
     }

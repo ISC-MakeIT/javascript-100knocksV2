@@ -17,11 +17,10 @@
     <script>
         function button_click() {
             let num = document.getElementById("form1").value;
-            let cnt = 1;
             let sum = 0;
-            while (cnt <= num) {
-                sum = sum + cnt;
-                cnt++;
+            //for文に修正
+            for (let cnt = 1; cnt <= num; cnt++) {
+                sum += cnt;
             }
             console.log(sum);
         }
