@@ -4,21 +4,21 @@
     background:rgba(253, 0, 0, 0.952);
     text-align: center;
     font-size: 50px;   
-  }
+}
 #midori {
     width:100px;
     height:100px;
     background:rgb(0, 255, 4); 
     text-align: center;
     font-size: 50px;   
-  }
+}
 #ao {
       width:100px;
       height:100px;
       background:rgb(0, 17, 255);
       text-align: center;
       font-size: 50px;   
-    }
+}
 #kiiro {
   width:100px;
   height:100px;
@@ -43,4 +43,5 @@
 #box{  display: flex;
   flex-wrap: wrap;
   height : 300px;
-  width : 200px;}
+  width : 200px;
+}
