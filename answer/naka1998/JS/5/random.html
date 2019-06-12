@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
     <button onclick="button()" style="width: 100px;height: 70px;">ポチっとな</button>
-<script>
-    function button(){
-        let random1 = Math.floor( Math.random()*256),
-            random2 = Math.floor( Math.random()*256),
-            random3 = Math.floor( Math.random()*256);
-        let rgb = "#"+random1.toString(16)+random2.toString(16)+random3.toString(16); 
-        document.body.style.backgroundColor=rgb;
-    }
-</script>
+    <script>
+        function button() {
+            let random1 = Math.floor(Math.random() * 256),
+                random2 = Math.floor(Math.random() * 256),
+                random3 = Math.floor(Math.random() * 256);
+            let rgb = "#" + random1.toString(16) + random2.toString(16) + random3.toString(16);
+            document.body.style.backgroundColor = rgb;
+        }
+    </script>
 </body>
+
 </html>

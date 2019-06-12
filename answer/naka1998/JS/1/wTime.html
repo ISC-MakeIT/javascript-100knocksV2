@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
     <p id="time"></p>
     <script>
-        function time(){
-            var now = new Date();
-            var year = now.getFullYear();
-            var month = now.getMonth()+1;
-            var day = now.getDate();
-            var week = now.getDay();
-            var yobi = new Array("Sun","Mon","Tue","Wed","Thu","Fri","Sur");
-            var hour = now.getHours();
-            var min = now.getMinutes();
-            var sec = now.getSeconds();
-            var msec = now.getMilliseconds();
-            document.getElementById("time").innerHTML = year + "/" +month + "/" + day + "/" + yobi[week] + "/" + hour +"/"+min+"/"+sec+"/"+msec;
+        function time() {
+            let now = new Date();
+            let year = now.getFullYear();
+            let month = now.getMonth() + 1;
+            let day = now.getDate();
+            let week = now.getDay();
+            let yobi = new Array("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sur");
+            let hour = now.getHours();
+            let min = now.getMinutes();
+            let sec = now.getSeconds();
+            let msec = now.getMilliseconds();
+            document.getElementById("time").innerHTML = year + "/" + month + "/" + day + "/" + yobi[week] + "/" + hour + "/" + min + "/" + sec + "/" + msec;
         }
-        setInterval('time()',1);
+        setInterval('time()', 1);
     </script>
-    
+
 </body>
+
 </html>
