@@ -61,12 +61,12 @@
 
         function createAge() {
             let age = document.getElementById('age');
-            for (let i = 0; i < 201; i++) {
+            [Array(200).keys()].forEach(function(i){
                 let option = document.createElement('option');
                 option.value = i.toString(10);
                 option.innerText = i.toString(10);
                 age.appendChild(option);
-            }
+            })
         }
     </script>
 

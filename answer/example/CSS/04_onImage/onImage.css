@@ -1,26 +1,27 @@
 #relative {
-    position: relative;
-    width: 1200px;
-    height: 675px;
+  position: relative;
+  width: 1200px;
+  height: 675px;
 }
 
 #small {
-    position: absolute;
-    left: 350px;
-    top: 212px;
+  position: absolute;
+  left: 350px;
+  top: 212px;
 }
 
 p {
-    font-size: 40px;
-    color: red;
-    position: absolute;
-    left: 530px;
-    top: 283px;
+  font-size: 40px;
+  color: red;
+  position: absolute;
+  left: 530px;
+  top: 283px;
 }
 
 #title {
-    position: absolute;
-    font-family: Monotype Corsiva;
-    font-size: 100px;
-    top: 400px;
+  position: absolute;
+
+  /* font-family: Monotype Corsiva; */
+  font-size: 100px;
+  top: 400px;
 }

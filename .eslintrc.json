@@ -1,0 +1,12 @@
+{
+    "parserOptions": { "ecmaVersion": 2015 },
+    "plugins": [ "html" ],
+    "extends": "airbnb-base",
+    "env": { "browser": true },
+    "rules": {
+        "no-plusplus":"off",
+        "no-bitwise":"off",
+        "max-len": "warn",
+        "no-alert":"off"
+    }
+}

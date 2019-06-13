@@ -1,43 +1,36 @@
-'use strict';
-let data = randomization(25, 75);
-
-/*
- * @param {number} has_order
- * @param {number} max
- */
-function randomization(has_order, max) {
-    let data = [];
-    while (data.length < has_order) {
-        let n = ~~(Math.random() * (max + 1));
-        if (!(0 === n)) {
-            if (!isExistArray(n, data)) {
-                data.push(n);
-            }
-        }
-    }
-    mySort(data);
-    return data;
-}
-
 /**
- * 
- * @param {number} x 
- * @param {Array} ary 
+ *
+ * @param {number} x
+ * @param {Array} ary
  * @returns {boolean}
  */
 function isExistArray(x, ary) {
-    let res = ary.some(function (v) {
-        return v === x;
-    });
-    return res;
+  return ary.some(v => v === x);
 }
 
 /**
  * @param {Array} ary
  * @return {Array}
  */
-function mySort(ary) {
-    ary.sort(function (a, b) {
-        return (a < b ? -1 : 1);
-    });
+function sort(ary) {
+  ary.sort((a, b) => (a < b ? -1 : 1));
 }
+
+/*
+ * @param {number} hasOrder
+ * @param {number} max
+ */
+function randomization(hasOrder, max) {
+  const data = [];
+  while (data.length < hasOrder) {
+    const n = ~~(Math.random() * (max + 1));
+    if (!(n === 0)) {
+      if (!isExistArray(n, data)) {
+        data.push(n);
+      }
+    }
+  }
+  return sort(data);
+}
+
+randomization(25, 75);
