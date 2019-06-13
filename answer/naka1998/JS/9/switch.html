@@ -14,10 +14,10 @@
 </head>
 
 <body>
-    <button onclick="button_click()">ボタン</button>
+    <button onclick="buttonClick()">ボタン</button>
     <div id="image"></div>
     <script>
-        function button_click() {
+        function buttonClick() {
             const random = Math.floor(Math.random() * 5);
             const img = document.getElementById("image");
             console.log(random);
@@ -41,7 +41,6 @@
                     console.log("乱数おかしいよ");
                     break;
             }
-
         }
     </script>
 </body>
