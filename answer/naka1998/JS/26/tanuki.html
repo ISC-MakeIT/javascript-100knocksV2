@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
     <textarea name="" id="form" cols="70" rows="10"></textarea>
     <button onclick="tanuki()">たぬき</button>
     <div id="result"></div>
     <script>
-        function tanuki(){
+        function tanuki() {
             const textIn = document.getElementById("form").value;
-            let textOut = textIn.replace(/た+/g,"た");
-            textOut = textOut.replace(/ふ/g,"");
+            let textOut = textIn.replace(/た+/g, "た");
+            textOut = textOut.replace(/ふ/g, "");
             console.log(textOut);
         }
     </script>
 
-    
+
 </body>
+
 </html>

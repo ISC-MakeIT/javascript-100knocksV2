@@ -11,7 +11,8 @@
 <body>
     <script>
         const ary = { 'color': 'red', 'size': '100' };
-        ary["count"] = '5';
+        ary.count = '5';
+        //  guard-for-in と no-restricted-syntax のエラーが出る
         for (const key in ary) {
             console.log("keyは：" + key + " valueは：" + ary[key]);
         }

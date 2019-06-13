@@ -11,14 +11,14 @@
 <body>
     <form>
         <input type="number" name="" id="form1">
-        <button onclick="button_click()">合計！！</button>
+        <button onclick="buttonClick()">合計！！</button>
     </form>
 
     <script>
-        function button_click() {
-            let num = document.getElementById("form1").value;
+        function buttonClick() {
+            const num = document.getElementById("form1").value;
             let sum = 0;
-            //for文に修正
+            //  for文に修正
             for (let cnt = 1; cnt <= num; cnt++) {
                 sum += cnt;
             }

@@ -17,14 +17,14 @@
             const month = now.getMonth() + 1;
             const day = now.getDate();
             const week = now.getDay();
-            const yobi = new Array("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sur");
+            const yobi = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sur"];
             const hour = now.getHours();
             const min = now.getMinutes();
             const sec = now.getSeconds();
             const msec = now.getMilliseconds();
             document.getElementById("time").innerHTML = year + "/" + month + "/" + day + "/" + yobi[week] + "/" + hour + "/" + min + "/" + sec + "/" + msec;
         }
-        setInterval('time()', 1);
+        setInterval("time()", 1);
     </script>
 
 </body>
