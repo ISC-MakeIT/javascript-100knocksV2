@@ -6,27 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>nav</title>
     <style>
-        h2{
+        /* 線横に伸ばす */
+        ul{
             background-color: grey;
             color: white;
+            display: table;
+            margin: 0 -200%;
+            padding: 0 200%;
+
         }
-        span:hover{
+        ul li{
+            display: table-cell;
+            padding: 10px;
+        }
+        ul li:hover{
             cursor: pointer;
             display: inline-block;
             color: white;
             background-color: pink;
-
         }
     </style>
 </head>
 <body>
-    <h2>
-        <span>Top</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JS</span>
-        <span>Node</span>
-        <span>PHP</span>
-    </h2>
+    <ul>
+        <li>Top</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>Node</li>
+        <li>PHP</li>
+    </ul>
 </body>
 </html>
