@@ -1,0 +1,48 @@
+#A{
+    width : 30vw;
+    height : 100vh;
+    background-color: rgb(9, 202, 250);
+    font-size: 60px;
+    text-align: center;
+    position: fixed;
+}
+#B{
+    width : 80vw;
+    height : 100vh;
+    background-color: rgb(69, 11, 228);
+    font-size: 60px;
+    text-align: center;
+    margin-left: 30vw;
+}
+
+#box{
+    display: flex;
+    margin-left : 30vw;
+}
+
+#C{
+    position: sticky;
+    width : 30vw;
+    height : 100vh;
+    background-color: rgb(190, 13, 48);
+    font-size: 60px;
+    text-align: center;
+    top : 0;
+}
+
+#D{
+    width : 50vw;
+    height: 200vh;
+    background-color: rgb(99, 139, 212);
+    font-size: 60px;
+    text-align: center;
+}
+
+#E{
+    width : 80vw;
+    height : 100vh;
+    margin-left: 30vw;
+    background-color: rgb(221, 221, 5);
+    font-size: 60px;
+    text-align: center;
+}
