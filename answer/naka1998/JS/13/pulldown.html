@@ -10,12 +10,12 @@
 
 <body>
     <script>
-        let box = document.createElement("select");
+        const box = document.createElement("select");
         box.id = "menu";
         document.body.appendChild(box);
         let num = 0;
         while (num <= 200) {
-            let ins = document.createElement("option");
+            const ins = document.createElement("option");
             ins.innerHTML = num;
             ins.setAttribute("value", num);
             document.getElementById("menu").appendChild(ins);

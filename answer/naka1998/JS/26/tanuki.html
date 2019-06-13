@@ -12,8 +12,8 @@
     <div id="result"></div>
     <script>
         function tanuki(){
-            let textIn = document.getElementById("form").value;
-            let textOut = textIn.replace(/たた+/g,"た");
+            const textIn = document.getElementById("form").value;
+            let textOut = textIn.replace(/た+/g,"た");
             textOut = textOut.replace(/ふ/g,"");
             console.log(textOut);
         }

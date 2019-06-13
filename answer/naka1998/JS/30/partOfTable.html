@@ -29,7 +29,7 @@
     <script>
         ary.sort((a, b) => a - b);
         for (let cnt = 0; cnt <= 24; cnt++) {
-            let insertDiv = document.createElement("div");
+            const insertDiv = document.createElement("div");
             insertDiv.textContent = ary[cnt];
             insertDiv.className = "insDiv"+cnt;
             document.getElementById("wrap").appendChild(insertDiv);

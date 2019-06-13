@@ -15,13 +15,13 @@
     <script>
         function fukugo() {
             let crypto = document.getElementById("form").value;
-            let ary = [];
+            const ary = [];
             while (crypto.length > 0) {
                 ary.unshift(crypto.charAt(0));
                 crypto = crypto.slice(3);
             }
             ary.reverse();
-            let outNumber = ary.join("");
+            const outNumber = ary.join("");
             console.log(outNumber);
             document.getElementById("output").innerHTML = "元の文は：" + outNumber;
         }

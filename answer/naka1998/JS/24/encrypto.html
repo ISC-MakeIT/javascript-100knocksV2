@@ -15,15 +15,15 @@
     <script>
         function angou() {
             let inNum = document.getElementById("form").value;
-            let ary = [];
+            const ary = [];
             while (inNum > 0) {
-                let kari = inNum % 10;
+                const kari = inNum % 10;
                 inNum = Math.floor(inNum / 10);
                 ary.unshift(Math.floor(Math.random() * 9));
                 ary.unshift(Math.floor(Math.random() * 9));
                 ary.unshift(kari);
             }
-            let outNumber = ary.join("");
+            const outNumber = ary.join("");
             console.log(outNumber);
             document.getElementById("output").innerHTML = "暗号は：" + outNumber;
         }

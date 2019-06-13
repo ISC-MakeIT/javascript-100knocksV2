@@ -12,16 +12,16 @@
     <p id="time"></p>
     <script>
         function time() {
-            let now = new Date();
-            let year = now.getFullYear();
-            let month = now.getMonth() + 1;
-            let day = now.getDate();
-            let week = now.getDay();
-            let yobi = new Array("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sur");
-            let hour = now.getHours();
-            let min = now.getMinutes();
-            let sec = now.getSeconds();
-            let msec = now.getMilliseconds();
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = now.getMonth() + 1;
+            const day = now.getDate();
+            const week = now.getDay();
+            const yobi = new Array("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sur");
+            const hour = now.getHours();
+            const min = now.getMinutes();
+            const sec = now.getSeconds();
+            const msec = now.getMilliseconds();
             document.getElementById("time").innerHTML = year + "/" + month + "/" + day + "/" + yobi[week] + "/" + hour + "/" + min + "/" + sec + "/" + msec;
         }
         setInterval('time()', 1);

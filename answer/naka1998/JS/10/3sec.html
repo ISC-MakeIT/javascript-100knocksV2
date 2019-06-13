@@ -20,12 +20,10 @@
     <button onclick="alert_button()">非常ボタン</button>
     <script>
         function alert_button() {
-            function wait(time) {
-                let start = new Date().getTime();
-                while (start + time > new Date().getTime()) { }
-            }
-            wait(3000);
-            alert("ジリリリリリリリリリリリｒ");
+            const hijo = function () {
+                alert("ジリリリリリリリリリリリｒ");
+            };
+            setTimeout(hijo, 3000);
         }
     </script>
 
