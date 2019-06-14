@@ -1,0 +1,58 @@
+
+
+.content{
+  background-color: #ccc;
+  height: 4000px;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+#left-bar{
+  width: 20%;
+  height: 50%;
+  position: sticky;
+  top: 0;
+  background-color: #f00;
+  float: left;
+}
+
+.wrapper{
+  width: 80%;
+  height: 100%;
+  float: left;
+}
+
+#top{
+  width: 100%;
+  height: 20%;
+  background-color: #00f;
+}
+
+#move-area{
+  width: 50%;
+  height: 50%;
+  float: left;
+}
+
+#left{
+  width: 100%;
+  height: 20%;
+  position: sticky;
+  top: 0;
+  background-color: #0f0;
+}
+
+#right{
+  width: 50%;
+  height: 50%;
+  background-color: #0ff;
+  float: left;
+}
+
+#bottom{
+  width: 100%;
+  height: 30%;
+  background-color: #ff0;
+  float: right;
+}
