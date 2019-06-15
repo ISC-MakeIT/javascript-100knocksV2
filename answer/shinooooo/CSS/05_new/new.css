@@ -1,8 +1,8 @@
-ul{
+ul {
   list-style: none;
 }
 
-.new:after{
+.new:after {
   color: white;
   background-color: orange;
   content: "NEW!";

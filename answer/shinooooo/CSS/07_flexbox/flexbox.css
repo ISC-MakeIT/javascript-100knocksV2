@@ -1,10 +1,11 @@
-.box{display: flex;
+.box {
+  display: flex;
   flex-wrap: wrap-reverse;
   width: 200px;
   height: 300px;
 } 
 
-.square{
+.square {
   width: 100px;
   height: 100px;
   font-size: 50px;
@@ -12,26 +13,26 @@
   line-height: 100px;
 }
 
-.square1{
+.square1 {
   background-color: red;
 }
 
-.square2{
+.square2 {
   background-color: green;
 }
 
-.square3{
+.square3 {
   background-color: blue;
 }
 
-.square4{
+.square4 {
   background-color: yellow;
 }
 
-.square5{
+.square5 {
   background-color: magenta;
 }
 
-.square6{
+.square6 {
   background-color: skyblue;
 }
