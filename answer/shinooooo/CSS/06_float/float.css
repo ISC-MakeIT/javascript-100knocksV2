@@ -1,38 +1,38 @@
 .box{
-    display: flex;
-    flex-wrap: wrap;
-    width: 200px;
-    height: 300px;
-} 
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 300px;
+}
 
 .square{
-    width: 100px;
-    height: 100px;
-    font-size: 50px;
-    text-align: center;
-    line-height: 100px;
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  text-align: center;
+  line-height: 100px;
 }
 
 .square1{
-    background-color: red;
+  background-color: red;
 }
 
 .square2{
-    background-color: green;
+  background-color: green;
 }
 
 .square3{
-    background-color: blue;
+  background-color: blue;
 }
 
 .square4{
-    background-color: yellow;
+  background-color: yellow;
 }
 
 .square5{
-    background-color: magenta;
+  background-color: magenta;
 }
 
 .square6{
-    background-color: skyblue;
+  background-color: skyblue;
 }

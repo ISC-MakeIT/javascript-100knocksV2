@@ -1,11 +1,11 @@
 ul{
-    list-style: none;
+  list-style: none;
 }
 
 .new:after{
-    color: white;
-    background-color: orange;
-    content: "NEW!";
-    border-radius: 3px;
-    padding: 1px;
+  color: white;
+  background-color: orange;
+  content: "NEW!";
+  border-radius: 3px;
+  padding: 1px;
 }
