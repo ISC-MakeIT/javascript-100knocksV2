@@ -3,15 +3,14 @@
     flex-wrap: wrap;
     width: 200px;
     height: 300px;
-    justify-content: center;
-    align-items: center;
-
 } 
 
 .square{
     width: 100px;
     height: 100px;
     font-size: 50px;
+    text-align: center;
+    line-height: 100px;
 }
 
 .square1{
