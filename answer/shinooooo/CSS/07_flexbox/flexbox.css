@@ -1,0 +1,39 @@
+.box{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width: 200px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+
+} 
+
+.square{
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+}
+
+.square1{
+    background-color: red;
+}
+
+.square2{
+    background-color: green;
+}
+
+.square3{
+    background-color: blue;
+}
+
+.square4{
+    background-color: yellow;
+}
+
+.square5{
+    background-color: magenta;
+}
+
+.square6{
+    background-color: skyblue;
+}
