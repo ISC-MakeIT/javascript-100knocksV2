@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+</head>
+
+<body>
+    <form name="math">
+        <input type="text" name="" value="0">：10進数<br>
+        <input type="text" name="" value="">：2進数<br>
+        <input type="button" value="変換" onclick="kazu()"><br>
+        </form>
+        
+        
+        <script>
+        
+        function kazu(){
+          var suji = parseInt(document.math.elements[0].value);
+          document.math.elements[1].value = suji.toString(2);
+        }
+        </script>
+
+</body>
+</html>
