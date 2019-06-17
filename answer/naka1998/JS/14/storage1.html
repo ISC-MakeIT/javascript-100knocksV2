@@ -17,19 +17,19 @@
     </select>
     <script>
         let target;
-        let boukenbook1;
+        let boukenbook;
         send();
         //  else使わないfor文に修正
-        if (boukenbook1 < 1) {
-            boukenbook1 = 1;
+        if (boukenbook < 1) {
+            boukenbook = 1;
         }
         function send() {
-            boukenbook1 = sessionStorage.getItem("save1");
-            document.getElementById("menu1").value = boukenbook1;
+            boukenbook = sessionStorage.getItem("save");
+            document.getElementById("menu1").value = boukenbook;
         }
         function linkClick() {
             target = document.getElementById("menu1").value;
-            sessionStorage.setItem("save1", target);
+            sessionStorage.setItem("save", target);
         }
     </script>
 

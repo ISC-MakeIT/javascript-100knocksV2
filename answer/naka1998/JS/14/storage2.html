@@ -10,7 +10,7 @@
 
 <body>
     <a href="storage1.html" onclick="linkClick()">ページ１へGO</a><br>
-    <select name="" id="menu1">
+    <select name="" id="menu2">
         <option value="1">なんやと！</option>
         <option value="2">なんやねん！</option>
         <option value="3">なんやて！</option>
@@ -18,18 +18,18 @@
 
     <script>
         let target;
-        let boukenbook2;
+        let boukenbook;
         send();
-        if (boukenbook2 < 1) {
-            boukenbook2 = 1;
+        if (boukenbook < 1) {
+            boukenbook = 1;
         }
         function send() {
-            boukenbook2 = sessionStorage.getItem("save2");
-            document.getElementById("menu1").value = boukenbook2;
+            boukenbook = sessionStorage.getItem("save");
+            document.getElementById("menu2").value = boukenbook;
         }
         function linkClick() {
-            target = document.getElementById("menu1").value;
-            sessionStorage.setItem("save2", target);
+            target = document.getElementById("menu2").value;
+            sessionStorage.setItem("save", target);
         }
     </script>
 </body>
