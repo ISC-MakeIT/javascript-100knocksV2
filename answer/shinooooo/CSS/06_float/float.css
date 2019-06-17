@@ -1,20 +1,15 @@
-.box {
-  display: flex;
-  flex-wrap: wrap;
-  width: 200px;
-  height: 300px;
-}
-
 .square {
   width: 100px;
   height: 100px;
   font-size: 50px;
-  text-align: center;
-  line-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .square1 {
   background-color: red;
+  float:left;
 }
 
 .square2 {
@@ -23,6 +18,7 @@
 
 .square3 {
   background-color: blue;
+  float:left;
 }
 
 .square4 {
@@ -31,6 +27,7 @@
 
 .square5 {
   background-color: magenta;
+  float:left;
 }
 
 .square6 {
