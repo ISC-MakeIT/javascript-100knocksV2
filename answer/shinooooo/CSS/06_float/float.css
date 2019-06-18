@@ -2,9 +2,8 @@
   width: 100px;
   height: 100px;
   font-size: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  line-height: 100px;
 }
 
 .square1 {
@@ -14,22 +13,27 @@
 
 .square2 {
   background-color: green;
+  float: left;
 }
 
 .square3 {
   background-color: blue;
+  clear: left;
   float: left;
 }
 
 .square4 {
   background-color: yellow;
+  float: left;
 }
 
 .square5 {
   background-color: magenta;
+  clear: left;
   float: left;
 }
 
 .square6 {
   background-color: skyblue;
+  float: left;
 }
