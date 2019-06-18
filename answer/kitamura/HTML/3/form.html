@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .in{
+            margin-left: 40px;
+            padding-right: 0px;
+        }
+
+        .radio2{
+            margin-left: 0px;
+        }
+
+        #submit{
+            margin-left: 0px;
+        }
+        
+    </style>
+
+    <script>
+        function age() {
+            for(var i = 0; i <= 200; i++){
+                document.write('<option value="' + i + '">' + i + '</option>')
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <form action="" method="get">
+        <p>
+            <label for="name">name:</label><br>
+            <input class="in" type="text" id="name" name="name">
+        </p>
+
+        <p>
+            <label for="email">email:</label><br>
+            <input class="in" type="email" id="email" name="email">
+        </p>
+
+        <p>
+            <label for="pass">password:</label><br>
+            <input class="in" type="password" id="pass" name="pass">
+        </p>
+
+        <p>
+            <label for="age">age:</label><br>
+            <select class="in" name="age" id="age">
+                <script>
+                    age()
+                </script>
+            </select>
+            <span>year</span>
+        </p>
+
+        <p>
+            <label>sex:</label><br>
+            <label><input class="in radio1" type="radio" name="sex" value="Male"> Male</label>
+            <label><input class="in radio2" type="radio" name="sex" value="Female"> Female</label>
+        </p>
+
+        <div id=submit><input type="submit" value="submit"></div>
+
+        </form>
+</body>
+</html>
