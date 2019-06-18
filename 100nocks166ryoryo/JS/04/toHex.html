@@ -9,13 +9,13 @@
 <body>
     <form name="math">
         <input type="text" name="" value="0">：10進数<br>
-        <input type="text" name="" value="">：2進数<br>
+        <input type="text" name="" value="">：16進数<br>
         <input type="button" value="変換" onclick="kazu()"><br>
-    </form>
+    </form> 
     <script>
         function kazu(){
           let suji = parseInt(document.math.elements[0].value);
-          document.math.elements[1].value = suji.toString(2);
+          document.math.elements[1].value = suji.toString(16);
         }
     </script>
 </body>
