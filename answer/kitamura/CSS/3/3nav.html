@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+
+        function item(){
+            for(let i = 0; i < 6; i++){
+                document.write('<li>項目' + i + '</li>')
+            }
+        }
+        
+    </script>
+    <style>
+
+        #nav ul li{
+            display: inline;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        ul{
+            background-color:grey;
+        }
+
+        li{
+            color: white;
+        }
+
+        li:hover{
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <ul>
+            <script>
+                item();
+            </script>
+        </ul>
+    </div>
+</body>
+</html>
