@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+        function box(){
+            for(let i = 6; i >= 1; i--){
+                document.write('<div id="box' + i + '" class="boxes">' + i + '</div>');
+            }
+        }
+    </script>
+
+    <style>
+
+        #container{
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            width: 200px;
+        }
+
+        .boxes{
+            width: 100px;
+            height: 100px;
+            font-size: 50px;
+            text-align: center;
+        }
+
+        #box1{
+            background-color: red;
+        }
+
+        #box2{
+            background-color: green;
+        }
+
+        #box3{
+            background-color: blue;
+        }
+
+        #box4{
+            background-color: yellow;
+        }
+
+        #box5{
+            background-color: darkorchid;
+        }   
+
+        #box6{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <script>
+                box();
+        </script>
+    </div>
+</body>
+</html>
