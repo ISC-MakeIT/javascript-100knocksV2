@@ -1,0 +1,55 @@
+body{
+    position: relative;
+    width: 100vw;
+    height: 1000vh;
+}
+
+div{
+    text-align: center;
+    font-size: 200px;
+}
+
+.row2{
+    margin-left: 25vw;
+}
+
+.row3{
+    margin-left: 50vw;
+}
+
+#fixed-wrap{
+    position: relative;
+}
+
+#div1{
+    position: fixed;
+    background-color: red;
+    width: 25vw;
+    height: 100vh;
+}
+
+#div2{
+    background-color: blue;
+    width: 75vw;
+    height: 250vh;
+}
+
+#div3{
+    float: left;
+    position: sticky;
+    top: 0vh;
+    height: 250vh;
+    width: 25vw;
+    background-color: yellow;
+}
+
+#div4{
+    height: 500vh;
+    width: 50vw;
+    background-color: aqua;
+}
+
+#div5{
+    height: 250vh;
+    background-color: blueviolet;
+}
