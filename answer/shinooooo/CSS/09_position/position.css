@@ -2,7 +2,7 @@
   width: 100%;
   height: 15000px;
   text-align: center;
-  font-size: 100ox;
+  font-size: 100px;
 }
 
 .box1 {
@@ -12,7 +12,7 @@
   position: sticky;
   top: 0;
   float: left;
-} 
+}
 
 .wrapper2 {
   width: 70%;
@@ -36,7 +36,7 @@
   width: 50%;
   height: 2000px;
   background-color: red;
-  float:left;
+  float: left;
   position: sticky;
   top: 0;
 }
@@ -52,6 +52,6 @@
   width: 100%;
   height: 5000px;
   background-color: yellow;
-  float:clear;
+  float: clear;
   float: right;
-} 
+}
