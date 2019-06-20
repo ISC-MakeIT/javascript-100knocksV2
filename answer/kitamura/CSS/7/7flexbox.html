@@ -6,20 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <script>
-        function box(){
-            for(let i = 6; i >= 1; i--){
-                document.write('<div id="box' + i + '" class="boxes">' + i + '</div>');
-            }
-        }
-    </script>
-
     <style>
 
         #container{
             display: flex;
-            flex-direction: row-reverse;
-            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
             width: 200px;
         }
 
@@ -58,9 +51,12 @@
 </head>
 <body>
     <div id="container">
-        <script>
-                box();
-        </script>
+        <div id="box1" class="boxes">1</div>
+        <div id="box2" class="boxes">2</div>
+        <div id="box3" class="boxes">3</div>
+        <div id="box4" class="boxes">4</div>
+        <div id="box5" class="boxes">5</div>
+        <div id="box6" class="boxes">6</div>
     </div>
 </body>
 </html>
