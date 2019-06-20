@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" name="" id="form">
+    <button onclick="angou()">暗号！</button>
+    <div id="output"></div>
+    <script>
+        function angou() {
+            let inNum = document.getElementById("form").value;
+            const ary = [];
+            while (inNum > 0) {
+                const kari = inNum % 10;
+                inNum = Math.floor(inNum / 10);
+                ary.unshift(Math.floor(Math.random() * 9));
+                ary.unshift(Math.floor(Math.random() * 9));
+                ary.unshift(kari);
+            }
+            const outNumber = ary.join("");
+            console.log(outNumber);
+            document.getElementById("output").innerHTML = "暗号は：" + outNumber;
+        }
+    </script>
+</body>
+
+</html>

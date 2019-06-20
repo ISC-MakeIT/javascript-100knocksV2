@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="time"></p>
+    <script>
+        function time() {
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = now.getMonth() + 1;
+            const day = now.getDate();
+            const week = now.getDay();
+            const yobi = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sur"];
+            const hour = now.getHours();
+            const min = now.getMinutes();
+            const sec = now.getSeconds();
+            const msec = now.getMilliseconds();
+            document.getElementById("time").innerHTML = year + "/" + month + "/" + day + "/" + yobi[week] + "/" + hour + "/" + min + "/" + sec + "/" + msec;
+        }
+        setInterval("time()", 1);
+    </script>
+
+</body>
+
+</html>

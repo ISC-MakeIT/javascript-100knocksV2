@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <style>
+        div{
+            width: 100%;
+            height: 50px;
+            text-align: center;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .red{
+            background-color: red;
+        }
+        .removed{
+            background-color: transparent;
+        }
+    </style>
+    <script>
+        $(function(){
+            $(".divA").on("click",function(){
+                $(".divA").css("backgroundColor","green");
+            });
+            $(".divB").on("click",function(){
+                $(".divB").addClass("yellow");
+            });
+            $(".divC").on("click",function(){
+                $(".divC").removeClass("removed");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="divA">11</div>
+    <div class="divB">22</div>
+    <div class="divC red removed">33</div>
+    
+</body>
+</html>

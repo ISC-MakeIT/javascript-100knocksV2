@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../27/duplicate.js"></script>
+    <style>
+        #wrap {
+            display: grid;
+            grid-template-columns: repeat(5, 100px);
+            grid-gap: 5px 5px;
+        }
+
+        div [class^="insDiv"] {
+            height: 100px;
+            width: 100px;
+            border: 1px solid red;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap"></div>
+    <script>
+        ary.sort((a, b) => a - b);
+        for (let cnt = 0; cnt <= 24; cnt++) {
+            const insertDiv = document.createElement("div");
+            insertDiv.textContent = ary[cnt];
+            insertDiv.className = "insDiv" + ary[cnt];
+            document.getElementById("wrap").appendChild(insertDiv);
+        }
+        document.getElementById("wrap").addEventListener("click", function () {
+            let clickedId = event.target.className;
+            clickedId = clickedId.replace("insDiv", "");
+        alert(clickedId);
+        }, false);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        img {
+            max-width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="buttonClick()">ボタン</button>
+    <div id="image"></div>
+    <script>
+        function buttonClick() {
+            const random = Math.floor(Math.random() * 5);
+            const img = document.getElementById("image");
+            console.log(random);
+            switch (random) {
+                case 0:
+                    img.innerHTML = '<img src="image/0.jpg">';
+                    break;
+                case 1:
+                    img.innerHTML = '<img src="image/1.jpg">';
+                    break;
+                case 2:
+                    img.innerHTML = '<img src="image/2.jpg">';
+                    break;
+                case 3:
+                    img.innerHTML = '<img src="image/3.jpg">';
+                    break;
+                case 4:
+                    img.innerHTML = '<img src="image/4.jpg">';
+                    break;
+                default:
+                    console.log("乱数おかしいよ");
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input type="number" name="" id="form1">
+        <button onclick="buttonClick()">合計！！</button>
+    </form>
+
+    <script>
+        function buttonClick() {
+            const num = document.getElementById("form1").value;
+            let sum = 0;
+            //  for文に修正
+            for (let cnt = 1; cnt <= num; cnt++) {
+                sum += cnt;
+            }
+            console.log(sum);
+        }
+    </script>
+</body>
+
+</html>

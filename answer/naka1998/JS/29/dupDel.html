@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../27/duplicate.js"></script>
+</head>
+
+<body>
+    <input type="number" name="" id="form"><br>
+    <button id="button1">除去！</button>
+    <script>
+        ary.sort((a, b) => a - b);
+        console.log(ary);
+        document.getElementById("button1").addEventListener("click", function () {
+            const inNum = document.getElementById("form").valueAsNumber;
+            const index = ary.findIndex(item => item === inNum);
+            console.log(index);
+            if (index === -1) {
+                console.log("error: Can't deleted");
+            } else {
+                ary.splice(index, 1);
+                console.log(ary);
+            }
+        });
+    </script>
+</body>
+
+</html>

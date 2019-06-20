@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .wrapper{
     display: grid;
     width: 644px;
@@ -27,3 +28,61 @@
     width: 100%;
     object-fit: cover;
 }
+=======
+.wrap{
+    display: grid;
+    width: 646px;
+    grid-template-columns: 160px 160px 322px;
+    grid-template-rows: 120px 120px 120px; 
+    gap: 2px;
+    background-color: black;
+    grid-template-areas:
+    "area1 area1 area2"
+    "area3 area4 area5"
+    "area6 area7 area5";
+}
+div [class^="item"]{
+    background-color: white;
+    position: relative;
+    border: 1px;
+}
+div p{
+    position: absolute;
+    left: 10px;
+    top: -40px;
+/*マイナスのマージン使うのは良くないらしいが、こうしないとできなかった*/
+    font-size: 60px;
+}
+.item1{
+    grid-area: area1;
+}
+.item2{
+    grid-area: area2;
+}
+.item3{
+    grid-area: area3;
+}
+/*example見て、画像いじってたんですがめんどくさくて途中で投げました*/
+.item4{
+    grid-area: area4;
+    background-image: url(images/tori2.jpg);
+}
+.item5{
+    grid-area: area5;
+    background-image: url(images/tori1.jpg);
+
+}
+.item6{
+    grid-area: area6;
+    background-image: url(images/tori3.jpg);
+
+}
+.item7{
+    grid-area: area7;
+}
+img{
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+}
+>>>>>>> submit-naka1998
