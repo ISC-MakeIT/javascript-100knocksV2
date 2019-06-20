@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        * {
+            position: absolute;
+        }
+
+        #face{
+            top: 50px;
+            left: 50px;
+            width: 340px;
+            height: 300px;
+            background-color: blueviolet;
+            border-radius: 50%;
+            background-image: linear-gradient(160deg , white,blueviolet 150px 300px,white);
+            border: 5px solid rgb(71, 10, 71);
+        }
+        #eye1{
+            top: 170px;
+            left: 120px;
+            width: 60px;
+            height: 130px;
+            border-radius: 80% 0 0 80% / 50%;
+            background: white;
+            transform: rotate(275deg);
+        }
+
+        #eye2{
+            top: 170px;
+            left: 270px;
+            width: 60px;
+            height: 130px;
+            border-radius: 80% 0 0 80% / 50%;
+            background: white;
+            transform: rotate(265deg);
+        }
+
+        #eye3{
+            top: 174px;
+            left: 130px;
+            width: 40px;
+            height: 100px;
+            border-radius: 80% 0 0 80% / 45%;
+            background: purple;
+            transform: rotate(275deg);
+        }
+
+        #eye4{
+            top: 174px;
+            left: 280px;
+            width: 40px;
+            height: 100px;
+            border-radius: 80% 0 0 80% / 45%;
+            background: purple;
+            transform: rotate(265deg);
+        }
+        #highlight{
+            top: 60px;
+            left: 120px;
+            width: 150px;
+            height: 130px;
+            background-color: blueviolet;
+            border-radius: 50%;
+            background-image: linear-gradient(160deg , white,blueviolet)
+        }
+    </style>
+</head>
+<body>
+    <div id="face"></div>
+    <div id="eye1"></div>
+    <div id="eye2"></div>
+    <div id="eye3"></div>
+    <div id="eye4"></div>
+    <div id="highlight"></div>
+</body>
+</html>
