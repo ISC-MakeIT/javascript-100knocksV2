@@ -1,9 +1,7 @@
-let add1 = 1;
-let add2 = 2;
-let add3 = 3;
-function add() {
-  console.log(add1);
-  console.log(add2);
-  console.log(add3);
+const a = 0;
+function add(x, y) {
+  return x + y;
 }
-add();
+console.log(add(z, 1));
+console.log(add(z, 2));
+console.log(add(z, 3));
