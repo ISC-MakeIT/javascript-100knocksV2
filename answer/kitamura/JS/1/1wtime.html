@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <script>
-
-        let day = ['月', '火', '水', '木', '金', '土', '日'];
-
-        function time(){
-            let d = new Date();
-            let time = d.getFullYear();
-            let m = d.getMonth() + 1;
-            time += ' / ' + m;
-            time += ' / ' + d.getDate();
-            time += ' / ' + day[d.getDay() - 1];
-            time += ' / ' + d.getHours();
-            time += ' / ' + d.getMinutes();
-            time += ' / ' + d.getSeconds();
-            time += ' / ' + d.getMilliseconds();
-            
-            document.getElementById('wrap').innerHTML = time;
-        }
-    </script>
-
 </head>
+
 <body>
     <div id="wrap">
         <script>
+
+            let day = ['月', '火', '水', '木', '金', '土', '日'];
+
+            function time() {
+                let d = new Date();
+                let time = d.getFullYear();
+                let m = d.getMonth() + 1;
+                time += ' / ' + m;
+                time += ' / ' + d.getDate();
+                time += ' / ' + day[d.getDay() - 1];
+                time += ' / ' + d.getHours();
+                time += ' / ' + d.getMinutes();
+                time += ' / ' + d.getSeconds();
+                time += ' / ' + d.getMilliseconds();
+
+                document.getElementById('wrap').innerHTML = time;
+            }
+
             setInterval('time()', 1);
+            
         </script>
     </div>
 </body>
+
 </html>
