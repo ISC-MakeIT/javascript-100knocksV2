@@ -3,7 +3,15 @@
     top: 50%;
 }
 
+.box img {
+    width: 50%;
+}
+
 .box .sikkoku1 { z-index: 0; }
+
+.sikkoku2 {
+    position: relative;
+}
 
 .box .sikkoku2 {
     z-index: 10;
@@ -20,10 +28,6 @@
     height: auto;
 }
 
-.sikkoku2 {
-    position: relative;
-}
-
 .sikkoku2 p {
     position: absolute;
     color: rgba(252, 4, 4, 0.582);
@@ -37,10 +41,6 @@
     transform: translate(-50%, -50%);
     margin: 0;
     padding: 0;
-}
-
-.box img {
-    width: 50%;
 }
 
 .aaa {
