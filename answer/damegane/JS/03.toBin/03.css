@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 500px;
+  margin: 50px auto;
+}
+
+.container h2 {
+  margin: 0;
+  text-align: center;
+}
+
+#number {
+  width: 100%;
+  padding: .3em;
+  box-sizing: border-box;
+}
+
+#btn {
+  width: 100%;
+  margin: 5px 0;
+}
