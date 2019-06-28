@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #container {
+            display: grid;
+            text-align: center;
+            font-size: 25px;
+            grid-template-rows: 200px 200px 200px;
+            grid-template-columns: 200px 200px 200px 200px 200px 200px;
+            grid-template-areas:
+                "areaA areaB areaB areaC itemG itemG"
+                "areaD areaD areaE areaE itemG itemG"
+                "areaF areaF areaF areaF itemG itemG";
+        }
+
+        #itemA {
+            grid-area: areaA;
+            background: red;
+        }
+
+        #itemB {
+            grid-area: areaB;
+            background: blue;
+        }
+
+        #itemC {
+            grid-area: areaC;
+            background: yellow;
+        }
+
+        #itemD {
+            grid-area: areaD;
+            background: purple;
+        }
+
+        #itemE {
+            grid-area: areaE;
+            background: green;
+        }
+
+        #itemF {
+            grid-area: areaF;
+            background: orange;
+        }
+
+        #itemG {
+            grid-area: itemG;
+            background-image: url(http://www2.u-netsurf.ne.jp/~tanbee/sozai/illust/unko/unko_a01.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="itemA">うんこ</div>
+        <div id="itemB">うんこ</div>
+        <div id="itemC">うんこ</div>
+        <div id="itemD">うんこ</div>
+        <div id="itemE">うんこ</div>
+        <div id="itemF">うんこ</div>
+        <div id="itemG"></div>
+    </div>
+</body>
+
+</html>

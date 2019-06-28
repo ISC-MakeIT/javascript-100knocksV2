@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="" method="get">
+    <div>
+      <label for="name">name:</label><br>
+      <input type="text" name="name" required>
+    </div>
+    <div>
+      <label for="email">email:</label><br>
+      <input type="email" name="email" required>
+    </div>
+    <div>
+      <label for="password">password:</label><br>
+      <input type="password" required>
+    </div>
+    <div>
+      <label for="age">age:</label>
+      <select name="age" id="selectAge"></select>
+    </div>
+    <div>
+      <label for="sex">sex:</label><br>
+      <input type="radio" name="sex" value="male" required>Male
+      <input type="radio" name="sex" value="female" required>Female
+    </div>
+    <input type="submit" name="submit">
+  </form>
+  <script>
+    function selectNum() {
+      const selectAge = document.getElementById('selectAge')
+      for (let i = 0; i < 201; i++) {
+        const option = document.createElement('option')
+        option.value = i;
+        option.innerText = i;
+        selectAge.appendChild(option);
+      }
+    }
+    selectNum();
+  </script>
+</body>
+
+</html>
