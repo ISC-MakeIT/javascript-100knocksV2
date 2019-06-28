@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <input type="button" value="addPict" onclick="addPict()">
+  <div class="area"></div>
+
+  <script>
+    function addPict() {
+      let area = document.getElementsByClassName('area');
+      area = area[0];
+      let pict = document.createElement('img');
+      pict.src = '../img/somari.jpg';
+      pict.setAttribute('width', '200px');
+      pict.setAttribute('heigt', 'auto');
+      area.appendChild(pict);
+      // area.insertBefore(pict, area.firstChild);
+    }
+  </script>
+</body>
+
+</html>
