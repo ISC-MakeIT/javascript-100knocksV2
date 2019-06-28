@@ -1,0 +1,11 @@
+.new::after{
+  display: inline-block;
+  content: "new";
+  background: orange;
+  font-size: 10px;
+  letter-spacing: -1px;
+  line-height: 1;
+  margin: 0;
+  padding: 2px;
+
+}
