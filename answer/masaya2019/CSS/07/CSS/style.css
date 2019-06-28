@@ -1,0 +1,42 @@
+#box1 {
+  background-color: red;
+  order: 5;
+}
+
+#box2 {
+  background-color: greenyellow;
+  order: 6;
+}
+
+#box3 {
+  background-color: blue;
+  order: 3;
+}
+
+#box4 {
+  background-color: yellow;
+  order: 4;
+}
+
+#box5 {
+  background-color: purple;
+  order: 1;
+}
+
+#box6 {
+  background-color: skyblue;
+  order: 2;
+}
+
+body div {
+  width: 100px;
+  height: 100px;
+  font-size: 40px;
+  text-align: center;
+}
+
+#flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+}

@@ -1,0 +1,38 @@
+#box1 {
+  background-color: red;
+  float: left;
+}
+
+#box2 {
+  background-color: greenyellow;
+  float:left;
+}
+
+#box3 {
+  background-color: blue;
+  clear: left;
+  float: left;
+}
+
+#box4 {
+  background-color: yellow;
+  float: left;
+}
+
+#box5 {
+  background-color: purple;
+  clear: left;
+  float: left;
+}
+
+#box6 {
+  background-color: skyblue;
+  float: left;
+}
+
+body div {
+  width: 100px;
+  height: 100px;
+  font-size: 40px;
+  text-align: center;
+}

@@ -1,0 +1,25 @@
+
+* {
+  list-style: none;
+}
+
+body {
+  background-color: aqua;
+}
+
+li {
+  font-size: 20px;
+  margin: 2px;
+}
+
+.new::after {
+  display: inline-block;
+  content: "NEW!";
+  background-color: orange;
+  color: white;
+  font-size: 18px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: 5px;
+  border-radius: 4px;
+}
