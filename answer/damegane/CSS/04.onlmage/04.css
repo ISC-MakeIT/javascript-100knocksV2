@@ -2,13 +2,13 @@
   position: relative;
 }
 
-.absolute{
+.absolute {
   position: absolute;
   top: 200px;
   left: 300px;
 }
 
-.memo{
+.memo {
   position: absolute;
   top: 500px;
   left: 500px;
@@ -16,7 +16,7 @@
   color: white;
 }
 
-.title{
+.title {
   font-size: 60px;
   font-family: 'Caveat', cursive;
   margin-left: 500px;

@@ -42,7 +42,7 @@
   border: 1px solid #000;
 }
 
-#day{
+#day {
   writing-mode: vertical-lr;
   font-size: 55px;
   font-weight: bold;
@@ -52,7 +52,7 @@
   margin: 15px auto 0;
 }
 
-#detail{
+#detail {
   writing-mode: vertical-lr;
   font-size: 60px;
   font-weight: bold;
@@ -62,43 +62,43 @@
   margin: 30px auto 0;
 }
 
-#center1{
+#center1 {
   grid-row: 2/3;
   grid-column: 1/2;
   border: 1px solid #000;
 }
 
-#center3{
+#center3 {
   grid-row: 2/3;
   grid-column:3/4;
   border: 1px solid #000;
 }
 
-#center4{
+#center4 {
   grid-row: 2/3;
   grid-column: 4/5;
   border: 1px solid #000;
 }
 
-#center5{
+#center5 {
   grid-row: 2/3;
   grid-column: 5/6;
   border: 1px solid #000;
 }
 
-#center7{
+#center7 {
   grid-row: 2/3;
   grid-column: 7/8;
   border: 1px solid #000;
 }
 
-#top-center{
+#top-center {
   grid-row: 1/2;
   grid-column: 2/7;
   border: 1px solid #000;
 }
 
-#bottom-center{
+#bottom-center {
   grid-row: 3/4;
   grid-column: 3/6;
   border: 1px solid #000;

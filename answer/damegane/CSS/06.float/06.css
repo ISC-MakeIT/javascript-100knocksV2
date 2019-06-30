@@ -1,4 +1,4 @@
-.box{
+.box {
   width: 100px;
   height: 100px;
   font-size: 20px;
@@ -6,28 +6,28 @@
   list-style: none;
 }
 
-.red{
+.red {
   background-color: red;
 }
 
-.blue{
+.blue {
   background-color: blue;
 }
 
-.yellow{
+.yellow {
   background-color: yellow;
   clear: left;
 }
 
-.green{
+.green {
   background-color: green;
 }
 
-.purple{
+.purple {
   background-color: purple;
   clear: left;
 }
 
-.skyblue{
+.skyblue {
   background-color: skyblue;
 }
