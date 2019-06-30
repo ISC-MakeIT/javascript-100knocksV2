@@ -1,37 +1,37 @@
-.content{
+.content {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
   width: 200px;
 }
 
-.box{
+.box {
   width: 100px;
   height: 100px;
   font-size: 30px;
   color: #fff;
 }
 
-.one{
+.one {
   background-color: red;
 }
 
-.two{
+.two {
   background-color: blue;
 }
 
-.three{
+.three {
   background-color: greenyellow;
 }
 
-.four{
+.four {
   background-color: yellow;
 }
 
-.five{
+.five {
   background-color: purple;
 }
 
-.six{
+.six {
   background-color: black;
 }
