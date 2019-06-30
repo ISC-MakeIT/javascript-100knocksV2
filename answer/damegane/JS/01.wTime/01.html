@@ -17,23 +17,28 @@
     <h1 id="time"></h1>
   </div>
   <script language="JavaScript">
-    //二桁になるように調整
-    const addZero = function (value) {
-      if (value < 10) {
-        value = '0' + String(value);
+    // 二桁になるように調整
+    const addZero = (value) => {
+      let time = value;
+      if (time < 10) {
+        time = String(time);
+        time = `0${time}`;
       }
-      return value;
-    }
-    const addZero2 = function (value) {
-      if (value < 10) {
-        value = '0' + '0' + String(value);
-      } else if (value < 100) {
-        value = '0' + String(value);
+      return time;
+    };
+    const addZero2 = (value) => {
+      let time = value;
+      if (time < 10) {
+        time = String(time);
+        time = `00${time}`;
+      } else if (time < 100) {
+        time = String(time);
+        time = `0${time}`;
       }
-      return value;
-    }
-    //日付、時間を取得
-    function time() {
+      return time;
+    };
+    // 日付、時間を取得
+    const clock = () => {
       const now = new Date();
       const years = now.getFullYear();
       const months = now.getMonth();
@@ -44,9 +49,11 @@
       const minutes = now.getMinutes();
       const seconds = now.getSeconds();
       const milliseconds = now.getMilliseconds();
-      document.getElementById("time").innerHTML = addZero(years) + '/' + addZero(months + 1) + '/' + addZero(days) + '/' + addZero(DateList[date]) + '/' + addZero(hours) + '/' + addZero(minutes) + '/' + addZero(seconds) + '/' + addZero2(milliseconds);
+      document.getElementById('time').innerHTML = `${addZero(years)}/${addZero(months + 1)}/${addZero(days)}/${addZero(DateList[date])}/${addZero(hours)}/${addZero(minutes)}/${addZero(seconds)}/${addZero2(milliseconds)}`;
     }
-    setInterval('time()', 10);
+    setInterval(function () {
+      clock();
+    }, 10);
   </script>
 </body>
 </html>
