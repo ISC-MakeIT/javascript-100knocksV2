@@ -6,18 +6,16 @@
 </head>
 <body>
   <script>
-    for (const count = 1; count < 101; count++) {
+    for (let count = 1; count < 101; count++) {
       const fizz = count % 3;
       const buzz = count % 5;
       const fizzbuzz = count % 15;
       if (fizzbuzz === 0) {
-        console.log("fizzbuzz");
-      }
-      else if (fizz === 0) {
-        console.log("fizz");
-      }
-      else if (buzz === 0) {
-        console.log("buzz");
+        console.log('fizzbuzz');
+      } else if (fizz === 0) {
+        console.log('fizz');
+      } else if (buzz === 0) {
+        console.log('buzz');
       } else {
         console.log(count);
       }
