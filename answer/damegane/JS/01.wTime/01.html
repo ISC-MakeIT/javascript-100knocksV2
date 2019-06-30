@@ -50,8 +50,8 @@
       const seconds = now.getSeconds();
       const milliseconds = now.getMilliseconds();
       document.getElementById('time').innerHTML = `${addZero(years)}/${addZero(months + 1)}/${addZero(days)}/${addZero(DateList[date])}/${addZero(hours)}/${addZero(minutes)}/${addZero(seconds)}/${addZero2(milliseconds)}`;
-    }
-    setInterval(function () {
+    };
+    setInterval(() => {
       clock();
     }, 10);
   </script>
