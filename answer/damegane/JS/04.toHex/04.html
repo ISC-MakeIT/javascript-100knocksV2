@@ -29,9 +29,6 @@
     <p id="ans"></p>
   </div>
   <script>
-    (function () {
-      toHex();
-    })();
     const toHex = () => {
       const Hex = Number(document.getElementById('number').value);
       document.getElementById('ans').innerHTML = Hex.toString(16);

@@ -17,9 +17,6 @@
     <p id="answer"></p>
   </div>
   <script>
-    (function () {
-      toBin();
-    })();
     const toBin = () => {
       const Bin = Number(document.getElementById('number').value);
       document.getElementById('answer').innerHTML = Bin.toString(2);
