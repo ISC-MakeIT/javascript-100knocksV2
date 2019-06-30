@@ -23,8 +23,10 @@
     <input type="button" id="ChangeColor" onclick="change();" value="色変える！！">
   </div>
   <script>
-    const change;
-    change = () => {
+    (function () {
+      change();
+    })();
+    const change = () => {
       // 16777216 = 256^3
       // 256 ** 3 だと構文エラー発生・・・
       let BgColor = Math.ceil(Math.random() * 16777216).toString(16);
