@@ -24,7 +24,9 @@
   </div>
   <script>
     const change = () => {
-      let BgColor = Math.ceil(Math.random() * 256 ** 3).toString(16);
+      // 16777216 = 256^3
+      // 256 ** 3 だと構文エラー発生・・・
+      let BgColor = Math.ceil(Math.random() * 16777216).toString(16);
       BgColor = '#' + String(BgColor);
       document.getElementById('container').style.backgroundColor = BgColor;
     }
