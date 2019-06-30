@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>randomBgColor</title>
+  <style>
+    #container {
+      width: 100%;
+      height: 1000px;
+      background-color: #000;
+      text-align: center;
+    }
+
+    #ChangeColor {
+      margin: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <input type="button" id="ChangeColor" onclick="change();" value="色変える！！">
+  </div>
+  <script>
+    const change = () => {
+      let BgColor = Math.ceil(Math.random() * 256 ** 3).toString(16);
+      BgColor = '#' + String(BgColor);
+      document.getElementById('container').style.backgroundColor = BgColor;
+    }
+  </script>
+</body>
+</html>

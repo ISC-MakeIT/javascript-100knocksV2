@@ -20,15 +20,15 @@
     //二桁になるように調整
     const addZero = function (value) {
       if (value < 10) {
-        value = '0' + value;
+        value = '0' + String(value);
       }
       return value;
     }
     const addZero2 = function (value) {
       if (value < 10) {
-        value = '0' + '0' + value;
+        value = '0' + '0' + String(value);
       } else if (value < 100) {
-        value = '0' + value;
+        value = '0' + String(value);
       }
       return value;
     }
