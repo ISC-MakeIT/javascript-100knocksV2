@@ -1,0 +1,42 @@
+#pic {
+  position: relative;
+  width: 800px;
+  height: 532px;
+}
+
+
+#small {
+  position: absolute;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  margin:auto;
+  /*
+  top: 133px;
+  border: 133px;
+  right: 200px;
+  left: 200px;
+  */
+}
+
+#text {
+  position: absolute;
+  font-size: 30px;
+  color: red;
+  width: 82px;
+  height: 44px;
+  top:0px;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  margin:auto;
+}
+
+#title {
+  font-family: Monotype Corsiva;
+  font-size: 50px;
+  color: red;
+  width: 800px;
+  text-align: center;
+}

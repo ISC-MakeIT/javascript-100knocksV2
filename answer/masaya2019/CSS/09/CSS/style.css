@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#divA {
+  width: 25vw;
+  height: 100vh;
+  text-align: center;
+  font-size: 50px;
+  background-color: aquamarine;
+  position: fixed;
+  float: left;
+}
+
+#divB {
+  width: 75vw;
+  height: 100vh;
+  text-align: center;
+  font-size: 50px;
+  background-color: blue;
+  float: right;
+}
+
+#divX {
+  width: 75vw;
+  height: 100vh;
+  clear: right;
+  float: right;
+}
+
+#divC {
+  width: 30vw;
+  height: 100vh;
+  text-align: center;
+  font-size: 50px;
+  background-color: yellow;
+  clear: right;
+  float: right;
+}
+
+#divD {
+  width: 45vw;
+  height: 100vh;
+  text-align: center;
+  font-size: 50px;
+  background-color: yellowgreen;
+  float: right;
+  text-align: center;
+}
+
+#divE {
+  width: 75vw;
+  height: 100vh;
+  text-align: center;
+  font-size: 50px;
+  background-color: chocolate;
+  clear: right;
+  float: right;
+}
