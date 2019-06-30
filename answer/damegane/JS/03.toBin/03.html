@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="03.css">
+  <title>toBin</title>
+</head>
+<body>
+  <div class="container">
+    <form id="id_form"></form>
+    <label>
+      <h2>10進数を入力してください</h2>
+      <input type="number" id="number">
+    </label>
+    <input id="btn" type="button" value="二進数に変換" onclick="toBin();">
+    <p id="answer"></p>
+  </div>
+  <script>
+    const toBin = () => {
+      const Bin = Number(document.getElementById('number').value);
+      document.getElementById('answer').innerHTML = Bin.toString(2);
+    };
+  </script>
+</body>
+</html>

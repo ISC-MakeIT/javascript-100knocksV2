@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>wTime</title>
+  <style>
+    .container {
+      margin: 50px auto;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="time"></h1>
+  </div>
+  <script language="JavaScript">
+    // 二桁になるように調整
+    const addZero = (value) => {
+      let time = value;
+      if (time < 10) {
+        time = String(time);
+        time = `0${time}`;
+      }
+      return time;
+    };
+    const addZero2 = (value) => {
+      let time = value;
+      if (time < 10) {
+        time = String(time);
+        time = `00${time}`;
+      } else if (time < 100) {
+        time = String(time);
+        time = `0${time}`;
+      }
+      return time;
+    };
+    // 日付、時間を取得
+    const clock = () => {
+      const now = new Date();
+      const years = now.getFullYear();
+      const months = now.getMonth();
+      const days = now.getDate();
+      const date = now.getDay();
+      const DateList = ['日', '月', '火', '水', '木', '金', '土'];
+      const hours = now.getHours();
+      const minutes = now.getMinutes();
+      const seconds = now.getSeconds();
+      const milliseconds = now.getMilliseconds();
+      document.getElementById('time').innerHTML = `${addZero(years)}/${addZero(months + 1)}/${addZero(days)}/${addZero(DateList[date])}/${addZero(hours)}/${addZero(minutes)}/${addZero(seconds)}/${addZero2(milliseconds)}`;
+    };
+    setInterval(() => {
+      clock();
+    }, 10);
+  </script>
+</body>
+</html>

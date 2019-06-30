@@ -1,0 +1,29 @@
+.wrapper {
+  background-color: black;
+  width: 1000px;
+  height: 1000px;
+  margin: 0 auto;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  margin: 400px 10px;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.box:hover {
+  box-shadow: 0 0 20px white;
+}
