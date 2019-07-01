@@ -1,6 +1,6 @@
-function time(){
-  const weeks = new Array('Sun', 'Mon', 'Thu', 'Wed', 'Thr', 'Fri', 'Sat');
-  
+function time() {
+  const weeks = ['Sun', 'Mon', 'Thu', 'Wed', 'Thr', 'Fri', 'Sat'];
+
   const now = new Date();
 
   const Year = now.getFullYear();
@@ -19,7 +19,7 @@ function time(){
 
   const mSec = now.getMilliseconds();
 
-  document.getElementById("date").textContent = Year + '/' + Month + '/' + Day + '/' + '(' + Week + ')' + '/' + Hour + '/' + Min + '/' + Sec + '/' + mSec;
+  document.getElementById('date').textContent = Year + '/' + Month + '/' + Day + '/(' + Week + ')/' + Hour + '/' + Min + '/' + Sec + '/' + mSec;
 }
 
 setInterval('time()', 10);
