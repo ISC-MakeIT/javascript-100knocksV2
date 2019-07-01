@@ -1,26 +1,25 @@
-function time()
-{
-  let weeks = new Array("Sun","Mon","Thu","Wed","Thr","Fri","Sat");
+function time(){
+  const weeks = new Array('Sun', 'Mon', 'Thu', 'Wed', 'Thr', 'Fri', 'Sat');
+  
+  const now = new Date();
 
-  let now = new Date();
+  const Year = now.getFullYear();
 
-  let Year = now.getFullYear();
+  const Month = now.getMonth() + 1;
 
-  let Month = now.getMonth() + 1;
+  const Day = now.getDay();
 
-  let Day = now.getDay();
+  const Week = weeks[now.getDay()];
 
-  let Week = weeks[now.getDay()];
+  const Hour = now.getHours();
 
-  let Hour = now.getHours();
+  const Min = now.getMinutes();
 
-  let Min = now.getMinutes();
+  const Sec = now.getSeconds();
 
-  let Sec = now.getSeconds();
+  const mSec = now.getMilliseconds();
 
-  let mSec = now.getMilliseconds();
-
-  document.getElementById("date").textContent = Year + "/" + Month + "/" + Day + "/" + "(" + Week + ")" + "/" + Hour + "/" + Min + "/" + Sec + "/" + mSec ;
+  document.getElementById("date").textContent = Year + '/' + Month + '/' + Day + '/' + '(' + Week + ')' + '/' + Hour + '/' + Min + '/' + Sec + '/' + mSec;
 }
 
-setInterval('time()',10);
+setInterval('time()', 10);
