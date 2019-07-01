@@ -19,9 +19,7 @@ function time() {
 
   const mSec = now.getMilliseconds();
 
-  const text =  Year + '/' + Month + '/' + Day + '/(' + Week + ')/' + Hour + '/' + Min + '/' + Sec + '/' + mSec ;
-
-  document.getElementById('date').textContent = text ;
+  document.getElementById('date').textContent = Year + '/' + Month + '/' + Day + '/(' + Week + ')/' + Hour + '/' + Min + '/' + Sec + '/' + mSec;
 }
 
 setInterval('time()', 10);
