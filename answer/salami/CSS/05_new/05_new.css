@@ -1,4 +1,4 @@
-.new::after{
+.new::after {
   display: inline-block;
   content: "new";
   background: orange;
@@ -7,5 +7,4 @@
   line-height: 1;
   margin: 0;
   padding: 2px;
-
 }
