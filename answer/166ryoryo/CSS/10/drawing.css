@@ -1,20 +1,21 @@
-.dot{
-      position:relative;
-      width: 100px;
-      height: 100px;
-      margin:0 auto;
-      }
+.dot {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
 .dot::before {
-  content: "";
-  position: absolute;
-  top: -4px;
-  left: -4px;
-  width: 4px;
-  height: 4px;
-  background: transparent;
-  box-shadow:4px 4px 0 transparent,
-8px 4px 0 transparent,
-12px 4px 0 transparent,
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 4px;
+    height: 4px;
+    background: transparent;
+    box-shadow: 4px 4px 0 transparent,
+        8px 4px 0 transparent,
+        12px 4px 0 transparent,
 16px 4px 0 transparent,
 20px 4px 0 transparent,
 24px 4px 0 transparent,
