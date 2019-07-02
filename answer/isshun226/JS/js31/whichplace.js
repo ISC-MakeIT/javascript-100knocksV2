@@ -4,8 +4,8 @@ function sort(array) {
 }
 function randomtable(orderlength, max) {
     while (data.length < orderlength) {
-        let random = Math.floor(Math.random() * (max - 1 + 1) + 1);
-        if (data.includes(random) == false) {
+        const random = Math.floor(Math.random() * (max - 1 + 1) + 1);
+        if (data.includes(random) === false) {
             data.push(random);
         }
     }
