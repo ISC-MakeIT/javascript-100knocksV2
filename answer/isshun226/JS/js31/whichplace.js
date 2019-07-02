@@ -2,7 +2,6 @@ const data = [];
 function sort(array) {
     array.sort((a, b) => (a < b ? -1 : 1));
 }
-
 function randomtable(orderlength, max) {
     while (data.length < orderlength) {
         let random = Math.floor(Math.random() * (max - 1 + 1) + 1);
@@ -13,7 +12,6 @@ function randomtable(orderlength, max) {
     sort(data);
     return data;
 }
-
 function addTable(random) {
     const main = document.getElementById('main');
     const table = document.createElement('table');
