@@ -29,14 +29,14 @@
     <div>
       <label for="sex">sex:</label><br>
       <input type="radio" id="sex" name="sex" value="male">Male
-      <input type="radio" id="sex" name="sex" value="female">Female
+      <input type="radio" name="sex" value="female">Female
     </div>
     <input type="submit" name="submit">
   </form>
   <script>
     function selectNum() {
       const selectAge = document.getElementById('age')
-      for (let i = 0; i < 201; i++) {
+      for (let i = 0; i <= 200; i++) {
         const option = document.createElement('option')
         option.value = i;
         option.innerText = i;
