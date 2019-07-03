@@ -34,9 +34,10 @@
   </div>
   <script>
     const change = () => {
-      document.getElementById('emotion').innerHTML = 'AWESOME';
-      document.getElementById('emotion').style.color = '#ff00ea';
-      document.getElementById('emotion').style.webkitTextStrokeColor = '#f00';
+      const IdEmotion = document.getElementById('emotion');
+      IdEmotion.innerHTML = 'AWESOME';
+      IdEmotion.style.color = '#ff00ea';
+      IdEmotion.style.webkitTextStrokeColor = '#f00';
       document.getElementById('img_emotion').src = 'img/AWESOME.jpg';
     };
   </script>
