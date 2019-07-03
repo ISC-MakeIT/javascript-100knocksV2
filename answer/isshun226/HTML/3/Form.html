@@ -16,26 +16,26 @@
     </div>
     <div>
       <label for="email">email:</label><br>
-      <input type="email" name="email">
+      <input type="email" id="email" name="email" required>
     </div>
     <div>
       <label for="password">password:</label><br>
-      <input type="password" required>
+      <input type="password" id="password" required>
     </div>
     <div>
       <label for="age">age:</label>
-      <select name="age" id="selectAge"></select>
+      <select name="age" id="age"></select>
     </div>
     <div>
       <label for="sex">sex:</label><br>
-      <input type="radio" name="sex" value="male">Male
-      <input type="radio" name="sex" value="female">Female
+      <input type="radio" id="sex" name="sex" value="male">Male
+      <input type="radio" id="sex" name="sex" value="female">Female
     </div>
     <input type="submit" name="submit">
   </form>
   <script>
     function selectNum() {
-      const selectAge = document.getElementById('selectAge')
+      const selectAge = document.getElementById('age')
       for (let i = 0; i < 201; i++) {
         const option = document.createElement('option')
         option.value = i;
