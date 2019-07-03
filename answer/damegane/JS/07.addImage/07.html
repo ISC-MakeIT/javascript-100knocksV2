@@ -34,12 +34,12 @@
     let count = 1;
     const addImage = () => {
       if (count < 20) {
-        image_num = String(count);
-        let img = document.createElement('img');
+        const image_num = String(count);
+        const img = document.createElement('img');
         img.src = `img/nino${image_num}.jpg`;
         document.getElementById('images').appendChild(img);
         count++;
-      }
+      };
     }
   </script>
 </body>
