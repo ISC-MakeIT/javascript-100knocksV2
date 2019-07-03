@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,8 +26,8 @@
   </div>
   <script>
     let count = 0;
-    const addImage = (i) => {
-      const pass = i;
+    const addImage = (pass) => {
+      // const pass = i;
       if (count === 0) {
         const img = document.createElement('img');
         img.src = pass;
