@@ -13,13 +13,23 @@
 </head>
 <body>
   <div class="container">
-    <input type="button" value="押すなよ" onclick="onclick()">
+    <input type="button" value="押すなよ" onclick="thridsec()">
   </div>
   <script>
-    const onclick = () => {
+    const thridsec = () => {
+      sleep(3000);
       alert('3秒経ちました');
-    };
-    setTimeout('onclick()', 3000);
+    }
+
+    const sleep = (time) => {
+      const d1 = new Date();
+      while (true) {
+        const d2 = new Date();
+        if (d2 - d1 > time) {
+          return;
+        }
+      }
+    }
   </script>
 </body>
 </html>
