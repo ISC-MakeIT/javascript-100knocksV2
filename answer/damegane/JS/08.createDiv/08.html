@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>createDiv</title>
+</head>
+<style>
+  #button {
+    margin: 10px;
+  }
+
+  #divs {
+    width: 100%;
+    height: 800px;
+    border: 2px solid #000;
+  }
+
+  #divs div {
+    width: 100px;
+    height: 100px;
+    background-color: #0f0;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    float: left;
+  }
+</style>
+<body>
+  <div class="wrap">
+    <input type="button" id="button" onclick="createDiv();" value="草はやす">
+    <div id="divs">
+    </div>
+  </div>
+  <script>
+    const createDiv = () => {
+      let div = document.createElement('div');
+      document.getElementById('divs').appendChild(div);
+    };
+  </script>
+</body>
+</html>
