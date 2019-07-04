@@ -19,7 +19,7 @@ function time() {
 
   const mSec = now.getMilliseconds();
 
-  document.getElementById('date').textContent = Year + '/' + Month + '/' + Day + '/(' + Week + ')/' + Hour + '/' + Min + '/' + Sec + '/' + mSec;
+  document.getElementById('date').textContent = `${Year}/${Month}/${Day}/(${Week})/${Hour}/${Min}/${Sec}/${mSec}`;
 }
 
-setInterval('time()', 10);
+setInterval(time, 10);
