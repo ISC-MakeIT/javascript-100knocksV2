@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>sumSequence</title>
+  <style>
+    input {
+      margin: 20px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <input type="number" id="number">
+    <input type="button" value="合計を求める" onclick="sumSequence();">
+  </div>
+  <script>
+    const sumSequence = () => {
+      let num = document.getElementById('number').value;
+      let sum = 0;
+      for (let n = 1; n <= num; n++) {
+        sum += n;
+      }
+      alert(`合計は${sum}です`);
+    };
+  </script>
+</body>
+</html>
