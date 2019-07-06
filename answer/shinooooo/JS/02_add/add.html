@@ -8,11 +8,13 @@
 </head>
 <body>
   <script>
-    let i = 0;
-    for (let j = 0; j < 3; j++) {
-      i++;
-      document.write(`${i}<br>`);
+    let i = 1;
+    function add() {
+      document.write(`${i++}<br>`);
     }
+    add();
+    add();
+    add();
   </script>
 </body>
 </html>
