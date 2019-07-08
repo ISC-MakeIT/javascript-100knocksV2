@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>storage</title>
+</head>
+<body>
+  <div class="container">
+    <h1>2ページ目</h1>
+    <select id="selectLang">
+      <option value="0">HTML</option>
+      <option value="1">CSS</option>
+      <option value="2">JavaScript</option>
+    </select>
+    <a href="14.html" onclick="getvalue();">2ページ目へ</a>
+  </div>
+  <script>
+    const Storage = localStorage;
+    const remember = localStorage.getItem('selectPulldown1');
+    if (remember !== null) {
+      document.getElementById('selectLang').value = remember;
+    }
+    const getvalue = () => {
+      Storage.setItem('selectPulldown2', document.getElementById('selectLang').value);
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>bored</title>
+  <style>
+    #img_emotion {
+      width: 70%;
+      margin: 0 auto;
+      display: block;
+    }
+
+    #emotion {
+      margin: auto;
+      padding: 0;
+      color: #0ff;
+      font-size: 40px;
+      font-weight: bold;
+      -webkit-text-stroke: 1px #00f;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p id="emotion" onclick="change();">bored</p>
+    <img src="img/bored.jpg" alt="bored" id="img_emotion">
+  </div>
+  <script>
+    const change = () => {
+      const IdEmotion = document.getElementById('emotion');
+      IdEmotion.innerHTML = 'AWESOME';
+      IdEmotion.style.color = '#ff00ea';
+      IdEmotion.style.webkitTextStrokeColor = '#f00';
+      document.getElementById('img_emotion').src = 'img/AWESOME.jpg';
+    };
+  </script>
+</body>
+</html>

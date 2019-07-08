@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>switch</title>
+  <style>
+    #Image {
+      widows: 100%;
+      height: 800px;
+      text-align: center;
+    }
+
+    #fiveSister {
+      widows: 80%;
+      height: 800px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <input type="button" id="button" onclick="randomImage();" value="五つ子">
+    <div id="Image">
+    </div>
+  </div>
+  <script>
+    let count = 0;
+    const addImage = (pass) => {
+      if (count === 0) {
+        const img = document.createElement('img');
+        img.src = pass;
+        img.id = 'fiveSister';
+        document.getElementById('Image').append(img);
+        count++;
+      } else {
+        document.getElementById('fiveSister').src = pass;
+      }
+    };
+
+    const randomImage = () => {
+      const num = Math.ceil(Math.random() * 5);
+      switch (num) {
+        case 1:
+          addImage('img/itika.jpg');
+          break;
+
+        case 2:
+          addImage('img/nino.jpg');
+          break;
+
+        case 3:
+          addImage('img/miku.png');
+          break;
+
+        case 4:
+          addImage('img/yotuba.png');
+          break;
+
+        case 5:
+          addImage('img/ituki.jpg');
+          break;
+
+        default:
+      }
+    };
+  </script>
+</body>
+</html>
