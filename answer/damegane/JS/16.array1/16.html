@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>array1</title>
+  <style>
+    input {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <label>
+      文字を入力してください
+      <input type="text" id="array">
+    </label>
+    <input type="button" id="button" value="送信" onclick="array();">
+  </div>
+  <script>
+    const array = () => {
+      const text = document.getElementById('array').value;
+      console.log(array.length);
+    }
+  </script>
+</body>
+</html>
