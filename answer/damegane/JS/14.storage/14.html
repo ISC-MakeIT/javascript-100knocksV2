@@ -21,7 +21,6 @@
     const remember = Storage.getItem('selectPulldown2');
     if (remember !== null) {
       document.getElementById('selectLang').value = remember;
-
     }
     const getvalue = () => {
       Storage.setItem('selectPulldown1', document.getElementById('selectLang').value);
