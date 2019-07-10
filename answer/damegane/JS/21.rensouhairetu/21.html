@@ -10,10 +10,11 @@
   <script>
     const ary = { 'color': 'red', 'size': '100' };
     const tostring = Object.prototype.toString;
-    if (tostring.call(ary) === '[object Object]')
+    if (tostring.call(ary) === '[object Object]') {
       for (const arys in ary) {
         console.log(`keyは: ${arys} valueは: ${ary[arys]}`);
       }
+    }
   </script>
 </body>
 </html>
