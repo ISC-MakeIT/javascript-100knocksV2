@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        th {
+        th, div{
             padding: 2px 30px;
             text-align: left;
         }
@@ -22,8 +22,7 @@
                     <label for="id_jusin">10進数：入力</label>
                 </th>
                 <td>
-                    <input name="name_jusin" id="id_jusin"><br>
-
+                    <input type="text" name="name_jusin" id="id_jusin"><br>
                 </td>
             </tr>
             <tr>
@@ -31,12 +30,12 @@
                     <label for="id_nisin">2進数：出力</label>
                 </th>
                 <td>
-
-                    <input naem="name_nisin" id="id_nisin"><br>
+                    <input type="text" naem="name_nisin" id="id_nisin"><br>
                 </td>
             </tr>
-            <input type="button" onclick="henkansuruyo();">
+            
         </table>
+        <div><input type="button" onclick="henkansuruyo();" value="へんかん"></div>
     </form>
 
     <script>
@@ -47,15 +46,17 @@
             let jsnisinmemo = [];
             let cnt = 0;
 
+            jsnisinmemo[0] = jsjusin % 2;
+            jsjusin = Math.floor(jsjusin / 2);
             while (jsjusin > 0) {
-                jsnisinmemo.push(jsjusin % 2);
-                jsjusin = Math.floor(jsjusin / 2);
+                jsnisinmemo.push(jsjusin % 2);　/* 追加 */
+                jsjusin = Math.floor(jsjusin / 2);　/* 切り捨て */
                 cnt++;
             }
 
             let syuturyoku = 0;
-            while (cnt > 0) {
-                syuturyoku = syuturyoku + jsnisinmemo[cnt - 1] * 10 ** (cnt - 1);
+            while (cnt >= 0) {
+                syuturyoku = syuturyoku + jsnisinmemo[cnt] * 10 ** (cnt);
                 cnt--;
             }
 
