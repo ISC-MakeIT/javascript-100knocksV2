@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" onclick="BgColor();" value="kawaru">
+
+    <script>
+        function BgColor() {
+            let body = document.getElementsByTagName('body');
+            let color = (Math.floor(Math.random() * 0xffffff)).toString(16); /* 生成 */
+            color = '#' + ('000000' + color).slice(-6); /* 0埋め */
+            body[0].style.backgroundColor = color; /* 背景色変わるやつ */
+            console.log(color); /* 確認 */
+        }    
+    </script>
+    
+</body>
+
+</html>
