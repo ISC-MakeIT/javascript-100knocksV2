@@ -2,7 +2,7 @@ body {
 	position: relative;
 	width: 100vw;
 	height: 1000vh;
-}
+};
 
 div {
 	text-align: center;
@@ -37,7 +37,7 @@ div {
 #div3 {
 	float: left;
 	position: sticky;
-	top: 0vh;
+	top: 0;
 	height: 250vh;
 	width: 25vw;
 	background-color: yellow;
