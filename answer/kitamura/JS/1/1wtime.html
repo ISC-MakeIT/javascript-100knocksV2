@@ -12,7 +12,7 @@
   <body>
     <div id="wrap">
       <script>
-        function interval() {
+        function out() {
           const day = ['月', '火', '水', '木', '金', '土', '日'];
           const d = new Date();
           const time = d.getFullYear();
@@ -25,8 +25,7 @@
           const milliseconds = d.getMilliseconds();
           document.getElementById('wrap').innerHTML = `${time} / ${m} / ${date} / ${days} / ${hours} / ${minutes} / ${seconds} / ${milliseconds}`;
         }
-        interval();
-        setInterval(function(){interval()}, 1);
+        setInterval(out(), 1);
       </script>
     </div>
   </body>
