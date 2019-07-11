@@ -33,11 +33,11 @@
         </td>
       </tr>
     </table>
-    <input type="button" onclick="henkan()" value="へんかん">
+    <input type="button" id="button" value="へんかん">
   </form>
 
   <script>
-    function henkan() {
+    document.getElementById('button').onclick = function() {
       const jsdec = parseInt(document.getElementById('dec').value, 10);
       document.getElementById('hex').value = jsdec.toString(16);
     }

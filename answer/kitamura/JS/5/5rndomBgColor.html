@@ -9,15 +9,15 @@
 </head>
 
 <body>
-  <input type="button" onclick="BgColor()" value="kawaru">
+  <input type="button" id="button" value="kawaru">
 
   <script>
-    function BgColor() {
+    document.getElementById('button').onclick = function() {
       const body = document.getElementsByTagName('body');
       let color = (Math.floor(Math.random() * 0xffffff)).toString(16); /* 生成 */
       color = '#' + (`000000 + ${color}`).slice(-6); /* 0埋め */
       body[0].style.backgroundColor = color; /* 背景色変わるやつ */
-    }    
+    }
   </script>
 </body>
 
