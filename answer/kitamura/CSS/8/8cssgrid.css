@@ -1,103 +1,103 @@
 #grid-container {
-	display: grid;
-	grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
-	grid-template-rows: 100px 100px 100px;
-	border: 2px solid black;
-	width: 700px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  border: 2px solid black;
+  width: 700px;
 }
 
 #item1 {
-	border: 1px solid black;
-	grid-row: 1 / 2;
-	grid-column: 1 / 2;
+  border: 1px solid black;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
 }
 
 #item2 {
-	border: 1px solid black;
-	grid-row: 1 / 2;
-	grid-column: 2 / -2;
+  border: 1px solid black;
+  grid-row: 1 / 2;
+  grid-column: 2 / -2;
 }
 
 #item3 {
-	border: 1px solid black;
-	grid-row: 1 / 2;
-	grid-column: -1 / -2;
+  border: 1px solid black;
+  grid-row: 1 / 2;
+  grid-column: -1 / -2;
 }
 
 #item4 {
-	border: 1px solid black;
-	grid-row: 2 / 3;
-	grid-column: 1 / 2;
+  border: 1px solid black;
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
 }
 
 #item5 {
-	border: 1px solid black;
-	grid-row: 2 / 4;
-	grid-column: 2 / 3;
+  border: 1px solid black;
+  grid-row: 2 / 4;
+  grid-column: 2 / 3;
 }
 
 #item6 {
-	border: 1px solid black;
-	grid-row: 2 / 3;
-	grid-column: 3 / 4;
+  border: 1px solid black;
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
 }
 
 #item7 {
-	border: 1px solid black;
-	grid-row: 2 / 3;
-	grid-column: 4 / 5;
+  border: 1px solid black;
+  grid-row: 2 / 3;
+  grid-column: 4 / 5;
 }
 
 #item8 {
-	border: 1px solid black;
-	grid-row: 2 / 3;
-	grid-column: 5 / 6;
+  border: 1px solid black;
+  grid-row: 2 / 3;
+  grid-column: 5 / 6;
 }
 
 #item9 {
-	border: 1px solid black;
-	grid-row: 2 / 4;
-	grid-column: 6 / 7;
+  border: 1px solid black;
+  grid-row: 2 / 4;
+  grid-column: 6 / 7;
 }
 
 #item10 {
-	border: 1px solid black;
-	grid-row: 2 / 3;
-	grid-column: 7 / 8;
+  border: 1px solid black;
+  grid-row: 2 / 3;
+  grid-column: 7 / 8;
 }
 
 #item11 {
-	border: 1px solid black;
-	grid-row: 3 / 4;
-	grid-column: 1 / 2;
+  border: 1px solid black;
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
 }
 
 #item12 {
-	border: 1px solid black;
-	grid-row: 3 / 4;
-	grid-column: 3 / -3;
+  border: 1px solid black;
+  grid-row: 3 / 4;
+  grid-column: 3 / -3;
 }
 
 #item13 {
-	border: 1px solid black;
-	grid-row: 3 / 4;
-	grid-column: -1 / -2;
+  border: 1px solid black;
+  grid-row: 3 / 4;
+  grid-column: -1 / -2;
 }
 
 .minimum {
-	border: 1px solid black;
-	width: 100px;
-	height: 100px;
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
 }
 
 .long {
-	border: 1px solid black;
-	width: 100px;
-	height: 200px;
+  border: 1px solid black;
+  width: 100px;
+  height: 200px;
 }
 
 .char {
-	border: 1px solid black;
-	text-align: center;
-	font-size: 75px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 75px;
 }
