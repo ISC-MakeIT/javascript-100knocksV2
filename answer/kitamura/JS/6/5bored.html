@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <div onclick="awesome()">I'm so bored</div>
+  <div id="click">I'm so bored</div>
   <script>
     const text = document.getElementsByTagName('div');
     text[0].style.position = 'absolute';
@@ -21,7 +21,7 @@
     text[0].style.width = '100px';
     text[0].style.height = '100px';
 
-    function awesome() {
+    document.getElementById('click').onclick = function() {
       text[0].textContent = 'awesome';
     }
   </script>
