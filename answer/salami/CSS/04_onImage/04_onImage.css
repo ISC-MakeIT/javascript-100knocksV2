@@ -1,28 +1,30 @@
-.img1 {
+.img1-g{
   position: relative;
-  text-align: center;
 }
 
-.img2 {
-position: absolute;
-top: 75px;
-left: 200px;
-
+.img2-g{
+  position: absolute;
+  left: 165px;
+  top: 75px;
 }
 
 .AAAA{
   position: absolute;
-  top: 0px;
-  left: 90px;
+  top: 165px;
+  left: 320px;
+  transform: translateX(-50%) translateY(-50%);
 }
-p{
-  color: #f00;
-  font-size: 50px
 
+p{
+  color: red;
+  font-size: 50px
 }
+
 h1{
+  position: absolute;
   font-family: 'Kumar One', cursive;
   color: yellow;
   font: size 30px;
   -webkit-text-stroke: 1px black;
+  left: 213px;
 }
