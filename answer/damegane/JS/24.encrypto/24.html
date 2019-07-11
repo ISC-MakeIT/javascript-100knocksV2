@@ -8,13 +8,13 @@
 </head>
 <body>
   <script>
-    let ary = '123';
+    const ary = '123';
     ary.split('');
     let arw = [];
     for (let i = 0; i < ary.length; i++) {
       arw.push(ary[i]);
-      for (j = 0; j < 2; j++) {
-        randomNum = Math.floor(Math.random() * 10);
+      for (let j = 0; j < 2; j++) {
+        const randomNum = Math.floor(Math.random() * 10);
         arw.push(randomNum);
       }
     }
