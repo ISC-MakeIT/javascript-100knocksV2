@@ -2,67 +2,49 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        th, div{
-            padding: 2px 30px;
-            text-align: left;
-        }
-    </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		th,
+		div {
+			padding: 2px 30px;
+			text-align: left;
+		}
+	</style>
 </head>
 
 <body>
-    <form name="form_henkan" id="henkan" action="">
-        <table>
-            <tr>
-                <th>
-                    <label for="id_jusin">10進数：入力</label>
-                </th>
-                <td>
-                    <input type="text" name="name_jusin" id="id_jusin"><br>
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label for="id_nisin">2進数：出力</label>
-                </th>
-                <td>
-                    <input type="text" naem="name_nisin" id="id_nisin"><br>
-                </td>
-            </tr>
-            
-        </table>
-        <div><input type="button" onclick="henkansuruyo();" value="へんかん"></div>
-    </form>
+	<form name="form_henkan" id="henkan" action="">
+		<table>
+			<tr>
+				<th>
+					<label for="id_jusin">10進数：入力</label>
+				</th>
+				<td>
+					<input type="text" name="name_jusin" id="id_jusin"><br>
+				</td>
+			</tr>
+			<tr>
+				<th>
+					<label for="id_nisin">2進数：出力</label>
+				</th>
+				<td>
+					<input type="text" naem="name_nisin" id="id_nisin"><br>
+				</td>
+			</tr>
 
-    <script>
+		</table>
+		<div><input type="button" onclick="henkansuruyo()" value="へんかん"></div>
+	</form>
 
-
-        function henkansuruyo() {
-            let jsjusin = document.getElementById("id_jusin").value;
-            let jsnisinmemo = [];
-            let cnt = 0;
-
-            jsnisinmemo[0] = jsjusin % 2;
-            jsjusin = Math.floor(jsjusin / 2);
-            while (jsjusin > 0) {
-                jsnisinmemo.push(jsjusin % 2);　/* 追加 */
-                jsjusin = Math.floor(jsjusin / 2);　/* 切り捨て */
-                cnt++;
-            }
-
-            let syuturyoku = 0;
-            while (cnt >= 0) {
-                syuturyoku = syuturyoku + jsnisinmemo[cnt] * 10 ** (cnt);
-                cnt--;
-            }
-
-            document.getElementById("id_nisin").value = syuturyoku;
-        }
-    </script>
+	<script>
+		function henkansuruyo() {
+			const jsjusin = document.getElementById("id_jusin").value;
+			document.getElementById("id_nisin").value = parseInt(jsjusin, 10).toString(2);
+		}
+	</script>
 </body>
 
 </html>

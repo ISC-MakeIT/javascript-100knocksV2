@@ -2,29 +2,29 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
 </head>
 
 <body>
-    <div onclick="awesome();">I'm so bored</div>
-    <script>
-        let text = document.getElementsByTagName('div');
-        text[0].style.position = 'absolute';
-        text[0].style.top = '0px';
-        text[0].style.left = '0px';
-        text[0].style.right = '0px';
-        text[0].style.bottom = '0px';
-        text[0].style.margin = 'auto';
-        text[0].style.width = '100px';
-        text[0].style.height = '100px';
+  <div onclick="awesome()">I'm so bored</div>
+  <script>
+    const text = document.getElementsByTagName('div');
+    text[0].style.position = 'absolute';
+    text[0].style.top = '0px';
+    text[0].style.left = '0px';
+    text[0].style.right = '0px';
+    text[0].style.bottom = '0px';
+    text[0].style.margin = 'auto';
+    text[0].style.width = '100px';
+    text[0].style.height = '100px';
 
-        function awesome() {
-            text[0].textContent = 'awesome';
-        }
-    </script>
+    function awesome() {
+      text[0].textContent = 'awesome';
+    }
+  </script>
 </body>
 
 </html>
