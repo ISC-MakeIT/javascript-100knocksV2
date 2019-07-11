@@ -15,7 +15,8 @@
     document.getElementById('button').onclick = function henkan() {
       const body = document.getElementsByTagName('body');
       let color = (Math.floor(Math.random() * 0xffffff)).toString(16); /* 生成 */
-      color = '#' + (`000000 + ${color}`).slice(-6); /* 0埋め */
+      color = `#${('000000' + color).slice(-6)}`; /* 0埋め */
+      console.log(color);
       body[0].style.backgroundColor = color; /* 背景色変わるやつ */
     };
   </script>

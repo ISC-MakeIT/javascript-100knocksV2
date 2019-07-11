@@ -23,7 +23,7 @@
           const minutes = d.getMinutes();
           const seconds = d.getSeconds();
           const milliseconds = d.getMilliseconds();
-          document.getElementById('wrap').innerHTML = time + '/' + m + '/' + date + '/' + days + '/' + hours + '/' + minutes + '/' + seconds + '/' + milliseconds;
+          document.getElementById('wrap').innerHTML = `${time} / ${m} / ${date} / ${days} / ${hours} / ${minutes} / ${seconds} / ${milliseconds}`;
         }
         interval();
         setInterval('interval()', 1);
