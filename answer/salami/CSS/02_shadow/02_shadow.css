@@ -1,8 +1,8 @@
-body{
+body {
   background-color: gray;
 }
 
-.red{
+.red {
   width: 100px;
   height: 100px;
   background-color: red;
@@ -10,30 +10,30 @@ body{
   float: left;
 }
 
-.red:hover{
-  color:white;
+.red :hover {
+  color: white;
 }
 
-.green{
+.green {
   width: 100px;
   height: 100px;
   background-color: green;
   box-shadow: 0 0 10px;
-  float:left;
+  float: left;
 }
 
-.green:hover{
-  color:white;
+.green :hover {
+  color: white;
 }
 
-.blue{
+.blue {
   width: 100px;
   height: 100px;
   background-color: blue;
   box-shadow: 0 0 10px;
-  float:left;
+  float: left;
 }
 
-.blue:hover{
-  color:white;
+.blue :hover {
+  color: white;
 }

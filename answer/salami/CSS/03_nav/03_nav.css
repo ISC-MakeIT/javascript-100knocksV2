@@ -3,16 +3,16 @@
   font-weight: bold;
 }
 
-#nav li:hover {
-  background-color: orange;
-}
-
 #nav li {
   text-align: center;
-  padding:20px;
+  padding: 20px;
   background-color: grey;
   float: left;
   box-shadow: 0 0;
+}
+
+#nav li:hover {
+  background-color: orange;
 }
 
 #nav li a {

@@ -1,4 +1,4 @@
-.box1{
+.box1 {
   background-color: red;
   height: 100px;
   width: 100px;
@@ -6,7 +6,7 @@
   font-size: 75px;
   text-align: center;
 }
-.box2{
+.box2 {
   background-color: lightgreen;
   height: 100px;
   width: 100px;
@@ -14,7 +14,7 @@
   font-size: 75px;
   text-align: center;
 }
-.box3{
+.box3 {
   background-color: blue;
   height: 100px;
   width: 100px;
@@ -23,15 +23,15 @@
   font-size: 75px;
   text-align: center;
 }
-.box4{
+.box4 {
   background-color: yellow;
   height: 100px;
   width: 100px;
-  float:left;
+  float: left;
   font-size: 75px;
   text-align: center;
 }
-.box5{
+.box5 {
   background-color: magenta;
   height: 100px;
   width: 100px;
@@ -40,7 +40,7 @@
   font-size: 75px;
   text-align: center;
 }
-.box6{
+.box6 {
   background-color: skyblue;
   height: 100px;
   width: 100px;
