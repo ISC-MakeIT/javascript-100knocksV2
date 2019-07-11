@@ -75,7 +75,7 @@
 #item12 {
 	border: 1px solid black;
 	grid-row: 3 / 4;
-	grid-column: 3 / -3
+	grid-column: 3 / -3;
 }
 
 #item13 {
