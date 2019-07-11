@@ -26,7 +26,7 @@
           document.getElementById('wrap').innerHTML = `${time} / ${m} / ${date} / ${days} / ${hours} / ${minutes} / ${seconds} / ${milliseconds}`;
         }
         interval();
-        setInterval('interval()', 1);
+        setInterval(function(){interval()}, 1);
       </script>
     </div>
   </body>
