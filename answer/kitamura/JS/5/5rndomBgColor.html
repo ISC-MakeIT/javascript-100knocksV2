@@ -12,7 +12,7 @@
   <input type="button" id="button" value="kawaru">
 
   <script>
-    document.getElementById('button').onclick = function() {
+    document.getElementById('button').onclick = function henkan() {
       const body = document.getElementsByTagName('body');
       let color = (Math.floor(Math.random() * 0xffffff)).toString(16); /* 生成 */
       color = '#' + (`000000 + ${color}`).slice(-6); /* 0埋め */
