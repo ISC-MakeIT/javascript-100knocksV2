@@ -2,14 +2,14 @@
   display: grid;
   width: 700px;
   height: 300px;
-  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px ;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
   grid-template-rows: 100px 100px 100px;
 }
 
 #box1 {
   grid-row: 1/2;
   grid-column: 1/2;
-  border:  black 1px solid;
+  border: black 1px solid;
 }
 
 #box2 {
@@ -19,61 +19,61 @@
   background-color: brown;
   text-align: center;
   font-size: 50px;
-  border:  black 1px solid;
+  border: black 1px solid;
 }
 
 #box3 {
   grid-row: 1/2;
   grid-column: 7/8;
-  border:  black 1px solid;
+  border: black 1px solid;
 }
 
 #box4 {
   grid-row: 2/3;
   grid-column: 1/2;
-  border:  black 1px solid;
+  border: black 1px solid;
 }
 
 #box5 {
   grid-row: 2/4;
   grid-column: 2/3;
-  border:  black 1px solid;
+  border: black 1px solid;
 }
 
 #box6 {
   grid-row: 2/3;
   grid-column: 3/4;
-  border:  black 1px solid;
+  border: black 1px solid;
 }
 
 #box7 {
   grid-row: 2/3;
   grid-column: 4/5;
-  border:  black 1px solid;
+  border: black 1px solid;
 }
 
 #box8 {
   grid-row: 2/3;
   grid-column: 5/6;
-  border:  black 1px solid;
+  border: black 1px solid;
 }
 
 #box9 {
   grid-row: 2/4;
   grid-column: 6/7;
-  border:  black 1px solid;
+  border: black 1px solid;
 }
 
 #box10 {
   grid-row: 2/3;
   grid-column: 7/8;
-  border:  black 1px solid;
+  border: black 1px solid;
 }
 
 #box11 {
   grid-row: 3/4;
   grid-column: 1/2;
-  border:  black 1px solid;
+  border: black 1px solid;
 }
 
 #box12 {
@@ -83,11 +83,11 @@
   background-color: lightgreen;
   text-align: center;
   font-size: 50px;
-  border:  black 1px solid;
+  border: black 1px solid;
 }
 
 #box13 {
   grid-row: 3/4;
   grid-column: 7/8;
-  border:  black 1px solid;
+  border: black 1px solid;
 }
