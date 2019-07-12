@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>decrypto</title>
+</head>
+<body>
+  <script>
+    const crypto = 'やくこみがんきいばていんるよは';
+    let ary1 = [];
+    ary1 = crypto.split('');
+    let ary2 = [];
+    for (let i = 0; i < ary1.length; i++) {
+      if (i % 3 === 2) {
+        ary2.push(ary1[i]);
+      }
+    }
+    console.log(ary2.join(''));
+  </script>
+</body>
+</html>
