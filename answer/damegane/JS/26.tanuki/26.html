@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>tanuki</title>
+</head>
+<body>
+  <script>
+    let text = 'ふわたたしが両手をひろげても、お空はちっとも飛べないが、飛べる小鳥はわたしのように、地面をはやくは走れない。\nわたたしがからだをゆすっても、ふきれいな音は出ないけど、あの鳴る鈴はわたたしのように、たたくさんなうたたは知らないよ。\n鈴と、小鳥と、それからわたたし、みんなふちがって、みんないい。';
+    const targetStr1 = 'たた';
+    const targetStr2 = 'ふ';
+    text = text.replace(targetStr1, 'た');
+    text = text.replace(targetStr2, '');
+    console.log(text);
+  </script>
+</body>
+</html>

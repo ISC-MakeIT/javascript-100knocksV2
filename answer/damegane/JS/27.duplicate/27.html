@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>duplicate</title>
+</head>
+<body>
+  <script>
+    let ary = [];
+    while (ary.length < 25) {
+      let randomNum = Math.ceil(Math.random() * 75);
+      switch (ary.includes(randomNum)) {
+        case true:
+          continue;
+        case false:
+          ary.push(randomNum);
+      }
+    }
+    console.log(ary);
+  </script>
+</body>
+</html>
