@@ -8,14 +8,15 @@
 </head>
 <body>
   <script>
-    let ary = [];
+    const ary = [];
     while (ary.length < 25) {
-      let randomNum = Math.ceil(Math.random() * 75);
+      const randomNum = Math.ceil(Math.random() * 75);
       switch (ary.includes(randomNum)) {
         case true:
           continue;
         case false:
           ary.push(randomNum);
+        default:
       }
     }
     console.log(ary);
