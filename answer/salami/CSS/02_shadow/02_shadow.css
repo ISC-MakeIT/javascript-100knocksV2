@@ -1,0 +1,39 @@
+body {
+  background-color: gray;
+}
+
+.red {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  box-shadow: 0 0 10px;
+  float: left;
+}
+
+.red :hover {
+  color: white;
+}
+
+.green {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  box-shadow: 0 0 10px;
+  float: left;
+}
+
+.green :hover {
+  color: white;
+}
+
+.blue {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  box-shadow: 0 0 10px;
+  float: left;
+}
+
+.blue :hover {
+  color: white;
+}

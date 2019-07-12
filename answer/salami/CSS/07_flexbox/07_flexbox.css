@@ -1,0 +1,41 @@
+.parent {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  width: 200px;
+}
+
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen;
+}
+
+.box3 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
+.box4 {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+}
+
+.box5 {
+  width: 100px;
+  height: 100px;
+  background-color: magenta;
+}
+
+.box6 {
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+}
