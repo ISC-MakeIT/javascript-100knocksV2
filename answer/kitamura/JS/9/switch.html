@@ -14,7 +14,7 @@
   <script>
     const wrap = document.getElementById('wrap');
     document.getElementById('button').onclick = function kirby() {
-      let value = Math.ceil(Math.random() * 5);
+      const value = Math.ceil(Math.random() * 5);
       switch (value) {
         case 1:
           wrap.innerHTML = '<img src="img/kirby1.png">';
@@ -31,8 +31,10 @@
         case 5:
           wrap.innerHTML = '<img src="img/kirby5.png">';
           break;
+        default:
+          break;
       }
-    }
+    };
   </script>
 </body>
 
