@@ -7,11 +7,11 @@
   <title>randomBgColor</title>
   <script>
     function random() {
-      let color = Math.floor(Math.random() * 0xFFFFFF).toString(16) ;
-      for(let count = color.length ; count<6 ; count++ ){
-        color =`0${color}`;
+      let color = Math.floor(Math.random() * 0xFFFFFF).toString(16);
+      for (let count = color.length; count < 6; count++) {
+        color = `0${color}`;
       }
-      color =`#${color}`;
+      color = `#${color}`;
       document.body.style.backgroundColor = color;
     }
   </script>
