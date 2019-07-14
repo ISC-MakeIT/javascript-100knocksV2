@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <th>文字列１：</th>
+      <td><input type="text" id="text1"></td>
+    </tr>
+    <tr>
+      <th>文字列２：</th>
+      <td><input type="text" id="text2"></td>
+    </tr>
+    <tr>
+      <th><input type="button" id="button" value="比較"></th>
+    </tr>
+  </table>
+  <script>
+    document.getElementById('button').onclick = function hikaku() {
+      const text1 = document.getElementById('text1').value;
+      const text2 = document.getElementById('text2').value;
+      if (text1 === text2) {
+        alert('True');
+      } else {
+        alert('False');
+      };
+    };
+  </script>
+</body>
+
+</html>
