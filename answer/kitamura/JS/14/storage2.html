@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <select name="pulldown" id="pulldown">
+    <option value="1">HTML</option>
+    <option value="2">CSS</option>
+    <option value="3">JavaScript</option>
+  </select>
+  <a href="storage1.html" id="seni">ページ1へ</a>
+  <script>
+    let pulldown = 0;
+    pulldown = localStorage.getItem("memo");
+    document.getElementById('pulldown').options[pulldown].selected = true;
+    document.getElementById('seni').onclick = function seni() {
+      pulldown = document.getElementById('pulldown').selectedIndex;
+      localStorage.setItem("memo", pulldown);
+    };
+  </script>
+</body>
+
+</html>
