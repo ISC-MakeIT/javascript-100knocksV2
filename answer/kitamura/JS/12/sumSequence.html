@@ -18,14 +18,14 @@
         <input type="text" id="nyuuryoku">
       </td>
     </tr>
-    <!-- <tr>
+    <tr>
       <th>
         出力：
       </th>
       <td>
         <input type="text" id="syuturyoku">
       </td>
-    </tr> -->
+    </tr>
     <tr>
       <th>
         <input type="button" id="button" value="和">
@@ -34,13 +34,13 @@
   </table>
   <script>
     document.getElementById('button').onclick = function keisan() {
-      const nyuuryoku = parseInt(document.getElementById('nyuuryoku').value);
+      const nyuuryoku = parseInt(document.getElementById('nyuuryoku').value, 10);
       let syuturyoku = 0;
       for (let cnt = nyuuryoku; cnt > 0; cnt--) {
         syuturyoku += cnt;
       }
-      console.log(syuturyoku);
-    }
+      document.getElementById('syuturyoku').value = syuturyoku;
+    };
   </script>
 </body>
 
