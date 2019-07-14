@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>dupDel</title>
+</head>
+<body>
+  <div class="container">
+    <label>
+      <p>
+      値を入力してください
+      </p>
+      <input type="text" id="inputValue">
+    </label>
+    <input type="button" onclick="serchAry();">
+  </div>
+  <script>
+    const serchAry = () => {
+      const num = document.getElementById('inputValue').value;
+      const ary = ['10', '3', '25', '6', '5'];
+      let i = 0;
+      let j = 0;
+      while (ary.length > i) {
+        if (ary[i] === num) {
+          ary.shift(i);
+          j++;
+        }
+        if (j < 1 && i >= ary.length - 1) {
+          alert("error: Can't deleted");
+        }
+        i++;
+      }
+      console.log(ary);
+    }
+  </script>
+</body>
+</html>
