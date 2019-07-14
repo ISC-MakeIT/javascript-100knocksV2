@@ -17,11 +17,11 @@
   <a href="storage2.html" id="seni">ページ2へ</a>
   <script>
     let pulldown = 0;
-    pulldown = localStorage.getItem("memo");
+    pulldown = localStorage.getItem('memo');
     document.getElementById('pulldown').options[pulldown].selected = true;
     document.getElementById('seni').onclick = function seni() {
       pulldown = document.getElementById('pulldown').selectedIndex;
-      localStorage.setItem("memo", pulldown);
+      localStorage.setItem('memo', pulldown);
     };
   </script>
 </body>
