@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <input type="button" id="button" value="kirby">
+  <div id="wrap"></div>
+  <script>
+    const wrap = document.getElementById('wrap');
+    document.getElementById('button').onclick = function kirby() {
+      const value = Math.ceil(Math.random() * 5);
+      switch (value) {
+        case 1:
+          wrap.innerHTML = '<img src="img/kirby1.png">';
+          break;
+        case 2:
+          wrap.innerHTML = '<img src="img/kirby2.png" width="200" height="200">';
+          break;
+        case 3:
+          wrap.innerHTML = '<img src="img/kirby3.png">';
+          break;
+        case 4:
+          wrap.innerHTML = '<img src="img/kirby4.png">';
+          break;
+        case 5:
+          wrap.innerHTML = '<img src="img/kirby5.png">';
+          break;
+        default:
+          break;
+      }
+    };
+  </script>
+</body>
+
+</html>

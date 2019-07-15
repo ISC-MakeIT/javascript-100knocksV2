@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    form {
+      margin-left: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="">
+    <table>
+      <tr>
+        <th>
+          <label for="dec">10進数：入力</label>
+        </th>
+        <td>
+          <input type="text" id="dec">
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label for="hex">16進数：出力</label>
+        </th>
+        <td>
+          <input type="text" id="hex">
+        </td>
+      </tr>
+    </table>
+    <input type="button" id="button" value="へんかん">
+  </form>
+
+  <script>
+    document.getElementById('button').onclick = function henkan() {
+      const jsdec = parseInt(document.getElementById('dec').value, 10);
+      document.getElementById('hex').value = jsdec.toString(16);
+    };
+  </script>
+</body>
+
+</html>
