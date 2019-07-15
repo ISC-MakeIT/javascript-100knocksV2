@@ -11,13 +11,10 @@
     const ary = [];
     while (ary.length < 25) {
       const randomNum = Math.ceil(Math.random() * 75);
-      switch (ary.includes(randomNum)) {
-        case true:
-          continue;
-        case false:
-          ary.push(randomNum);
-          break;
-        default:
+      if (ary.includes(randomNum)) {
+        continue;
+      } else {
+        ary.push(randomNum);
       }
     }
     console.log(ary);

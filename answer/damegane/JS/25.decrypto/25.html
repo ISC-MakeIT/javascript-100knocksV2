@@ -9,15 +9,13 @@
 <body>
   <script>
     const crypto = 'やくこみがんきいばていんるよは';
-    let ary1 = [];
-    ary1 = crypto.split('');
-    const ary2 = [];
-    for (let i = 0; i < ary1.length; i++) {
+    let str = '';
+    for (let i = 0; i < crypto.length; i++) {
       if (i % 3 === 2) {
-        ary2.push(ary1[i]);
+        str += crypto.substr(i, 1);
       }
     }
-    console.log(ary2.join(''));
+    console.log(str);
   </script>
 </body>
 </html>
