@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script>
+    add = () => {
+      const addImage = document.getElementById('container').innerHTML + '<img src="heavenstime.gif" alt= "画像">';
+      document.getElementById('container').innerHTML = addImage;
+    };
+  </script>
+  <title>addImage</title>
+</head>
+<body>
+  <input type="button" id="button" value="addImage" onclick="add()">
+  <div id="container"></div>
+</body>
+</html>
