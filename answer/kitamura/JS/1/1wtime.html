@@ -25,7 +25,7 @@
           const milliseconds = currentDate.getMilliseconds();
           document.getElementById('wrap').innerHTML = `${time} / ${m} / ${date} / ${days} / ${hours} / ${minutes} / ${seconds} / ${milliseconds}`;
         }
-        setInterval('out()', 1);
+        setInterval(() => out(), 1);
       </script>
     </div>
   </body>
