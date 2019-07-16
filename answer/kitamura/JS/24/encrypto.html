@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let raw = '123';
+    let crypted = '';
+    for (let i = 0; i < raw.length; i++) {
+      crypted = `${crypted + raw.substring(i, i + 1)}`;
+      crypted = `${crypted + (`00${Math.floor(Math.random() * 100)}`).slice(-2)}`
+    }
+    console.log(crypted);
+  </script>
+</body>
+
+</html>
