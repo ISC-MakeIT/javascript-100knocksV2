@@ -10,8 +10,9 @@
   <script>
     const ary = { color : 'red' , size : 100 };
     ary.count = '5';
-    for (const key in ary) {
-      console.log(`keyは: ${key} valueは: ${ary[key]}`);
+    const key = Object.keys(ary);
+    for (let i = 0; i < key.length; i++) {
+      console.log(`keyは: ${key[i]} valueは: ${ary[key[i]]}`);
     }
   </script>
 </body>
