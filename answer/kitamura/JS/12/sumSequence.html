@@ -34,12 +34,12 @@
   </table>
   <script>
     document.getElementById('button').onclick = function keisan() {
-      const nyuuryoku = parseInt(document.getElementById('nyuuryoku').value, 10);
-      let syuturyoku = 0;
-      for (let cnt = nyuuryoku; cnt > 0; cnt--) {
-        syuturyoku += cnt;
+      const input = parseInt(document.getElementById('nyuuryoku').value, 10);
+      let output = 0;
+      for (let cnt = input; cnt > 0; cnt--) {
+        output += cnt;
       }
-      document.getElementById('syuturyoku').value = syuturyoku;
+      document.getElementById('syuturyoku').value = output;
     };
   </script>
 </body>

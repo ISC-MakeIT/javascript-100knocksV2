@@ -12,12 +12,11 @@
   <select name="pull" id="pulldown"></select>
   <script>
     const pulldown = document.getElementById('pulldown');
-    const option = [];
     for (let i = 0; i <= 200; i++) {
-      option[i] = document.createElement('option');
-      option[i].setAttribute('value', i);
-      option[i].textContent = i;
-      pulldown.appendChild(option[i]);
+      const option = document.createElement('option');
+      option.setAttribute('value', i);
+      option.textContent = i;
+      pulldown.appendChild(option);
     }
   </script>
 </body>
