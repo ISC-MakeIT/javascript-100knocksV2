@@ -10,11 +10,11 @@
 
 <body>
   <script>
-    let raw = '123';
+    const raw = '123';
     let crypted = '';
     for (let i = 0; i < raw.length; i++) {
       crypted = `${crypted + raw.substring(i, i + 1)}`;
-      crypted = `${crypted + (`00${Math.floor(Math.random() * 100)}`).slice(-2)}`
+      crypted = `${crypted + (`00${Math.floor(Math.random() * 100)}`).slice(-2)}`;
     }
     console.log(crypted);
   </script>
