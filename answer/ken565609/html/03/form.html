@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#" method="get">
+        <p>name：<br>
+            <input type="text" name="name" placeholder="Yamada taro" required></p>
+        <p>email：<br>
+            <input type="text" name="mail" placeholder="examle@mail.com"></p>
+        <p>password：<br>
+            <input type="text" name="password" placeholder="p@ssw0rd"></p>
+        <p>age：<br>
+            <select id="select" name="age"></select>
+        </p>
+
+        <p>sex:<br>
+            <input type="radio" id="male" name="sex" value="male"><label for="male">male</label>
+            <input type="radio" id="female" name="sex" value="female"><label for="female">female</label>
+        </p>
+        <p>
+            <input type="submit" value="submit">
+        </p>
+    </form>
+
+    <script>
+        for (let i = 0; i <= 200; i++) {
+            const option = document.createElement("option");
+            option.textContent = i;
+            option.value = i;
+            document.querySelector("#select").appendChild(option);
+        }
+    </script>
+</body>
+
+</html>
