@@ -1,0 +1,36 @@
+@charset "utf-8";
+body{
+    background:grey;
+}
+section{
+    width: 100%;
+    text-align: center;
+    margin:0 auto;
+}
+#akaino{
+    display: inline-block;
+    background: red;
+    width: 200px;
+    height: 200px;
+}
+#akaino:hover{
+    box-shadow:10px 10px 10px 10px white;
+}
+#midori{
+    display: inline-block;
+    background: green;
+    width: 200px;
+    height: 200px;
+}
+#midori:hover{
+    box-shadow:10px 10px 10px 10px white;
+}
+#aoino{
+    display: inline-block;
+    background: blue;
+    width: 200px;
+    height: 200px;
+}
+#aoino:hover{
+    box-shadow:10px 10px 10px 10px white;
+}
