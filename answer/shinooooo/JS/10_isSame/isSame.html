@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>isSame</title>
+  <script>
+    judge = () =>{
+      const text1 = document.getElementById('text1').value;
+      const text2 = document.getElementById('text2').value;
+      if(text1 == text2){
+        document.getElementById('result').textContent = 'True';
+      }
+      else{
+        document.getElementById('result').textContent = 'False';
+      }
+    }
+  </script>
+</head>
+<body>
+  <p>
+    A<input id="text1" type="text">
+    B<input id="text2" type="text">
+  </p>
+  <button id="button" onclick="judge()">判定</button>
+  <div id="result"></div>
+</body>
+</html>
