@@ -1,0 +1,36 @@
+body{
+	background-color: #000000;
+}
+
+#red{
+	height: 100px;
+	width: 100px;
+	background-color: #ff0000;
+	float: left;
+}
+
+#red:hover{
+	box-shadow: 0px 0px 5px 2px #ffffff ;
+}
+
+#green{
+	height: 100px;
+	width: 100px;
+	background-color: #00ff00;
+	float: left;
+}
+
+#green:hover{
+	box-shadow: 0px 0px 5px 2px #ffffff ;
+}
+
+#blue{
+	height: 100px;
+	width: 100px;
+	background-color: #0000ff;
+	float: left;
+}
+
+#blue:hover{
+	box-shadow: 0px 0px 5px 2px #ffffff ;
+}
