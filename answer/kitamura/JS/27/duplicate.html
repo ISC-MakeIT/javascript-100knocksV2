@@ -27,21 +27,21 @@
 
 
     /* 重複があるか確認 */
-    dupCheck = (ary) => {
-      let flag = 0
+    const dupCheck = (ary) => {
+      let dupFlag = 0;
       for (let i = 0; i < ary.length - 1; i++) {
         for (let j = i + 1; j < ary.length; j++) {
           if (ary[i] === ary[j]) {
-            flag = 1;
+            dupFlag = 1;
           }
         }
       }
-      return flag;
+      return dupFlag;
     }
 
 
-    const dupFlag = dupCheck(output);
-    if (dupFlag === 1) {
+    flag = dupCheck(output);
+    if (flag === 1) {
       console.log('重複あり');
     } else {
       console.log('重複なし');
