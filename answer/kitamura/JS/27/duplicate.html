@@ -8,7 +8,7 @@
 </head>
 <body>
   <script>
-    let output = new Array(25);
+    const output = new Array(25);
     let flag = 1;
     let rand;
     output[0] = Math.floor(Math.random() * 75 + 1);
@@ -37,7 +37,7 @@
         }
       }
     }
-    if (flag = 0) {
+    if (flag === 0) {
       console.log('重複あり');
     } else {
       console.log('重複なし');
