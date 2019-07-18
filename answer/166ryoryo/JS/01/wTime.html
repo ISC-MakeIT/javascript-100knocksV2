@@ -9,7 +9,7 @@
 <body>
   <p id="RealtimeClockArea"></p>
   <script lang="javascript">
-    function showClock1() {
+    function showClock() {
       const nowTime = new Date();
       const nowHour = nowTime.getHours();
       const nowMin = nowTime.getMinutes();
@@ -17,7 +17,7 @@
       const msg = ` 現在時刻は、${nowHour}:${nowMin}:${nowSec}です。`;
       document.getElementById("RealtimeClockArea").innerHTML = msg;
     }
-    setInterval('showClock1()', 1000);
+    setInterval('showClock()', 1000);
   </script>
 </body>
 </html>
