@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
+
 <body>
   <script>
-    const input = 'ふわたたしが両手をひろげても、お空はちっとも飛べないが、飛べる小鳥はわたしのように、地面をはやくは走れない。\nわたたしがからだをゆすっても、ふきれいな音は出ないけど、あのなる鈴はわたたしのように、たたくさんなうたたは知らないよ。\n鈴と、小鳥と、それからわたたし、みんなふちがって、みんないい。'
+    const input = 'ふわたたしが両手をひろげても、お空はちっとも飛べないが、飛べる小鳥はわたしのように、地面をはやくは走れない。\nわたたしがからだをゆすっても、ふきれいな音は出ないけど、あのなる鈴はわたたしのように、たたくさんなうたたは知らないよ。\n鈴と、小鳥と、それからわたたし、みんなふちがって、みんないい。';
     let output = '';
     let taFlag = 0;
 
-  for (let i = 0; i < input.length; i++) {
-    const take = input.slice(i, i + 1);
-    if(take === 'た') {
-      if(taFlag === 0) {
-        taFlag = 1;
+    for (let i = 0; i < input.length; i++) {
+      const take = input.slice(i, i + 1);
+      if (take === 'た') {
+        if (taFlag === 0) {
+          taFlag = 1;
+          output += `${take}`;
+        }
+      } else if (take === 'ふ') {
+        if (taFlag === 1) {
+          taFlag = 0;
+        }
+      } else {
         output += `${take}`;
-      }
-    } else if (take === 'ふ') {
-      if(taFlag === 1) {
-        taFlag = 0;
-      }
-    } else {
-      output += `${take}`;
-      if(taFlag === 1) {
-        taFlag = 0;
+        if (taFlag === 1) {
+          taFlag = 0;
+        }
       }
     }
-  }
-  console.log(output);
+    console.log(output);
   </script>
 </body>
+
 </html>
