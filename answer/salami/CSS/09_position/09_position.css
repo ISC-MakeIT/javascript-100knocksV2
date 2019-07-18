@@ -1,0 +1,74 @@
+body {
+  position: relative;
+  font-size: 300%;
+}
+
+.set1 {
+  width: 25%;
+  height: 4000px;
+}
+
+.set2 {
+  width: 75%;
+  height: 2000px;
+  position: absolute;
+  top: 1000px;
+  left: 25%;
+}
+
+.set2-1 {
+  width: 66%;
+  height: 2000px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#A {
+  color: black;
+  background-color: aqua;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+#B {
+  background-color: blue;
+  width: 75%;
+  height: 1000px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#C {
+  background-color: red;
+  width: 100%;
+  height: 1000px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+#D {
+  background-color: green;
+  width: 34%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#E {
+  background-color: yellow;
+  width: 75%;
+  height: 1000px;
+  text-align: center;
+  position: absolute;
+  top: 3000px;
+  left: 25%;
+}
