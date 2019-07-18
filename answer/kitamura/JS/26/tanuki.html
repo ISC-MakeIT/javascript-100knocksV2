@@ -19,14 +19,14 @@
       if (take === 'た') {
         if (taFlag === 0) {
           taFlag = 1;
-          output += `${take}`;
+          output += take;
         }
       } else if (take === 'ふ') {
         if (taFlag === 1) {
           taFlag = 0;
         }
       } else {
-        output += `${take}`;
+        output += take;
         if (taFlag === 1) {
           taFlag = 0;
         }
