@@ -39,12 +39,12 @@ let work;
 let minIndex;
 for (let i = 0; i < output.length - 1; i++) {
   minIndex = i;
-  for(let j = i + 1; j < output.length; j++) {
-    if(output[minIndex] > output[j]) {
+  for (let j = i + 1; j < output.length; j++) {
+    if (output[minIndex] > output[j]) {
       minIndex = j;
     }
   }
-  if(minIndex != i) {
+  if (minIndex !== i) {
     work = output[i];
     output[i] = output[minIndex];
     output[minIndex] = work;
