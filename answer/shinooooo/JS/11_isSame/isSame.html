@@ -9,13 +9,13 @@
     judge = () =>{
       const text1 = document.getElementById('text1').value;
       const text2 = document.getElementById('text2').value;
-      if(text1 == text2){
+      if(text1 === text2) {
         document.getElementById('result').textContent = 'True';
       }
-      else{
+      else {
         document.getElementById('result').textContent = 'False';
       }
-    }
+    };
   </script>
 </head>
 <body>
