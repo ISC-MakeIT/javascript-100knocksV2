@@ -37,7 +37,7 @@
     const createRandomNum = () => {
       const ary = [];
       while (ary.length < 25) {
-        const randomNum = Math.ceil(Math.random() * 99)
+        const randomNum = Math.ceil(Math.random() * 99);
         if (ary.includes(randomNum)) {
           continue;
         } else {
@@ -47,9 +47,8 @@
       return ary;
     };
     // 昇順に並べるための関数
-    const compare = (a, b) => {
-      return a - b;
-    };
+    const compare = (a, b) =>
+      a - b;
 
     const numList = createRandomNum();
     numList.sort(compare);
@@ -61,8 +60,7 @@
       for (let j = 0; j < 5; j++) {
         const td = document.createElement('td');
         td.textContent = numList[k];
-        td.onclick = alertNum = () =>
-          alert(td.textContent);
+        td.onclick = alertNum = () => alert(td.textContent);
         tr.appendChild(td);
         k++;
       }
