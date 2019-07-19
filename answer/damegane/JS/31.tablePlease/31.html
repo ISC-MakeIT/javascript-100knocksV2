@@ -20,13 +20,17 @@
     }
 
     td {
-      border: 1px solid #000;
+      background-color: #0cf;
+      border: 1px solid #00f;
+    }
+
+    td:hover {
+      opacity: 0.7;
     }
   </style>
 </head>
 <body>
   <div id="wrap">
-
   </div>
   <script>
     // 重複してない数のリストを作成する関数
@@ -57,6 +61,8 @@
       for (let j = 0; j < 5; j++) {
         const td = document.createElement('td');
         td.textContent = numList[k];
+        td.onclick = alertNum = () =>
+          alert(td.textContent);
         tr.appendChild(td);
         k++;
       }
