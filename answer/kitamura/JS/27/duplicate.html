@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const output = new Array(25);
+    let flag = 1;
+    let rand;
+    for (let i = 0; i < output.length; i++) {
+      while (flag) {
+        rand = Math.floor(Math.random() * 75 + 1);
+        if (output.indexOf(rand) < 0) {
+          output[i] = rand;
+          flag = 0;
+        }
+      }
+      flag = 1;
+    }
+    console.log(output);
+
+
+    /* 重複があるか確認 */
+    const dupCheck = (ary) => {
+      let dupFlag = 0;
+      for (let i = 0; i < ary.length - 1; i++) {
+        for (let j = i + 1; j < ary.length; j++) {
+          if (ary[i] === ary[j]) {
+            dupFlag = 1;
+          }
+        }
+      }
+      return dupFlag;
+    };
+
+
+    flag = dupCheck(output);
+    if (flag === 1) {
+      console.log('重複あり');
+    } else {
+      console.log('重複なし');
+    }
+  </script>
+</body>
+
+</html>

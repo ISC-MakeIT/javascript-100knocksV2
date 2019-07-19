@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const crypto = 'やくこみがんきいばていんるよは';
+    const decrypto = new Array(crypto.length);
+    for (let i = 0; i < crypto.length; i++) {
+      if ((i + 1) % 3 !== 0) {
+        decrypto[i] = crypto.slice(i, i + 1);
+      }
+    }
+    console.log(decrypto.join(''));
+  </script>
+</body>
+
+</html>
