@@ -88,7 +88,8 @@
     };
 
     /* 削除処理 */
-    const del = (delHairetu, index) => {
+    const del = (hairetu, index) => {
+      const delHairetu = hairetu;
       for (let i = index; i < delHairetu.length - 1; i++) {
         delHairetu[i] = delHairetu[i + 1];
       }
