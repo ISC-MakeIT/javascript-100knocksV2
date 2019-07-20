@@ -1,18 +1,12 @@
-/* js27から */
 const output = new Array(25);
 let flag = 1;
 let rand;
-output[0] = Math.floor(Math.random() * 75 + 1);
-for (let i = 1; i < output.length; i++) {
+for (let i = 0; i < output.length; i++) {
   while (flag) {
     rand = Math.floor(Math.random() * 75 + 1);
-    for (let j = i - 1; j >= 0; j--) {
-      if (output[j] === rand) {
-        break;
-      } else if (j === 0) {
-        output[i] = rand;
-        flag = 0;
-      }
+    if (output.indexOf(rand) < 0) {
+      output[i] = rand;
+      flag = 0;
     }
   }
   flag = 1;
@@ -21,14 +15,21 @@ console.log(output);
 
 
 /* 重複があるか確認 */
-for (let i = 0; i < output.length - 1; i++) {
-  for (let j = i + 1; j < output.length; j++) {
-    if (output[i] === output[j]) {
-      flag = 0;
+const dupCheck = (ary) => {
+  let dupFlag = 0;
+  for (let i = 0; i < ary.length - 1; i++) {
+    for (let j = i + 1; j < ary.length; j++) {
+      if (ary[i] === ary[j]) {
+        dupFlag = 1;
+      }
     }
   }
-}
-if (flag === 0) {
+  return dupFlag;
+};
+
+
+flag = dupCheck(output);
+if (flag === 1) {
   console.log('重複あり');
 } else {
   console.log('重複なし');
