@@ -13,25 +13,80 @@
   消したい値を入力：<input type="text" id="text">
   <input type="button" id="button" value="消す">
   <script>
-    /* outputは1~75までの重複ない整数25個を格納した配列であり、昇順でソートされたもの */
+    /* js28から */
+    const output = new Array(25);
+    let flag = 1;
+    let rand;
+    for (let i = 0; i < output.length; i++) {
+      while (flag) {
+        rand = Math.floor(Math.random() * 75 + 1);
+        if (output.indexOf(rand) < 0) {
+          output[i] = rand;
+          flag = 0;
+        }
+      }
+      flag = 1;
+    }
+    console.log(output);
+
+
+    /* 重複があるか確認 */
+    const dupCheck = (ary) => {
+      let dupFlag = 0;
+      for (let i = 0; i < ary.length - 1; i++) {
+        for (let j = i + 1; j < ary.length; j++) {
+          if (ary[i] === ary[j]) {
+            dupFlag = 1;
+          }
+        }
+      }
+      return dupFlag;
+    };
+
+
+    flag = dupCheck(output);
+    if (flag === 1) {
+      console.log('重複あり');
+    } else {
+      console.log('重複なし');
+    }
+
+    /* js28並べ替え */
+    let work;
+    let minIndex;
+    for (let i = 0; i < output.length - 1; i++) {
+      minIndex = i;
+      for (let j = i + 1; j < output.length; j++) {
+        if (output[minIndex] > output[j]) {
+          minIndex = j;
+        }
+      }
+      if (minIndex !== i) {
+        work = output[i];
+        output[i] = output[minIndex];
+        output[minIndex] = work;
+      }
+    }
+    console.log(output);
 
     /* 探索処理 */
     const tansaku = (hairetu, value) => {
       let apper = hairetu.length;
       let lower = 0;
       let middle;
-      while (apper >= lower) {
+      let flg = 0;
+      while (apper >= lower && flg === 0) {
         middle = Math.floor((apper + lower) / 2);
         if (hairetu[middle] === value) {
-          return middle;
+          flg = 1;
         } else if (hairetu[middle] > value) {
           apper = middle - 1;
         } else {
           lower = middle + 1;
         }
       }
-      return 0;
-    }
+      return middle;
+    };
 
     /* 削除処理 */
     const del = (hairetu, index) => {
@@ -40,10 +95,10 @@
       }
       hairetu.pop();
       return hairetu;
-    }
+    };
 
-    document.getElementById('button').onclick = main => {
-      const value = parseInt(document.getElementById('text').value);
+    document.getElementById('button').onclick = main = () => {
+      const value = parseInt(document.getElementById('text').value, 10);
       if (output.indexOf(value) === -1) {
         console.log('error:Can\'t deleted');
       } else {
@@ -51,7 +106,7 @@
         del(output, delIndex);
         console.log(output);
       }
-    }
+    };
   </script>
 </body>
 
