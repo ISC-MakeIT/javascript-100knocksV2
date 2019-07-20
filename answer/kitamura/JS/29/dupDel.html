@@ -88,15 +88,15 @@
     };
 
     /* 削除処理 */
-    const del = (hairetu, index) => {
-      for (let i = index; i < hairetu.length - 1; i++) {
-        hairetu[i] = hairetu[i + 1];
+    const del = (delHairetu, index) => {
+      for (let i = index; i < delHairetu.length - 1; i++) {
+        delHairetu[i] = delHairetu[i + 1];
       }
-      hairetu.pop();
-      return hairetu;
+      delHairetu.pop();
+      return delHairetu;
     };
 
-    document.getElementById('button').onclick = main = () => {
+    document.getElementById('button').onclick = function main() {
       const value = parseInt(document.getElementById('text').value, 10);
       if (output.indexOf(value) === -1) {
         console.log('error:Can\'t deleted');
