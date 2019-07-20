@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../28/dupSort.js"></script>
+</head>
+
+<body>
+  消したい値を入力：<input type="text" id="text">
+  <input type="button" id="button" value="消す">
+  <script>
+    /* outputは1~75までの重複ない整数25個を格納した配列であり、昇順でソートされたもの */
+
+    /* 探索処理 */
+    const tansaku = (hairetu, value) => {
+      let apper = hairetu.length;
+      let lower = 0;
+      let middle;
+      while (apper >= lower) {
+        middle = Math.floor((apper + lower) / 2);
+        if (hairetu[middle] === value) {
+          return middle;
+        } else if (hairetu[middle] > value) {
+          apper = middle - 1;
+        } else {
+          lower = middle + 1;
+        }
+      }
+      return 0;
+    }
+
+    /* 削除処理 */
+    const del = (hairetu, index) => {
+      for (let i = index; i < hairetu.length - 1; i++) {
+        hairetu[i] = hairetu[i + 1];
+      }
+      hairetu.pop();
+      return hairetu;
+    }
+
+    document.getElementById('button').onclick = main => {
+      const value = parseInt(document.getElementById('text').value);
+      if (output.indexOf(value) === -1) {
+        console.log('error:Can\'t deleted');
+      } else {
+        const delIndex = tansaku(output, value);
+        del(output, delIndex);
+        console.log(output);
+      }
+    }
+  </script>
+</body>
+
+</html>
