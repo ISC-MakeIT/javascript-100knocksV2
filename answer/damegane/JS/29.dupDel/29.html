@@ -12,27 +12,35 @@
       <p>
       値を入力してください
       </p>
-      <input type="text" id="inputValue">
+      <input type="number" id="inputValue">
     </label>
-    <input type="button" onclick="serchAry();">
+    <input type="submit" onclick="serchAry();">
   </div>
   <script>
+    const ary = [];
+    while (ary.length < 25) {
+      const randomNum = Math.ceil(Math.random() * 75);
+      if (ary.includes(randomNum)) {
+        continue;
+      } else {
+        ary.push(randomNum);
+      }
+    }
+    console.log(ary);
+
     const serchAry = () => {
-      const num = document.getElementById('inputValue').value;
-      const ary = ['10', '3', '25', '6', '5'];
-      let i = 0;
+      const num = Number(document.getElementById('inputValue').value);
       let j = 0;
-      while (ary.length > i) {
+      for (let i = 0; i < ary.length; i++) {
         if (ary[i] === num) {
           ary.shift(i);
           j++;
         }
-        if (j < 1 && i >= ary.length - 1) {
-          alert("error: Can't deleted");
-        }
-        i++;
       }
-      console.log(ary);
+      if (j === 0) {
+        alert("error: Can't deleted");
+      }
+      console.log(ary)
     };
   </script>
 </body>
