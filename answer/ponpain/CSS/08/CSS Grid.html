@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+        }
+        .line{
+            border: solid 1px black;
+        }
+        .item2{
+            grid-column-start: 2;
+            grid-column-end: 7;
+            font-size: 75px;
+            text-align: center;
+        }
+        .item4{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            font-size: 75px;
+            text-align: center;
+        }
+        .item5{
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .item6{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            font-size: 75px;
+            text-align: center;
+        }
+        .item7{
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .item8{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            font-size: 75px;
+            text-align: center;
+        }
+        .item9{
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .item10{
+            color: grey;
+            font-size: 75px;
+            text-align: center
+        }
+        .item12{
+            grid-column-start: 3;
+            grid-column-end: 6;
+            font-size: 75px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="item1 line"><img src="hibana.png"  width="100px" height="100px" alt="hibana"></div>
+        <div class="item2 line">Rainbow</div>
+        <div class="item3 line"><img src="echo.png"  width="100px" height="100px" alt="echo"></div>
+        <div class="item4 line">S</div>
+        <div class="item5 line"><img src="twitch.png" width="100px" height="200px" alt="twitch"></div>
+        <div class="item6 line">i</div>
+        <div class="item7 line"><img src="Rainbow.png" width="100px" height="100px" alt="Rainbow"></div>
+        <div class="item8 line">x</div>
+        <div class="item9 line"><img src="jager.png" width="100px" height="200px" alt="jager"></div>
+        <div class="item10 line">6</div>
+        <div class="item11 line"><img src="blackbeard.png"  width="100px" height="100px" alt="blackbeard"></div>
+        <div class="item12 line">Siege</div>
+        <div class="item13 line"><img src="valkyrie.png"  width="100px" height="100px" alt="valkyrie"></div>
+    </div>
+    
+</body>
+</html>
