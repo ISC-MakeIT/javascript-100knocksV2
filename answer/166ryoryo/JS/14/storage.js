@@ -8,9 +8,3 @@ window.onload = function () {
     j.value = i;
   }
 };
-// eslint-disable-next-line no-unused-vars
-function setStorage() {
-  const i = document.getElementById('language');
-  const j = i.value;
-  window.sessionStorage.setItem('current', j);
-}
