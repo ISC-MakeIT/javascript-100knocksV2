@@ -20,9 +20,9 @@
     return(number)
   }
   function toHex(dec)	{
-    hexChar="0123456789ABCDEF"
-    let i = dec % 16
-    let j = (dec - i)/16
+    hexChar = "0123456789ABCDEF"
+    const i = dec % 16
+    const j = (dec - i) / 16
     result = hexChar.charAt(j)
     result += hexChar.charAt(i)
     return result
@@ -30,7 +30,7 @@
   function ramdomChgBack() {
     let backcolor = "#";
     for(let i = 0; i < 6; i++) {
-      backcolor += (16*Math.random() | 0).toString(16);
+      backcolor += (16 * Math.random() | 0).toString(16);
     }
     document.bgColor = backcolor;
   }
