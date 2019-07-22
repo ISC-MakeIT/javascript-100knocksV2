@@ -1,0 +1,25 @@
+#photo{
+    position: relative;
+    width: 1200px;
+    height: 650px;
+}
+
+#up{
+    position: absolute;
+    top: 150px;
+    left: 300px;
+}
+
+p{
+    font-size: 40px;
+    color: blue;
+    position: absolute;
+    top: 250px;
+    left: 480px;
+}
+
+#title{
+    position: absolute;
+    font-size: 100px;
+    top: 400px;    
+}
