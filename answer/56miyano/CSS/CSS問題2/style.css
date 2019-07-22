@@ -1,36 +1,38 @@
+@charset "utf-8";
+
 body{
-	background-color: #000000;
+  background-color: #000;
 }
 
 #red{
-	height: 100px;
-	width: 100px;
-	background-color: #ff0000;
-	float: left;
+  height: 100px;
+  width: 100px;
+  background-color: #f00;
+  float: left;
 }
 
 #red:hover{
-	box-shadow: 0px 0px 5px 2px #ffffff ;
+  box-shadow: 0 0 5px 2px #fff;
 }
 
 #green{
-	height: 100px;
-	width: 100px;
-	background-color: #00ff00;
-	float: left;
+  height: 100px;
+  width: 100px;
+  background-color: #0f0;
+  float: left;
 }
 
 #green:hover{
-	box-shadow: 0px 0px 5px 2px #ffffff ;
+  box-shadow: 0 0 5px 2px #fff;
 }
 
 #blue{
-	height: 100px;
-	width: 100px;
-	background-color: #0000ff;
-	float: left;
+  height: 100px;
+  width: 100px;
+  background-color: #00f;
+  float: left;
 }
 
 #blue:hover{
-	box-shadow: 0px 0px 5px 2px #ffffff ;
+  box-shadow: 0 0 5px 2px #fff;
 }
