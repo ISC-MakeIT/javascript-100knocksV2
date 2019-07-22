@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script>
     const add = () => {
-      const addImage = document.getElementById('container').innerHTML + '<img src="heavenstime.gif" alt= "画像">';
+      const value = document.getElementById('container').innerHTML;
+      const addImage =  `${value}'<img src="heavenstime.gif" alt= "画像">'`;
       document.getElementById('container').innerHTML = addImage;
     };
   </script>
