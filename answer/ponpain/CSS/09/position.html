@@ -19,28 +19,31 @@
         }
         .B{
             background-color: blue;
-            float: right;
             width: 80vw;
             height: 100vh;
+            margin-left: 20vw;
             font-size: 50px;
             text-align: center;
         }
         .C{
+            position: sticky;
             background-color: red;
-            float: right;
             width: 40vw;
             height: 100vh;
             font-size: 50px;
-            font-size: 50px;
             text-align: center;
+            top: 0;
         }
         .D{
             background-color: green;
-            float: right;
             width: 40vw;
-            height: 100vh;
+            height: 200vh;
             font-size: 50px;
             text-align: center;
+        }
+        .CD{
+            display: flex;
+            margin-left: 20vw;
         }
         .E{
             background-color: yellow;
@@ -55,8 +58,10 @@
 <body>
     <div class="A">A</div>
     <div class="B">B</div>
-    <div class="C">C</div>
-    <div class="D">D</div>
+    <div class="CD"> 
+        <div class="C">C</div>
+        <div class="D">D</div>
+    </div>
     <div class="E">E</div>
 </body>
 </html>
