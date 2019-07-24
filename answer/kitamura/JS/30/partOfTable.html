@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    td {
+      border: solid red;
+      text-align: center;
+      padding: 50px;
+      font-size: 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <table id="table"></table>
+  <script>
+    /* 値格納 */
+    const values = new Array(25);
+    let value;
+    for (let i = 0; i < values.length; i++) {
+      do {
+        value = Math.floor(Math.random() * 75 + 1);
+      } while (values.indexOf(value) >= 0);
+      values[i] = value;
+    }
+
+    /* ソート */
+    for (let i = 0; i < values.length - 1; i++) {
+      let j = i;
+      while (j >= 0 && values[j] > values[j + 1]) {
+        const w = values[j];
+        values[j] = values[j + 1];
+        values[j + 1] = w;
+        j--;
+      }
+    }
+    console.log(values);
+    const table = document.getElementById('table');
+    /* 行生成 */
+    for (let i = 0; i < 5; i++) {
+      const tr = document.createElement('tr');
+      /* 列生成 */
+      let step = 0
+      for (let j = 0; j < 5; j++) {
+        const td = document.createElement('td');
+        td.textContent = values[i + j * 5];
+        tr.appendChild(td);
+      }
+      table.appendChild(tr);
+    }
+  </script>
+</body>
+
+</html>
