@@ -8,24 +8,24 @@
 <script LANGUAGE="JavaScript">
   function rangeRandom(num1, num2) {
     if ((num1 - num2) > 0) {
-      const big = num1
-      const small = num2
+      const big = num1;
+      const small = num2;
     }
     else {
-      const big = num2
-      const small = num1
+      const big = num2;
+      const small = num1;
     }
-    const range = big - small + 1
-    const number = Math.floor(Math.random()*range) + small
-    return (number)
+    const range = big - small + 1;
+    const number = Math.floor(Math.random()*range) + small;
+    return (number);
   }
   function toHex(dec)	{
-    hexChar = '0123456789ABCDEF'
-    const i = dec % 16
-    const j = (dec - i) / 16
-    result = hexChar.charAt(j)
-    result += hexChar.charAt(i)
-    return result
+    hexChar = '0123456789ABCDEF';
+    const i = dec % 16;
+    const j = (dec - i) / 16;
+    result = hexChar.charAt(j);
+    result += hexChar.charAt(i);
+    return result;
   }
   function ramdomChgBack() {
     let backcolor = '#';
