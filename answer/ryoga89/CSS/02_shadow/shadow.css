@@ -1,26 +1,22 @@
-
 .red{
     width: 100px;
     height: 100px;
     background-color: red;
     float: left;
-    
 }
 
 .green{
     width: 100px;
     height: 100px;
     background-color: green;
-    float: left;
-    
+    float: left;    
 }
 
 .blue{
     width: 100px;
     height:100px;
     background-color: blue;
-    float: left;
-    
+    float: left;    
 }
 
 .btns{
@@ -28,11 +24,8 @@
     width: 300px;
     height: 100px;
     padding: 10px;
-
 }
 
 .box:hover{
     box-shadow: 0 0 18px white;
 }
-
-
