@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id="wrap">
+    <input type="button" value="こんにちは" onclick="incrementHello();">
+  </div>
+  <script src="../jquery.js"></script>
+  <script>
+    let count = 0;
+    let flg = 1;
+    const incrementHello = () => {
+      if (flg) {
+        $('<div class="content"></div>')
+          .append('<p id="numHello">' + 'hello' + count + '回目' + '</p>')
+          .appendTo('#wrap');
+        flg = 0;
+      } else {
+        $('#numHello').html('hello' + count + '回目');
+      }
+      count++;
+    };
+  </script>
+</body>
+</html>
