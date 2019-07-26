@@ -12,26 +12,19 @@
     <form id="" action="" method="GET">
         <dl>
             <dt>name:</dt>
-            <dd><input type="text" name="name" placeholder="name"></dd>
-
-
-
+            <dd><input type="text" name="name" required placeholder="name"></dd>
             <dt>email:</dt>
             <dd><input type="email" name="email" id="email" placeholder="info@example.com"></dd>
-
-
             <dt>password:</dt>
             <dd><input type="password"></dd>
-
             <dt>age:</dt>
             <dd><select name="age" id="age"></select>
             </dd>
-
             <dt>sex:</dt>
             <dd>
-                <input type="radio" name="zyosei" value="zyosei">jyosei
-                <input type="radio" name="dansei" value="dansei">dansei
-            </dd>
+                <label><input type="radio" name="sex" value="josei">jyosei
+                    <input type="radio" name="sex" value="dansei">dansei
+            </label></dd>
         </dl>
         <input type="submit" value="submit">
     </form>
