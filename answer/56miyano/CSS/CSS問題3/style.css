@@ -1,18 +1,18 @@
 @charset "utf-8";
 
-#nav{
+#nav {
   list-style: none;
   color: #ffffff;
   background-color: #999;
   padding: 0;
 }
 
-#nav li{
+#nav li {
   display: inline-block;
   width: 100px;
   text-align: center;
 }
 
-#nav li:hover{
+#nav li:hover {
   background-color: #ff9;
 }

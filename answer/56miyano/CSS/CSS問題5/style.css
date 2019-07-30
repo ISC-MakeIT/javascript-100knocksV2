@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+body {
+  background-color: #7fffd4;
+}
+
+li {
+  margin: 6px 0;
+  list-style: none;
+}
+
+.new:after {
+  content: "NEW!";
+  margin: 0 0 0 6px;
+  padding: 0 2px;
+  color: #fff;
+  font-size: 80%;
+  background-color: #ffd500;
+  vertical-align: middle;
+  border-radius: 4px
+
+}

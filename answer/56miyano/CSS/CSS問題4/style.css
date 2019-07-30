@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+#sushi {
+  position: relative;
+  width: 670px;
+  height: 443px;
+}
+
+#maguro {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#AAAA {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  color: #f00;
+  margin: 0;
+}
+
+#japan {
+  position: absolute;
+  top: 102%;
+  left: 50%;
+  transform:translateX(-50%);
+  font-size: 32px;
+  color: #f00;
+  margin: 0;
+  font-family: HG行書体;
+}

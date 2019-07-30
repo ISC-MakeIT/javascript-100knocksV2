@@ -1,38 +1,38 @@
 @charset "utf-8";
 
-body{
+body {
   background-color: #000;
 }
 
-#red{
+#red {
   height: 100px;
   width: 100px;
   background-color: #f00;
   float: left;
 }
 
-#red:hover{
+#red:hover {
   box-shadow: 0 0 5px 2px #fff;
 }
 
-#green{
+#green {
   height: 100px;
   width: 100px;
   background-color: #0f0;
   float: left;
 }
 
-#green:hover{
+#green:hover {
   box-shadow: 0 0 5px 2px #fff;
 }
 
-#blue{
+#blue {
   height: 100px;
   width: 100px;
   background-color: #00f;
   float: left;
 }
 
-#blue:hover{
+#blue:hover {
   box-shadow: 0 0 5px 2px #fff;
 }
