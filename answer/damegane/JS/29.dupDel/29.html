@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>dupDel</title>
-</head>
-<body>
-  <div class="container">
-    <label>
-      <p>
-      値を入力してください
-      </p>
-      <input type="number" id="inputValue">
-    </label>
-    <input type="submit" onclick="serchAry();">
-  </div>
-  <script>
-    const ary = [];
-    while (ary.length < 25) {
-      const randomNum = Math.ceil(Math.random() * 75);
-      if (ary.includes(randomNum)) {
-        continue;
-      } else {
-        ary.push(randomNum);
-      }
-    }
-    console.log(ary);
-
-    const serchAry = () => {
-      const num = Number(document.getElementById('inputValue').value);
-      let j = 0;
-      for (let i = 0; i < ary.length; i++) {
-        if (ary[i] === num) {
-          ary.shift(i);
-          j++;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>dupDel</title>
+  </head>
+  <body>
+    <div class="container">
+      <label>
+        <p>
+          値を入力してください
+        </p>
+        <input type="number" id="inputValue" />
+      </label>
+      <input type="submit" onclick="serchAry();" />
+    </div>
+    <script>
+      const ary = [];
+      while (ary.length < 25) {
+        const randomNum = Math.ceil(Math.random() * 75);
+        if (ary.includes(randomNum)) {
+          continue;
+        } else {
+          ary.push(randomNum);
         }
       }
-      if (j === 0) {
-        alert("error: Can't deleted");
-      }
       console.log(ary);
-    };
-  </script>
-</body>
+
+      const saerchAry = () => {
+        const num = Number(document.getElementById('inputValue').value);
+        let j = 0;
+        for (let i = 0; i < ary.length; i++) {
+          if (ary[i] === num) {
+            ary.shift(i);
+            j++;
+          }
+        }
+        if (j === 0) {
+          alert("error: Can't deleted");
+        }
+        console.log(ary);
+      };
+    </script>
+  </body>
 </html>
