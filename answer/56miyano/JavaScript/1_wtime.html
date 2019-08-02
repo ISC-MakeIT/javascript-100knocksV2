@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="wtime" style="font-size: 50px; font-style:oblique; font-family: HGP行書体; font-weight: 900;">
+    <script type="text/javascript">
+
+    function time(){
+      nd = new Date();
+      y = nd.getFullYear();
+      m = nd.getMonth()+1;
+      w = nd.getDay();
+      dd = nd.getDate();
+      h = nd.getHours();
+      min = nd.getMinutes();
+      s = nd.getSeconds();
+      ms  = nd.getMilliseconds();
+
+      yobi = ["SUN","MON","TUE","WED","THU","FRI","SAT"];
+
+      var msg =y+"/"+m+"/"+dd+"/"+yobi[w]+"/"+h+"/"+min+"/"+s+"/"+ms;
+
+        document.getElementById("wtime").innerHTML = msg;
+    }
+
+    window.onload = function(){
+        setInterval("time()",100);
+    }
+
+    </script>
+</body>
+</html>
