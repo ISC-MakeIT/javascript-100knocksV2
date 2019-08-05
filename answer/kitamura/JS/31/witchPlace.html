@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    td {
+      border: solid red;
+      padding: 50px;
+      font-size: 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <table id="table"></table>
+  <script>
+    const values = new Array(25);
+    /* 値の格納 */
+    for (let i = 0; i < values.length; i++) {
+      let value;
+      do {
+        value = Math.floor(Math.random() * 75 + 1);
+      } while (values.indexOf(value) > 0);
+      values[i] = value;
+    }
+
+    /* 値のソート */
+    for (let i = 0; i < values.length - 1; i++) {
+      for (let j = i; i >= 0 && values[j] > values[j + 1]; j--) {
+        const work = values[j];
+        values[j] = values[j + 1];
+        values[j + 1] = work;
+      }
+    }
+    console.log(values);
+
+    const table = document.getElementById('table');
+    for (let i = 0; i < 5; i++) {
+      const tr = document.createElement('tr');
+      let text = '';
+      for (let j = 0; j < 5; j++) {
+        text += `<td class="block${i + j * 5}">${values[i + j * 5]}</td>`
+      }
+      tr.innerHTML = text;
+      table.appendChild(tr);
+    }
+    table.addEventListener('click', () => {
+      const eventDOM = event.target;
+      const num = eventDOM.innerHTML;
+      console.log(num);
+    }, false);
+
+  </script>
+</body>
+
+</html>
