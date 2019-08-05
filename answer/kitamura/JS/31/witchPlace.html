@@ -43,17 +43,17 @@
       const tr = document.createElement('tr');
       let text = '';
       for (let j = 0; j < 5; j++) {
-        text += `<td class="block${i + j * 5}">${values[i + j * 5]}</td>`
+        text += `<td class="block${i + j * 5}">${values[i + j * 5]}</td>`;
       }
       tr.innerHTML = text;
       table.appendChild(tr);
     }
-    table.addEventListener('click', () => {
+    let event;
+    table.addEventListener('click', (event) => {
       const eventDOM = event.target;
       const num = eventDOM.innerHTML;
       alert(num);
     }, false);
-
   </script>
 </body>
 
