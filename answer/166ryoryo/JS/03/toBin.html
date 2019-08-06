@@ -13,8 +13,8 @@
     <input type="button" value="変換" onclick="kazu()"><br>
   </form>
   <script>
-    function kazu() {
-      const suji = parseInt(document.math.elements[0].value,10);
+    function kazu() { // eslint-disable-line
+      const suji = parseInt(document.math.elements[0].value , 10);
       document.math.elements[1].value = suji.toString(2);
     }
   </script>
