@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    #content {
+      text-align: center;
+    }
+
+    .colorBox {
+      width: 50%;
+      height: 50px;
+      margin: 3px auto;
+      font-weight: bold;
+      background-color: #ccc;
+      user-select: none;
+    }
+
+    .colorBox:hover {
+      opacity: .5;
+    }
+  </style>
+</head>
+<body>
+  <div id="content">
+    <div class="colorBox one">click!</div>
+    <div class="colorBox two">click!</div>
+    <div class="colorBox three">click!</div>
+  </div>
+  <script src="../jquery.js"></script>
+  <script>
+    const changeColor = (self) => {
+      // 256^3 + 1 = 16777217 256**3を使うとESlintに怒られるため
+      const randomNum = Math.floor(Math.random() * 16777217);
+      const randomColor = '#' + randomNum.toString(16);
+      $(self).css('background-color', randomColor);
+    };
+    $('.one').click(function () {
+      changeColor('.one');
+    })
+    $('.two').click(function () {
+      changeColor('.two');
+    })
+    $('.three').click(function () {
+      changeColor('.three');
+    })
+  </script>
+</body>
+</html>

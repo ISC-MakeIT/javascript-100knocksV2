@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>rensouhairetu</title>
+</head>
+<body>
+  <script>
+    const ary = [];
+    while (ary.length < 25) {
+      const randomNum = Math.ceil(Math.random() * 75);
+      if (ary.includes(randomNum)) {
+        continue;
+      } else {
+        ary.push(randomNum);
+      }
+    }
+    ary.sort((a, b) => a - b);
+    console.log(ary);
+  </script>
+</body>
+</html>

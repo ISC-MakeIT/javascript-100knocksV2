@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    #content {
+      text-align: center;
+    }
+
+    img {
+      width: 30%;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <input type="button" onclick="addImage();" value="addImage">
+    <div id="content"></div>
+  </div>
+  <script src="../jquery.js"></script>
+  <script>
+    const createUID = () => {
+      const data = new Date();
+      const time = data.getTime();
+      const uid = 'U' + String(time) + String(Math.ceil(Math.random() * 5));
+      return uid
+    };
+
+    createUID();
+    let flg = 3;
+    const addImage = () => {
+      const img_path = 'img/nino' + String(Math.ceil(Math.random() * 5)) + '.jpg';
+      if (flg) {
+        $('<img src="' + img_path + '"  id="' + createUID() + '" onclick="remove(this);">')
+          .appendTo('#content');
+        flg--;
+      }
+    };
+
+    const remove = (el) => {
+      let id = $(el).attr('id');
+      $('#' + id).remove();
+      flg++;
+    };
+  </script>
+</body>
+</html>

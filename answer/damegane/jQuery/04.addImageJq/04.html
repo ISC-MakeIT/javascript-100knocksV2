@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    img {
+      width: 20%;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <input type="button" onclick="addImage();" value="addImage">
+    <div id="content"></div>
+  </div>
+  <script src="../jquery.js"></script>
+  <script>
+    const addImage = () => {
+      $('<img src="img/nino.jpg">')
+        .appendTo('#content');
+    };
+  </script>
+</body>
+</html>
