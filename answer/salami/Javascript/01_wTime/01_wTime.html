@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link href="01_wTime.css" rel="stylesheet">
+  <title>wTime</title>
+</head>
+<body>
+  <a id="time"></a>
+  <script>
+    const Clock = () => {
+
+      const time = new Date();
+
+      const year = time.getFullYear();
+
+      const month = time.getMonth() + 1;
+
+      const week = time.getDay();
+
+      const day = time.getDate();
+
+      const youbi = new Array("sun", "mon", "tue", "wen", "thu", "fri", "sat");
+
+      const hour = time.getHours();
+
+      const miunte = time.getMinutes();
+
+      const second = time.getSeconds();
+
+      const milliseconds = time.getMilliseconds();
+
+      const msg = `${year}/${month}/${day}/${youbi[week]}/${hour}/${miunte}/${second}/${milliseconds}`;
+
+      document.getElementById("time").innerHTML = msg;
+
+    };
+
+    setInterval(Clock, 1);
+  </script>
+</body>
+</html>
