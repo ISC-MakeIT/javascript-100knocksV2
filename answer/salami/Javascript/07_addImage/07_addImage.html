@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>addImage</title>
+</head>
+<body>
+  <p><button type="button" onclick="chenge()">Image</button></p>
+  <p id='addImg'></p>
+  <script>
+    const chenge = () => {
+      const img = document.createElement('img');
+      img.src = 'img/gatakiriba.jpg';
+      addImg.appendChild(img);
+    }
+  </script>
+</body>
+</html>
