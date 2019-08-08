@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>randomBgColor</title>
+</head>
+<body>
+  <button type="button" value="chenge" name="chenge" onclick="BC();">chenge</button>
+  <div id="background"></div>
+  <script>
+    const background = document.body;
+
+    const BC = () => {
+      let random = Math.floor(Math.random() * 239) + 16;
+      let colorCode = random.toString(16);
+
+      random = Math.floor(Math.random() * 239) + 16;
+      colorCode = `${colorCode}${random.toString(16)}`;
+
+      random = Math.floor(Math.random() * 239) + 16;
+      colorCode = `#${colorCode}${random.toString(16)}`;
+
+      background.style.background = colorCode;
+    }
+  </script>
+</body>
+</html>
