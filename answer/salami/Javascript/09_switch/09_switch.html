@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>switch</title>
+</head>
+<body>
+  <p><button type="button" onclick="image()">Heisei-riders</button></p>
+  <a id="image"></a>
+  <script>
+    const image = () => {
+      let random = Math.floor(Math.random() * 19) + 1;
+      switch (random) {
+        case 1:
+          document.getElementById('image').innerHTML = '<img src="img/kuuga-A.jpg">';
+          break;
+
+        case 2:
+          document.getElementById('image').innerHTML = '<img src="img/agito-S.jpg">';
+          break;
+
+        case 3:
+          document.getElementById('image').innerHTML = '<img src="img/ryuki-S.jpg">';
+          break;
+
+        case 4:
+          document.getElementById('image').innerHTML = '<img src="img/faiz-B.jpg">';
+          break;
+
+        case 5:
+          document.getElementById('image').innerHTML = '<img src="img/blade-K.jpg">';
+          break;
+
+        case 6:
+          document.getElementById('image').innerHTML = '<img src="img/hibiki-A.jpg">';
+          break;
+
+        case 7:
+          document.getElementById('image').innerHTML = '<img src="img/kabuto-H.jpg">';
+          break;
+
+        case 8:
+          document.getElementById('image').innerHTML = '<img src="img/den-o-L.jpg">';
+          break;
+
+        case 9:
+          document.getElementById('image').innerHTML = '<img src="img/kiba-E.jpg">';
+          break;
+
+        case 10:
+          document.getElementById('image').innerHTML = '<img src="img/decade-C.jpg">';
+          break;
+
+        case 11:
+          document.getElementById('image').innerHTML = '<img src="img/w-X.jpg">';
+          break;
+
+        case 12:
+          document.getElementById('image').innerHTML = '<img src="img/ooo-P.jpg">';
+          break;
+
+        case 13:
+          document.getElementById('image').innerHTML = '<img src="img/fourze-C.jpg">'; break;
+
+        case 14:
+          document.getElementById('image').innerHTML = '<img src="img/wizard-I.jpg">';
+          break;
+
+        case 15:
+          document.getElementById('image').innerHTML = '<img src="img/gaim-fb.jpg">';
+          break;
+
+        case 16:
+          document.getElementById('image').innerHTML = '<img src="img/drive-TT.jpg">';
+          break;
+
+        case 17:
+          document.getElementById('image').innerHTML = '<img src="img/ghost-M.jpg">';
+          break;
+
+        case 18:
+          document.getElementById('image').innerHTML = '<img src="img/ex-aid-M.jpg">';
+          break;
+
+        case 19:
+          document.getElementById('image').innerHTML = '<img src="img/build-G.jpg">';
+          break;
+
+        case 20:
+          document.getElementById('image').innerHTML = '<img src="img/zi-o-G.jpg">';
+          break;
+
+        default:
+
+      }
+    }
+  </script>
+</body>
+</html>
