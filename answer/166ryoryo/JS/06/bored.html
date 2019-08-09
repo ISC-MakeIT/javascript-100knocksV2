@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+#text-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: block;
+    cursor: pointer;
+    width: 160px;
+    text-align: center;
+}
+
+.a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 128px;
+    color: #4ce01f;
+}
+</style>
+</head>
+<body>
+  <div id="text-button"><p id="text">I'm so bored</p></div>
+  <script>
+    document.getElementById('text-button').onclick = function(){
+      document.getElementById('text').innerHTML = '<span class="a">AWESOME</span>';
+    };
+  </script>
+</body>
+</html>

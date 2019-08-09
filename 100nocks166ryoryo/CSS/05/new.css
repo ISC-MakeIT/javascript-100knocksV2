@@ -1,9 +1,0 @@
-.new::after {
-    display        : inline-block;
-    content        : "NEW";
-    color          : #ff0000;
-    font-size      : 7pt;
-    vertical-align : middle;
-    margin-left    : 5px;
-    text-shadow    : 2px 2px 2px #ffff00
-  }

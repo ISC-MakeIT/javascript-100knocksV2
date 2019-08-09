@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+</head>
+<body onload="setSelectNumber()">
+  <select name="pull" id="pull"></select>
+  <script>
+    function setSelectNumber() { // eslint-disable-line
+      const selectElement = document.getElementById('pull');
+      for (let i = 0; i <= 200; i ++ ) {
+        const option = document.createElement('option');
+        option.value = i;
+        option.innerText = i;
+        selectElement.appendChild(option);
+      }
+    }
+  </script>
+</body>
+</html>

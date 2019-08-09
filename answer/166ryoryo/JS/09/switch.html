@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+</head>
+<body>
+  <input type=button value="名探偵ガチャ" onClick="siwasiwaImage()">
+  <img src="" id="tantei">
+  <script>
+    function siwasiwaImage(){ // eslint-disable-line
+      const img = document.getElementById('tantei');
+      const pi = Math.floor(Math.random() * 7) + 1;
+      console.log(pi);
+      switch (pi){
+        case 1:
+          img.src =　'img/download.jpg';
+          break;
+
+        case 2:
+          img.src = 'img/images.jpg';
+          break;
+
+        case 3:
+          img.src = 'img/p.jpg';
+          break;
+
+        case 4:
+          img.src = 'img/pi.jpg';
+          break;
+
+        case 5:
+          img.src = 'img/si.jpg';
+          break;
+
+        case 6:
+          img.src = 'img/imags.jpg';
+          break;
+
+        case 7:
+          img.src = 'img/Pikachu200.jpg';
+          break;
+      }
+    }
+  </script>
+</body>
+</html>

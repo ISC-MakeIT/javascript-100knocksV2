@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+</head>
+<body>
+  <input type="text" id="n" placeholder="n(数値）" onkeyup="sum()">
+  <script>
+    function sum() { // eslint-disable-line
+      let goukei = 0;
+      const n = document.getElementById('n').value;
+      for (let a = 1; a <= n; a++) {
+        goukei += a;
+      }
+      console.log(goukei);
+    }
+  </script>
+</body>
+</html>

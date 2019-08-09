@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+</head>
+
+<body>
+        <div class="main">
+          <input type="text" id="text1" placeholder="aiueo1">
+          <input type="text" id="text2" placeholder="aiueo2">
+          <input type="button" value="比較" onclick="hikaku()">
+        </div>
+        <script>
+          function hikaku() { // eslint-disable-line
+            const text1 = document.getElementById('text1').value;
+            const text2 = document.getElementById('text2').value;
+            if (!text1 || !text2) { return;}
+
+            if (text1 === text2) {
+              alert('true');
+            } else {
+              alert('false');
+            }
+          }
+        </script>
+
+</body>
+</html>

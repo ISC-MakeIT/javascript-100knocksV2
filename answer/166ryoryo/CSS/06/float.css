@@ -1,0 +1,43 @@
+#aka {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: rgba(230, 8, 8, 0.952);
+}
+
+#midori {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: rgb(33, 192, 35);
+}
+
+#ao {
+    clear: both;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: rgb(16, 29, 207);
+}
+
+#kiiro {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: rgb(240, 236, 16);
+}
+
+#murasaki {
+    clear: both;
+    width: 100px;
+    height: 100px;
+    background: rgb(232, 11, 240);
+    float: left;
+}
+
+#mizuiro {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: rgb(4, 248, 207);
+}

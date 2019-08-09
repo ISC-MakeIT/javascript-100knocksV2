@@ -1,0 +1,12 @@
+.red {
+    background-color: rgba(233, 61, 8, 0.952);
+    width: 300px;
+    height: 300px;
+}
+
+.red:hover {
+    border-spacing: 0;
+    border-collapse: collapse;
+    border: solid 5px rgba(194, 178, 178, 0.712);
+    overflow: hidden;
+}
