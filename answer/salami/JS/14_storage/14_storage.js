@@ -12,4 +12,4 @@ const store = () => {
   const a = document.getElementById('outputsave');
   const b = a.value;
   window.sessionStorage.setItem('key', b);
-}
+};

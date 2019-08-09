@@ -14,14 +14,14 @@
     let answer = 0;
     const reset = () => {
       answer = 0;
-    }
+    };
     const addition = () => {
-      let n = document.getElementById("number").value;
+      const n = document.getElementById('number').value;
       for (let i = 0; i <= n; i++) {
         answer = answer + i;
+        console.log(answer);
       }
-      console.log(answer);
-    }
+    };
   </script>
 </body>
 </html>
