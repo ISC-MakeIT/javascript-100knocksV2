@@ -11,7 +11,7 @@
   <a id="image"></a>
   <script>
     const image = () => {
-      let random = Math.floor(Math.random() * 19) + 1;
+      const random = Math.floor(Math.random() * 19) + 1;
       switch (random) {
         case 1:
           document.getElementById('image').innerHTML = '<img src="img/kuuga-A.jpg">';
@@ -62,7 +62,8 @@
           break;
 
         case 13:
-          document.getElementById('image').innerHTML = '<img src="img/fourze-C.jpg">'; break;
+          document.getElementById('image').innerHTML = '<img src="img/fourze-C.jpg">';
+          break;
 
         case 14:
           document.getElementById('image').innerHTML = '<img src="img/wizard-I.jpg">';

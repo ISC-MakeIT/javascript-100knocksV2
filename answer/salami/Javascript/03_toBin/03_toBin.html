@@ -12,8 +12,8 @@
   <input type="button" value="変換" onclick="conversion();">
   <script>
     const conversion = () => {
-      let variable = Number(document.getElementById('original').value);
-      let result = variable.toString(2);
+      const variable = Number(document.getElementById('original').value);
+      const result = variable.toString(2);
       document.getElementById('result').innerHTML = result;
     }
 
