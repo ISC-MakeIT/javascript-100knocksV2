@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script>
+    const change = () => {
+      const value = Math.floor(Math.random() * 6);
+      const imageId = document.getElementById('image');
+      imageId.innerHTML = `<img src='${value}.jpg' >`;
+    };
+  </script>
+  <title>switch</title>
+</head>
+<body>
+  <button id="button" onclick="change()">アヴェンジャーズ</button>
+  <div id="container">
+    <div id="image"></div>
+  </div>
+</body>
+</html>

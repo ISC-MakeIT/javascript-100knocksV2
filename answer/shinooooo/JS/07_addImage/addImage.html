@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script>
-    add = () => {
-      const addImage = document.getElementById('container').innerHTML + '<img src="heavenstime.gif" alt= "画像">';
+    const add = () => {
+      const value = document.getElementById('container').innerHTML;
+      const addImage = `${value}'<img src="heavenstime.gif" alt= "画像">'`;
       document.getElementById('container').innerHTML = addImage;
     };
   </script>
