@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>sum_Sequence</title>
+</head>
+<body>
+  <input type="number" placeholder="数字を入力してください" id="number">
+  <button type="button" onclick="addition();">addition!</button>
+  <button type="button" onclick="reset();">reset!</button>
+  <script>
+    let answer = 0;
+    const reset = () => {
+      answer = 0;
+    }
+    const addition = () => {
+      let n = document.getElementById("number").value;
+      for (let i = 0; i <= n; i++) {
+        answer = answer + i;
+      }
+      console.log(answer);
+    }
+  </script>
+</body>
+</html>
