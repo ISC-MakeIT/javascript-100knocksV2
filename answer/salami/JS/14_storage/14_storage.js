@@ -10,6 +10,6 @@ window.onload = () => {
 
 const store = () => {
   const choose = document.getElementById('outputsave');
-  const value = choose.value;
-  window.sessionStorage.setItem('key', value);
+  const number = choose.value;
+  window.sessionStorage.setItem('key', number);
 };
