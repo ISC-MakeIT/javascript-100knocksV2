@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>pulldown</title>
   <script>
-      const createmenu = () => {
+      const createMenu = () => {
         const pulldown = document.getElementById('pulldown');
         for (let i = 0; i <= 200; i++) {
           const option = document.createElement('option');
@@ -17,7 +17,7 @@
       };
     </script>
 </head>
-<body onload="createmenu()">
+<body onload="createMenu()">
   <select id="pulldown">
     <option>--数を選択--</option>
   </select>

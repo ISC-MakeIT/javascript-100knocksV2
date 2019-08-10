@@ -5,4 +5,4 @@ const save = () => {
 
 const load = () => {
   document.getElementById('Language').selectedIndex = localStorage.getItem('select_num');
-}
+};
