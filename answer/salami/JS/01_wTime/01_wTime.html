@@ -8,34 +8,21 @@
 <body>
   <a id="time"></a>
   <script>
-
-    const Clock = () => {
+    const clock = () => {
       const time = new Date();
-
       const year = time.getFullYear();
-
       const month = time.getMonth() + 1;
-
       const week = time.getDay();
-
       const youbi = ['sun', 'mon', 'tue', 'wen', 'thu', 'fri', 'sat'];
-
       const day = time.getDate();
-
       const hour = time.getHours();
-
       const miunte = time.getMinutes();
-
       const second = time.getSeconds();
-
       const milliseconds = time.getMilliseconds();
-
       const msg = `${year}/${month}/${day}/${youbi[week]}/${hour}/${miunte}/${second}/${milliseconds}`;
-
       document.getElementById('time').innerHTML = msg;
     };
-
-    setInterval(Clock, 1);
+    setInterval(clock, 1);
   </script>
 </body>
 </html>

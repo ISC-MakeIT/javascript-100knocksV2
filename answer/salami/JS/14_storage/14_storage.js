@@ -1,15 +1,15 @@
 window.onload = () => {
-  let a = window.sessionStorage.getItem('key');
-  const b = document.getElementById('outputsave');
-  if (a == null) {
-    a = 0;
+  let storage = window.sessionStorage.getItem('key');
+  const choose = document.getElementById('outputsave');
+  if (storage == null) {
+    storage = 0;
   } else {
-    b.value = a;
+    choose.value = storage;
   }
 };
 
 const store = () => {
-  const a = document.getElementById('outputsave');
-  const b = a.value;
-  window.sessionStorage.setItem('key', b);
+  const choose = document.getElementById('outputsave');
+  const value = choose.value;
+  window.sessionStorage.setItem('key', value);
 };
