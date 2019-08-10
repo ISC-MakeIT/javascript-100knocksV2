@@ -8,11 +8,6 @@
 <body>
   <a id="time"></a>
   <script>
-    let weekget = 0;
-    weekget = (w) => {
-      const youbi = ['sun', 'mon', 'tue', 'wen', 'thu', 'fri', 'sat'];
-      return [w];
-    };
 
     const Clock = () => {
       const time = new Date();
@@ -22,6 +17,8 @@
       const month = time.getMonth() + 1;
 
       const week = time.getDay();
+
+      const youbi = ['sun', 'mon', 'tue', 'wen', 'thu', 'fri', 'sat'];
 
       const day = time.getDate();
 
@@ -33,7 +30,7 @@
 
       const milliseconds = time.getMilliseconds();
 
-      const msg = `${year}/${month}/${day}/${weekget(time.getDay())}/${hour}/${miunte}/${second}/${milliseconds}`;
+      const msg = `${year}/${month}/${day}/${youbi[week]}/${hour}/${miunte}/${second}/${milliseconds}`;
 
       document.getElementById('time').innerHTML = msg;
     };
