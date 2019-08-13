@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const raw = '114514';
+    let stdLeng = raw.length * 3;
+    let insert1 = 0;
+    let insert2 = 0;
+    for (let i = 0; i < stdLeng; i += 3) {
+      insert1 = Math.floor(Math.random() * 10).toString();
+      insert2 = Math.floor(Math.random() * 10).toString();
+      raw = raw.slice(0 , i + 1) + insert1 + insert2 + raw.slice(i + 1);
+      console.log(raw);
+    };
+  </script>
+</body>
+</html>

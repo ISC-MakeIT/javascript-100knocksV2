@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const compareFunc = (a, b) => {
+      return a - b;
+    };
+    const intRandom = () => {
+      return Math.floor(Math.random() * 75) + 1;
+    };
+    let ary = [];
+    const min = 1, max = 75;
+    for (i = 1; i <= 25; i++) {
+      while (1) {
+        let tmp = intRandom();
+        if (!ary.includes(tmp)) {
+          ary.push(tmp);
+          break;
+        }
+      }
+    }
+    ary.sort(compareFunc);
+    console.log(ary);
+    
+    const del = (val) => {
+      let num = Number(val);
+      if (ary.includes(num)) {
+        ary.splice(ary.indexOf(num), 1);
+        console.log(ary.length);
+        console.log(ary);
+      } else {
+        console.log("error: Can't deleted");
+      }
+    };
+  </script>
+  <input type="text" id="text">
+  <button  onclick="del(text.value)">送信</button>
+</body>
+</html>
