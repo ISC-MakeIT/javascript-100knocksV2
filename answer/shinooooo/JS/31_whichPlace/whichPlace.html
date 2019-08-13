@@ -24,18 +24,17 @@
       const intRandom = () => {
       return Math.floor(Math.random() * 75) + 1;
     }
-    let ary = [];
-    const min = 1, max = 75;
-    for (i = 1; i <= 25; i++) {
+    const ary = [];
+    for (let i = 1; i <= 25; i++) {
       while (1) {
-        let tmp = intRandom();
+        const tmp = intRandom();
         if (!ary.includes(tmp)) {
           ary.push(tmp);
           break;
         }
       }
     }
-    ary.sort(compareFunc);
+  ary.sort(compareFunc);
     console.log(ary);
 
     const createDiv = () => { 
