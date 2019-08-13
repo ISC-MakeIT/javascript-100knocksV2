@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>pulldown</title>
+  <script>
+      const createMenu = () => {
+        const pulldown = document.getElementById('pulldown');
+        for (let i = 0; i <= 200; i++) {
+          const option = document.createElement('option');
+          option.value = i;
+          option.innerHTML = i;
+          pulldown.appendChild(option);
+        }
+      };
+    </script>
+</head>
+<body onload="createMenu()">
+  <select id="pulldown">
+    <option>--数を選択--</option>
+  </select>
+</body>
+</html>
