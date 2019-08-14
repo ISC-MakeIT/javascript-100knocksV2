@@ -1,26 +1,20 @@
 wTime();
 
 function clock () {
-  let target = document.getElementById("nowDate");
+  const target = document.getElementById("nowDate");
   let now = new Date();
-  let Year = now.getFullYear();
-  let Month = now.getMonth() + 1;
-  let Day = now.getDate();
-  let DayOfWeek = now.getDay();
-  let Hour = now.getHours();
-  let Min = now.getMinutes();
-  let Sec = now.getSeconds();
-  let Msec = now.getMilliseconds();
-  const DOW = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'][DayOfWeek];
-  target.textContent = Year + "/" + Month + "/" + Day + "/" + DOW + "/" + Hour + "/" + Min + "/" + Sec + "/" + Msec;
+  let year = now.getFullYear();
+  let month = now.getMonth() + 1;
+  let day = now.getDate();
+  let dayOfWeek = now.getDay();
+  let hour = now.getHours();
+  let min = now.getMinutes();
+  let sec = now.getSeconds();
+  let msec = now.getMilliseconds();
+  const dow = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'][dayOfWeek];
+  target.textContent = year + "/" + month + "/" + day + "/" + dow + "/" + hour + "/" + min + "/" + sec + "/" + msec;
 }
 
 function wTime () {
   setInterval("clock();",10);
 }
-
-
-
-
-
-
