@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>rensouhairetu</title>
+</head>
+<body>
+  <p id="a"></p>
+  <script>
+    let ary = {
+      'color': 'red',
+      'size': '100'
+    };
+    ary.count = '5';
+
+    Object.keys(ary).forEach((key) => {
+      alert(`key: ${key}, value: ${ary[key]}`);
+    });
+  </script>
+</body>
+</html>

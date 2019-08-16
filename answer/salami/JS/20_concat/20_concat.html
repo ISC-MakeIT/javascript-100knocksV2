@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>concat</title>
+</head>
+<body>
+  <p id="a"></p>
+  <script>
+    const ary1 = ['a', 'b'];
+    const ary2 = ['c', 'd'];
+    const array = ary1.concat(ary2);
+    document.getElementById('a').innerHTML = '[' + array + ']';
+  </script>
+</body>
+</html>

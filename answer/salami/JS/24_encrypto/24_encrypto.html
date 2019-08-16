@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>encrypto</title>
+</head>
+<body>
+  <p id="displayBefore"></p>
+  <p id="displayResult"></p>
+  <script>
+    const plainText = '20010130';
+    const cipher = '99';
+    let source = '';
+    for (let i = 0; i < plainText.length; i++) {
+      source += plainText[i] + cipher;
+    }
+    document.getElementById('displayBefore').innerText = '暗号前：' + plainText;
+    document.getElementById('displayResult').innerText = '暗号結果：' + source;
+  </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>decrypto</title>
+</head>
+<body>
+  <p id="displayBefore"></p>
+  <p id="displayResult"></p>
+  <script>
+    const crypto = 'やくこみがんきいばていんるよは'
+    let result = '';
+    for (let i = 2; i < crypto.length; i = i + 3) {
+      result = result + crypto[i];
+    };
+    document.getElementById('displayBefore').innerText = '復号前：' + crypto;
+    document.getElementById('displayResult').innerText = '復号結果：' + result;
+  </script>
+</body>
+</html>
