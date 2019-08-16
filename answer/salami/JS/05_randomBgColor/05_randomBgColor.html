@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>randomBgColor</title>
+  <style>
+    #background {
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
 </head>
 <body>
   <button type="button" value="change" name="change" onclick="backColor();">chenge</button>
@@ -13,16 +19,12 @@
     const background = document.body;
 
     const backColor = () => {
-      let random = Math.floor(Math.random() * 239) + 16;
-      let colorCode = random.toString(16);
 
-      random = Math.floor(Math.random() * 239) + 16;
-      colorCode = `${colorCode}${random.toString(16)}`;
+      const randomNum1 = Math.floor(Math.random() * 256);
+      const randomNum2 = Math.floor(Math.random() * 256);
+      const randomNum3 = Math.floor(Math.random() * 256);
 
-      random = Math.floor(Math.random() * 239) + 16;
-      colorCode = `#${colorCode}${random.toString(16)}`;
-
-      background.style.background = colorCode;
+      document.getElementById('background').style.backgroundColor = `rgb(${randomNum1},${randomNum2},${randomNum3}`;
     };
   </script>
 </body>
