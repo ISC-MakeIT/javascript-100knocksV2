@@ -1,0 +1,17 @@
+td{
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  font-size: 16px;
+  text-align: left;
+  overflow: visible;
+  vertical-align: middle;
+  border: red 1px solid;
+  padding: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+td:hover{
+  background-color:orange;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="31_whichPlance.css" rel="stylesheet">
+  <title>whichplace</title>
+</head>
+<body>
+  <div id="result"></div>
+  <script>
+    let ary = [];
+    while (ary.length < 25) {
+      let random = Math.floor(Math.random() * 75) + 1;
+      if (ary.includes(random)) {
+        continue;
+      } else {
+        ary.push(random);
+      }
+    };
+    const alignment = (a, b) => {
+      return a - b;
+    }
+    ary.sort(alignment);
+    console.log(ary);
+
+    const result = document.getElementById('result');
+    const table = document.createElement('table');
+    for (let i = 0; i < 5; i++) {
+      const row = document.createElement('tr');
+      for (let j = 0; j < 5; j++) {
+        const data = document.createElement('td');
+        data.textContent = ary[j * 5 + i];
+        data.onclick = () => {
+          alert(ary[j * 5 + i]);
+        }
+        row.appendChild(data);
+      }
+      table.appendChild(row);
+    }
+    result.appendChild(table);
+
+  </script>
+</body>
+</html>

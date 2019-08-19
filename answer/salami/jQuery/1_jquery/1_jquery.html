@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jquery</title>
+</head>
+<body>
+  <p id="text">Cosmos</p>
+  <button type="button" id="change">change</button>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>
+    $('#change').on('click', function () {
+      if ($('#text').text() === 'Cosmos') {
+        $('#text').text('Chaos');
+      } else {
+        $('#text').text('Cosmos');
+      }
+    });
+  </script>
+</body>
+</html>

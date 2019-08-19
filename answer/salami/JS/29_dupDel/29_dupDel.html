@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>dupDel</title>
+</head>
+<body>
+  <input type="number" id="inputNumber">
+  <button type="button" onclick="execution();">配列にあるか確かめる！</button>
+  <p id="result"></p>
+  <script>
+    let ary = [];
+    while (ary.length < 25) {
+      let random = Math.floor(Math.random() * 75) + 1;
+      if (ary.includes(random)) {
+        continue;
+      } else {
+        ary.push(random);
+      }
+    };
+    const alignment = (a, b) => {
+      return a - b;
+    }
+    ary.sort(alignment);
+    console.log(ary);
+
+    const execution = () => {
+      let flg = 0;
+      const inputNumber = Number(document.getElementById('inputNumber').value);
+      for (let i = 0; ary.length > i; i++) {
+        if (inputNumber === ary[i]) {
+          ary.splice(i, 1);
+          flg += 1;
+          console.log('入力文字を削除しました:' + ary);
+        }
+      }
+      if (flg === 0) {
+        console.log("error: Can't deleted");
+        //Can'tのアポストロフィが引っかかってしまうので、ダブルコーテーションで対応しました。
+      }
+    }
+  </script>
+</body>
+</html>

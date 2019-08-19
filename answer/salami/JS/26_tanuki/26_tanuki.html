@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>tanuki</title>
+</head>
+<body>
+  <p id="displayBefore"></p>
+  <p id="displayResult"></p>
+  <script>
+    let sentence = 'ふわたたしが両手をひろげても、お空はちっとも飛べないが、飛べる小鳥はわたしのように、地面をはやくは走れない。\nわたたしがからだをゆすっても、ふきれいな音は出ないけど、あの鳴る鈴はわたたしのように、たたくさんなうたたは知らないよ。\n鈴と、小鳥と、それからわたたし、みんなふちがって、みんないい。';
+    let result = '';
+    for (let i = 0; i < sentence.length; i++) {
+      if (sentence[i] === 'た' && sentence[i + 1] === 'た') {
+      } else if (sentence[i] === 'ふ') {
+      } else {
+        result += sentence[i];
+      }
+    };
+    document.getElementById('displayBefore').innerText = '復号前：' + sentence;
+    document.getElementById('displayResult').innerText = '復号結果：' + result;
+  </script>
+</body>
+</html>

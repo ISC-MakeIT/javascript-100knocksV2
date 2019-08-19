@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>hasImage</title>
+  <style>
+    #image {
+      width: auto;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <p><button type="button" id="addition">Image</button></p>
+  <p id='Image'></p>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>
+    $('#addition').click(function () {
+      if (!$('#Image img').get(0)) {
+        $('#Image')
+          .append('<img src="gatakiriba.jpg">');
+      }
+    })
+  </script>
+</body>
+</html>
