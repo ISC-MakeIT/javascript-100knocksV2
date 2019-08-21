@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>
+    let count = 0;
+    $(func = () => {
+      $('#button').on('click', function () {
+        if (count === 0) {
+          $(this).after('<div id="container"></div>');
+          $('#container').append('<img src="0.jpg" alt="Ironman">');
+          count++;
+        }
+      });
+    });
+  </script>
+  <title>Document</title>
+</head>
+<body>
+  <button id="button">追加</button>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>
+      const rem = (num) => {
+        $(`#img${num}`).remove();
+      };
+    let count = 0;
+    $(func = () => {
+      $('#button').on('click', function () {
+        if (count < 3) {
+          $('#container').append(`<img id="img${count}" src="${count}.jpg" alt="Ironman" onclick="rem(${count})">`);
+          count++;
+        }
+      });
+    });
+  </script>
+  <title>Document</title>
+</head>
+<body>
+  <button id="button">送信</button>
+  <div id="container"></div>
+</body>
+</html>
