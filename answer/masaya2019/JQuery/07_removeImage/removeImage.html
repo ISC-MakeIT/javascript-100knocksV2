@@ -16,13 +16,13 @@
     let i = 0;
     $("button").on("click",function () {
       if (i < 3) {
-        $("#wrap").append(`<img src="nino.png" class="pic" id="pic_${i}" alt="二乃">`);
+        $("#wrap").append(`<img src="nino.png" class="picture_remove" id="pic_${i}" alt="二乃">`);
         i++;
       }
     });
 
     //画像をクリックされたら画像を削除
-    $(document).on("click", ".pic", function() {
+    $(document).on("click", ".picture_remove", function() {
       $(this).remove();
       i--;
     });
