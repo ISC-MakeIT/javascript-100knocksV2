@@ -16,7 +16,7 @@
       return '#' + ('000000' + hex.toString(16)).substr(-6);
     }
     const henkou = document.getElementsByClassName('abc')[0];
-    henkou.addEventListener ('click', function () {
+    henkou . addEventListener ('click', () => {
       const color = randomcolor();
       document.body.style.backgroundColor = color;
     }, false);
