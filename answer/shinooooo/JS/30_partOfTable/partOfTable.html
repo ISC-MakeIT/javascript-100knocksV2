@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    #table td{
+      text-align: center;
+      vertical-align: middle;
+      border: solid 1px black;
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+  <script>
+    const compareFunc = (a, b) => {
+      return a - b;
+    };
+      const intRandom = () => {
+      return Math.floor(Math.random() * 75) + 1;
+    };
+    const ary = [];
+    for (let i = 1; i <= 25; i++) {
+      while (1) {
+        const add = intRandom();
+        if (!ary.includes(add)) {
+          ary.push(add);
+          break;
+        }
+      }
+    }
+    ary.sort(compareFunc);
+    console.log(ary);
+
+    const createDiv = () => {
+      const table = document.createElement('table');
+      table.id = 'table';
+      document.body.appendChild(table);
+      for (let i = 0; i < 5; i++) {
+        const tr = document.createElement('tr');
+        table.appendChild(tr);
+        for (let j = 0; j < 5; j++) {
+          const td = document.createElement('td');
+          td.innerText = ary[i * 5 + j];
+          tr.appendChild(td);
+        }
+      }
+    };
+  </script>
+</head>
+<body onload="createDiv()">
+</body>
+</html>
