@@ -12,7 +12,7 @@ function clock () {
   let sec = now.getSeconds();
   let msec = now.getMilliseconds();
   const dow = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'][dayOfWeek];
-  target.textContent = year + "/" + month + "/" + day + "/" + dow + "/" + hour + "/" + min + "/" + sec + "/" + msec;
+  target.textContent = `${year} / ${month} / ${day} / ${dow} / ${hour} / ${min} / ${sec} / ${msec}`;
 }
 
 function wTime () {
