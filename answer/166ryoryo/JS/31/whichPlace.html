@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title></title>
+<style>
+td {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: left;
+    overflow: visible;
+    vertical-align: middle;
+    border: rgb(248, 2, 2) 1px solid;
+    padding: 4px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+  <div id="aka" onclick="al()"></div>
+  <script>
+    let li = [];
+    while (li.length < 25) {
+      let randoms = Math.floor(Math.random() * 75) + 1;
+      if (li.includes(randoms)) {
+        continue;
+      } else {
+        li.push(randoms);
+      }
+    };
+    const ali = (a, b) => {
+      return a - b;
+    }
+    li.sort(ali);
+    console.log(li);
+    const aka = document.getElementById('aka');
+    const hako = document.createElement('hako');
+    for (let l = 0; l < 5; l++) {
+      const t = document.createElement('tr');
+      for (let i = 0; i < 5; i++) {
+        const d = document.createElement('td');
+        d.textContent = li[i * 5 + l];
+        t.appendChild(d);
+        function al() {
+        alert(d.textContent);
+        }
+      }
+      hako.appendChild(t);
+    }
+    aka.appendChild(hako);
+  </script>
+</body>
+</html>
