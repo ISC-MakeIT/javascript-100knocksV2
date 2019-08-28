@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <table frame="void" border="1" bordercolor="red" id="tabel" style="width:1000px;height:1000px;display: flex;flex-direction: column;flex-wrap: wrap;">
+
+        </table>
+    <script>
+        var ary = [];
+
+        for(let i = 0;i<25;i++) {
+            let n = Math.floor(Math.random() *(75 - 1)+1);
+            var flg = 0;
+            for(let s = 0;s<25;s++) {
+                if(n == ary[s]) {
+                    i = i -1;
+                    var flg = 1;
+                }else if(s == i && flg == 0) {
+                    ary.push(n);
+                }else{}
+            }
+        }
+
+
+
+        ary.sort(function(a, b){
+            if(a < b) {
+                return -1;}else if(a > b) {
+                return 1;}else {
+                    return 0;}
+        });
+
+        for(let sq = 0;sq < 25;sq++){
+            var square = document.createElement('td');
+
+            square.style.borderColor = 'red';
+
+            square.style.width = '196px';
+
+            square.style.height = '196px';
+
+            square.style.margin = '0';
+
+            square.textContent = ary[sq];
+
+            square.className = ary[sq];
+
+            square.addEventListener('click', function() {
+
+            var syuturyoku = this.className;
+
+            alert(syuturyoku);
+
+            }, false);
+
+            document.getElementById('tabel').appendChild(square);
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body id="knocks">
+    <p>
+    <input type="button" value="背景色変更" onclick="henkou()">
+    <script>
+    var len = 6;
+
+    var ramdom = "0123456789abcdef"
+
+    function henkou(){
+      let bgcolor = "#";
+      for(let i =0;i < len;i++){
+      bgcolor += ramdom[Math.floor(Math.random() * ramdom.length)];
+      }
+      document.getElementById('knocks').style.backgroundColor = bgcolor;
+      console.log(bgcolor);
+    }
+    </script>
+    </p>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="ランダム" onclick="ramdom()"><br>
+    <script type="text/javascript">
+        function ramdom() {
+            var image = 　document.getElementById('musakui');
+            var hairetu = ['banana.jpg', '3oku.jpg', 'kiti.jpg','tatsu.jpg','tobu.jpg'];
+            var i = Math.floor( Math.random() * 5 ) ;
+            image.src = hairetu[i];
+        }
+    </script>
+    <img id="musakui">
+</body>
+</html>

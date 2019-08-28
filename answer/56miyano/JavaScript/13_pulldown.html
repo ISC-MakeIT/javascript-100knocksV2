@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+
+<body onload="pulldown()">
+    <select id="age"></select>
+    <script>
+        const pulldown = () => {
+            const selectElement = document.getElementById("age");
+            for (let i=0;i< 201;i++) {
+                const year = document.createElement("option");
+                year.value = i;
+                year.innerText = i;
+                selectElement.appendChild(year);
+                console.log(i);
+            };
+        };
+    </script>
+</body>
+</html>

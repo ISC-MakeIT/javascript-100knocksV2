@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form name="issame">
+        <input type="text"   name="box1">
+        <input type="text"   name="box2">
+    </form>
+    <input type="button" value="比較" onclick="kannsuu()">
+
+    <script type="text/javascript">
+        function kannsuu() {
+            let te1 = document.issame.box1.value;
+            let te2 = document.issame.box2.value;
+            if (te1 === te2) {
+            alert('true');
+            } else {
+            alert('false');
+            }
+
+            console.log(te1 + 'と' + te2);
+                }
+    </script>
+</body>
+</html>

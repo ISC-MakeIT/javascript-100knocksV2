@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const crypto='やくこみがんきいばていんるよは'
+
+        hint = "";
+
+        for(let i = 2;i < crypto.length;i++) {
+            if(i % 3 ==2){
+                hint += crypto[i];
+            }
+        }
+
+        console.log(hint);
+    </script>
+</body>
+</html>

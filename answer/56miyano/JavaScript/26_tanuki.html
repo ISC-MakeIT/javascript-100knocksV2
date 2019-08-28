@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body onload="add()">
+    <script>
+        const add = () => {
+        const tanuki ="ふわたたしが両手をひろげても、お空はちっとも飛べないが、飛べる小鳥はわたしのように、地面をはやくは走れない。わたたしがからだをゆすっても、ふきれいな音は出ないけど、あの鳴る鈴はわたたしのように、たたくさんなうたたは知らないよ。鈴と、小鳥と、それからわたたし、みんなふちがって、みんないい。"
+
+        let hunuita ="";
+
+        hunuita = tanuki.replace( /ふ/g , "" ) ;
+
+        console.log(hunuita);
+
+        tanuita = hunuita.replace( /たた/g, "た");
+
+        console.log(tanuita);
+
+        alert(tanuita);
+        }
+
+    </script>
+</body>
+</html>

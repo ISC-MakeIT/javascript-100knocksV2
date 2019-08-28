@@ -11,19 +11,19 @@
     <script type="text/javascript">
 
     function time(){
-      nd = new Date();
-      y = nd.getFullYear();
-      m = nd.getMonth()+1;
-      w = nd.getDay();
-      dd = nd.getDate();
-      h = nd.getHours();
-      min = nd.getMinutes();
-      s = nd.getSeconds();
-      ms  = nd.getMilliseconds();
+      ima = new Date();
+      var yy = ima.getFullYear();
+      var mm = ima.getMonth()+1;
+      var ww = ima.getDay();
+      var dd = ima.getDate();
+      var hh = ima.getHours();
+      var min = ima.getMinutes();
+      var ss = ima.getSeconds();
+      var ms  = ima.getMilliseconds();
 
       yobi = ["SUN","MON","TUE","WED","THU","FRI","SAT"];
 
-      var msg =y+"/"+m+"/"+dd+"/"+yobi[w]+"/"+h+"/"+min+"/"+s+"/"+ms;
+      var msg =yy+"/"+mm+"/"+dd+"/"+yobi[ww]+"/"+hh+"/"+min+"/"+ss+"/"+ms;
 
         document.getElementById("wtime").innerHTML = msg;
     }

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <input type="button" value="コンソール出力" onclick="kannsuu()">
+        <form name="issame">
+                <input type="text" name="box1">
+        </form>
+        <script type="text/javascript">
+            function kannsuu() {
+                let n = 0;
+                let te1 = document.issame.box1.value;
+                for(i = 0;i <= te1;i ++){
+                    n = n+i
+                    console.log(i + 'と' + n);
+                }
+            }
+        </script>
+
+</body>
+</html>

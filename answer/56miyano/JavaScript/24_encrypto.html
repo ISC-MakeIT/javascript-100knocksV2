@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var raw='123';
+        var encrypto = "";
+
+        for(let i = 0;i < raw.length;i++) {
+            var n1 = Math.floor( Math.random()*9);
+            var n2 = Math.floor( Math.random()*9);
+            encrypto += raw[i] + n1 + n2;
+        }
+
+        console.log(encrypto);
+    </script>
+</body>
+</html>

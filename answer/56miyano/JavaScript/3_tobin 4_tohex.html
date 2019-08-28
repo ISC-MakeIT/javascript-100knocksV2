@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<form name="henkan">
+<input type="text" name="" value="">：10進数<br>
+<input type="text" name="" value="">：2進数<br>
+<input type="text" name="" value="">：16進数<br>
+<input type="button" value="変換" onclick="sinsu()"><br>
+</form>
+
+
+<script>
+
+function sinsu(){
+
+  var suji = parseInt(document.henkan.elements[0].value);
+
+  document.henkan.elements[1].value = suji.toString(2);
+
+  document.henkan.elements[2].value = suji.toString(16);
+}
+</script>
+
+    </script>
+</body>
+</html>
