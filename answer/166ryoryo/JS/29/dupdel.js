@@ -15,4 +15,12 @@ const p = (min, max, n) => {
       return a - b;
     },
   )
-
+function text(suuti) {
+  const t = document.getElementById(suuti).value;
+  for(i=0; i<li.length; i++){
+    if(li[i] == t){
+        li.splice(i, 1);
+    }
+  }
+  console.log(li);
+}
