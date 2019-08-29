@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .addClass {
+      background-color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="one">class1</div>
+  <div id="two">class2</div>
+  <div id="three">class3</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $("#one").click(() => {
+      $("#one").css("background-color", "red");
+    });
+    $("#two").click(() => {
+      $("#two").addClass("addClass");
+    });
+    $("#three").on("click", () => {
+      $("#three").css("background-color", "yellow");
+    });
+  </script>
+</body>
+
+</html>
