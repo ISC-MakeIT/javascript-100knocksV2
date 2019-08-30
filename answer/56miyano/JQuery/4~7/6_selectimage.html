@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+    <input type="button" value="増殖" id="query">
+    <p>ドラえもん</p>
+    <script>
+        let i = 0;
+        $('#query').click(function() {
+            i = i + 1;
+            if(i <= 3) {
+        $('p').after('<img src="doraemon.jpg" class="doraemon">');
+        console.log("増える～！" + i);
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <body style="text-align: center;">
+        <div id="a">class a</div>
+        <div class="b">class b</div>
+        <div id="c">class c</div>
+        <script>
+            $('#a').click(function() {
+                $(this).css('background-color','red');
+            })
+
+            $('.b').click(function() {
+                $(this).html('<div id="b" style="background-color:green;">class b</div>');
+            })
+
+
+            $('#c').click(function() {
+                $(this).after('<div id="newc" style="background-color:yellow;">class c</div>');
+                $(this).remove();
+            })
+        </script>
+              </body>
+</body>
+</html>
