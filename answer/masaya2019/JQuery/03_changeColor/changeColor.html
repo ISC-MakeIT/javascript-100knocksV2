@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>changeColor</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <style>
+    div {
+      text-align: center;
+    }
+
+    #idChange {
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div id="classA">classA</div>
+  <div id="classB">classB</div>
+  <div id="classC">classC</div>
+  <script>
+    //style追加
+    $("#classA").click(function() {
+      $("#classA").css("background-color", "red");
+    })
+    //id書き換え
+    $("#classB").click(function() {
+      $("#classB").attr("id", "idChange")
+    })
+    //on()
+    $("#classC").on("click", function() {
+      $("#classC").css("background-color", "green");
+    })
+    </script>
+</body>
+</html>

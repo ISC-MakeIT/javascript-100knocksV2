@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>removeImage</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+  <button>PUSH!</button>
+  <div id="wrap">
+  </div>
+  <script>
+    //ボタンをクリックしたら画像を追加(３つまで)
+    let i = 0;
+    $("button").on("click",function () {
+      if (i < 3) {
+        $("#wrap").append(`<img src="nino.png" class="picture_remove" id="pic_${i}" alt="二乃">`);
+        i++;
+      }
+    });
+
+    //画像をクリックされたら画像を削除
+    $(document).on("click", ".picture_remove", function() {
+      $(this).remove();
+      i--;
+    });
+  </script>
+</body>
+</html>

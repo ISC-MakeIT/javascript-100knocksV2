@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>selectImage</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+  <button>PUSH!</button>
+  <div id="wrap"></div>
+  <script>
+    let i = 0;
+    $("button").click(function () {
+      if (i < 3) {
+        $("#wrap").append('<img src="nino.png" alt="二乃">');
+        i++;
+      }
+    })
+  </script>
+</body>
+</html>
