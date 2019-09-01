@@ -10,18 +10,18 @@
 <body>
   <div id="result"></div>
   <script>
-    let ary = [];
+    const ary = [];
     while (ary.length < 25) {
-      let random = Math.floor(Math.random() * 75) + 1;
+      const random = Math.floor(Math.random() * 75) + 1;
       if (ary.includes(random)) {
         continue;
       } else {
         ary.push(random);
       }
-    };
+    }
     const alignment = (a, b) => {
       return a - b;
-    }
+    };
     ary.sort(alignment);
     console.log(ary);
 

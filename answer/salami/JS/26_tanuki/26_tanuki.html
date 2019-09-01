@@ -10,19 +10,16 @@
     <p id="displayBefore"></p>
     <p id="displayResult"></p>
     <script>
-      let sentence =
-        "ふわたたしが両手をひろげても、お空はちっとも飛べないが、飛べる小鳥はわたしのように、地面をはやくは走れない。\nわたたしがからだをゆすっても、ふきれいな音は出ないけど、あの鳴る鈴はわたたしのように、たたくさんなうたたは知らないよ。\n鈴と、小鳥と、それからわたたし、みんなふちがって、みんないい。";
+        const sentence = 'ふわたたしが両手をひろげても、お空はちっとも飛べないが、飛べる小鳥はわたしのように、地面をはやくは走れない。\nわたたしがからだをゆすっても、ふきれいな音は出ないけど、あの鳴る鈴はわたたしのように、たたくさんなうたたは知らないよ。\n鈴と、小鳥と、それからわたたし、みんなふちがって、みんないい。';
       let result = '';
       for (let i = 0; i < sentence.length; i++) {
-        if (sentence[i] === 'た' && sentence[i + 1] === 'た' || sentence[i] === 'ふ') {
+        if ((sentence[i] === 'た' && sentence[i + 1] === 'た') || sentence[i] === 'ふ') {
         } else {
           result += sentence[i];
         }
       }
-      document.getElementById("displayBefore").innerText =
-        '復号前：' + sentence;
-      document.getElementById("displayResult").innerText =
-        '復号結果：' + result;
+      document.getElementById('displayBefore').innerText ='復号前：' + sentence;
+      document.getElementById('displayResult').innerText ='復号結果：' + result;
     </script>
   </body>
 </html>

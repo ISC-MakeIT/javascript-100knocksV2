@@ -11,15 +11,15 @@
   <button type="button" onclick="execution();">配列にあるか確かめる！</button>
   <p id="result"></p>
   <script>
-    let ary = [];
+    const ary = [];
     while (ary.length < 25) {
-      let random = Math.floor(Math.random() * 75) + 1;
+      const random = Math.floor(Math.random() * 75) + 1;
       if (ary.includes(random)) {
         continue;
       } else {
         ary.push(random);
       }
-    };
+    }
     const alignment = (a, b) => {
       return a - b;
     }
@@ -33,14 +33,13 @@
         if (inputNumber === ary[i]) {
           ary.splice(i, 1);
           flg += 1;
-          console.log('入力文字を削除しました:' + ary);
+          console.log(`入力文字を削除しました:${ary}`);
         }
       }
       if (flg === 0) {
-        console.log("error: Can't deleted");
-        //Can'tのアポストロフィが引っかかってしまうので、ダブルコーテーションで対応しました。
+        console.log(`error: Can't deleted`);
       }
-    }
+    };
   </script>
 </body>
 </html>
