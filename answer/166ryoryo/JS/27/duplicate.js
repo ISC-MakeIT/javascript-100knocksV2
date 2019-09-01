@@ -1,4 +1,4 @@
-const p = (min, max, n) => {
+const suuretu = (min, max, n) => {
   const kz = new Array(max - min + 1).fill().map((_, i) => i + min);
   const retu = [];
   // eslint-disable-next-line no-param-reassign
@@ -9,6 +9,6 @@ const p = (min, max, n) => {
   return retu;
 };
 
-const li = p(1, 75, 25);
+const li = suuretu(1, 75, 25);
 // eslint-disable-next-line no-console
 console.log(li);

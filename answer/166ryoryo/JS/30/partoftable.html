@@ -23,11 +23,11 @@ td {
   <script>
     let li = [];
     while (li.length < 25) {
-      let randoms = Math.floor(Math.random() * 75) + 1;
-      if (li.includes(randoms)) {
+      let random = Math.floor(Math.random() * 75) + 1;
+      if (li.includes(random)) {
         continue;
       } else {
-        li.push(randoms);
+        li.push(random);
       }
     };
     const ali = (a, b) => {

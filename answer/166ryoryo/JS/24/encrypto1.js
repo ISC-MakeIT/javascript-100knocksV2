@@ -1,5 +1,5 @@
+/* eslint-disable no-unused-vars */
 const raw = '0916';
-// eslint-disable-next-line no-unused-vars
 let aaa = '';
 const add = '00';
 for (let b = 0; b < raw.length; b++) {
