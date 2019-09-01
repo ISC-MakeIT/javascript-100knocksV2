@@ -16,8 +16,8 @@
     for (let i = 0; i < plainText.length; i++) {
       source += plainText[i] + cipher;
     }
-    document.getElementById('displayBefore').innerText = '暗号前：' + plainText;
-    document.getElementById('displayResult').innerText = '暗号結果：' + source;
+    document.getElementById('displayBefore').innerText = `暗号前：${plainText}`;
+    document.getElementById('displayResult').innerText = `暗号結果：${source}`;
   </script>
 </body>
 </html>

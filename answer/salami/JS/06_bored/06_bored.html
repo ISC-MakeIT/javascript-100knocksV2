@@ -12,7 +12,8 @@
     <a id="bored">I'm so bored</a>
   </div>
   <script>
-    document.getElementById('bored').onclick = () => {
+    const bored = document.getElementById('bored');
+    bored.onclick = () => {
       bored.innerHTML = 'AWESOME!';
       bored.style.color = 'blue';
       bored.style.fontSize = '128px';

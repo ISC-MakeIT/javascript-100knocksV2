@@ -12,10 +12,11 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>
     $('#change').on('click', function () {
-      if ($('#text').text() === 'Cosmos') {
-        $('#text').text('Chaos');
+      const $text = $('#text');
+      if ($text.text() === 'Cosmos') {
+        $text.text('Chaos');
       } else {
-        $('#text').text('Cosmos');
+        $text.text('Cosmos');
       }
     });
   </script>
