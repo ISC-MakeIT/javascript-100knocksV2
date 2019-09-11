@@ -1,80 +1,86 @@
-<table>
-<form name="form1" onSubmit="return check()">
-<tr>
-    <th>name:</th>
-    <td>
-        <input type="text" name="name" placeholder="Yamada Taro">
-    </td>
-</tr>
+<!DOCTYPE html>
+<html lang="en">
 
-<tr>
-    <th>email:</th>
-    <td>
-        <input type="email" name="email" placeholder="example@gmail.com">
-    </td>
-</tr>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
 
-<tr>
-    <th>password:</th>
-    <td>
-        <input type="password" name="password" placeholder="p@ssdw0rd">
-    </td>
-</tr>
+<body>
+    <table>
+        <form name="form1" onSubmit="return check()">
+            <tr>
+                <th>name:</th>
+                <td>
+                    <input type="text" name="name" placeholder="Yamada Taro">
+                </td>
+            </tr>
+            <tr>
+                <th>email:</th>
+                <td>
+                    <input type="email" name="email" placeholder="example@gmail.com">
+                </td>
+            </tr>
+            <tr>
+                <th>password:</th>
+                <td>
+                    <input type="password" name="password" placeholder="p@ssdw0rd">
+                </td>
+            </tr>
+            <tr>
+                <th>age:</th>
+                <td>
+                    <select name="pref">
+                        <option value="" selected>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>sex:</th>
+                <td>
+                    <input type="radio" name="sex" value="Male" checked>Male
+                    <input type="radio" name="sex" value="Female">Female
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="submit">
+                </td>
+            </tr>
+        </form>
+        <script tipe="text/javascript">
+            function check() {
+                var flag = 0;
+                if (document.form1.name.value == "") {
+                    flag = 1;
+                }
+                else if (document.form1.emale.value == "") {
+                    flag = 1;
+                }
+                else if (document.form1.password.value == "") {
+                    flag = 1;
+                }
+                if (flag) {
+                    window.alert('このフィールドを入力してください');
+                    return false;
+                }
+                else {
+                    return true;
+                }
+            }
+        </script>
+    </table>
+</body>
 
-<tr>
-    <th>age:</th>
-    <td>
-        <select name="pref">
-            <option value=""selected>0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-
-        </select>
-    </td>
-</tr>
-
-<tr>
-    <th>sex:</th>
-    <td>
-        <input type="radio" name="sex" value="Male" checked>Male
-        <input type="radio" name="sex" value="Female">Female
-    </td>
-</tr>
-
-<tr>
-    <td>
-        <input type="submit" value="submit">
-    </td>
-</tr>
-</form>
-
-    <script tipe="text/javascript">
-    function check(){
-        var flag=0;
-        if(document.form1.name.value==""){
-            flag=1;
-        }
-        else if(document.form1.emale.value==""){
-            flag=1;
-        }
-        else if(document.form1.password.value==""){
-            flag=1;
-        }
-    if(flag){
-        window.alert('このフィールドを入力してください');
-        return false;
-        }
-    else{
-        return true;
-        }
-    }
-    </script>
-
-</table>
+</html>
