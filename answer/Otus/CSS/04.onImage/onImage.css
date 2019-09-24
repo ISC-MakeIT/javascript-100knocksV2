@@ -1,0 +1,21 @@
+.relatine{
+    position: relative;
+    width: 300px;
+}
+
+.absolute{
+    position: absolute;
+    left: 450px;
+    top:  700px;
+}
+
+.p{
+    position: absolute;
+    left: 600px;
+    bottom: 0px;
+    color: red;
+}
+
+.h1{
+    font-family:
+}

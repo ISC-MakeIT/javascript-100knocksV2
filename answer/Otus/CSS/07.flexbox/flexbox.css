@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    flex-direction: flex-start;
+    flex-wrap: wrap-reverse;
+    width: 200px;
+}
+
+.float{
+    width: 100px;
+    height: 100px;
+    background: #ff0000;
+}
+
+.float2{
+    width: 100px;
+    height: 100px;
+    background: #00ff00;
+}
+
+.float3{
+    width: 100px;
+    height: 100px;
+    background: #0000ff;
+}
+
+.float4{
+    width: 100px;
+    height: 100px;
+    background: #ffff00;
+
+}
+
+.float5{
+    width: 100px;
+    height: 100px;
+    background: #800080;
+}
+
+.float6{
+    width: 100px;
+    height: 100px;
+    background: #00ffff;
+}

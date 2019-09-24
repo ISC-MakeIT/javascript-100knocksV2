@@ -1,0 +1,45 @@
+.float{
+    width: 100px;
+    height: 100px;
+    background: #ff0000;
+    float: left;
+}
+
+.float2{
+    width: 100px;
+    height: 100px;
+    background: #00ff00;
+    float: left;
+}
+
+.float3{
+    width: 100px;
+    height: 100px;
+    background: #0000ff;
+    float: left;
+    clear: left;
+}
+
+.float4{
+    width: 100px;
+    height: 100px;
+    background: #ffff00;
+    font: outline;
+    float: left;
+}
+
+.float5{
+    width: 100px;
+    height: 100px;
+    background: #800080;
+    float: left;
+    clear: left;
+}
+
+.float6{
+    width: 100px;
+    height: 100px;
+    background: #00ffff;
+    float: left;
+}
+

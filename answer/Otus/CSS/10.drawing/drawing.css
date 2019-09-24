@@ -1,0 +1,160 @@
+.face {
+    position: relative;
+    width: 500px;
+    height: 450px;
+    margin: 50px auto;
+    border-radius: 47%;
+    background-color: #F09567;
+}
+
+.eyebrows {
+    position: absolute;
+    top: 0;
+    left: 145px;
+    width: 210px;
+    height: 75px;
+}
+
+.eyebrow_left,
+.eyebrow_right {
+    position: absolute;
+    top: 20px;
+    width: 90px;
+    height: 110px;
+    border-top: 2px solid #333;
+    border-radius: 50%;
+}
+
+.eyebrow_left {
+    left: 0;
+}
+
+.eyebrow_right {
+    right: 0;
+}
+
+.eyes {
+    position: absolute;
+    top: 75px;
+    left: 150px;
+    width: 200px;
+    height: 75px;
+}
+
+.eye_left,
+.eye_right {
+    position: absolute;
+    top: 0;
+    width: 45px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #333;
+}
+
+.eye_left {
+    left: 17.5px;
+}
+
+.eye_right {
+    right: 17.5px;
+}
+
+.noses {
+    position: absolute;
+    z-index: 3;
+    top: 150px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 420px;
+    height: 150px;
+    background-color: #F09567;
+}
+
+.nose_left,
+.nose_right {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    width: 135px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #F7771B;
+}
+
+.nose_left {
+    left: 50%;
+    transform: translateX(-210px);
+}
+
+.nose_right {
+    right: 50%;
+    transform: translateX(210px);
+}
+
+.nose_left .ray,
+.nose_right .ray {
+    position: absolute;
+    top: 60px;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+}
+
+.nose_left .ray {
+    left: 42.5px;
+}
+
+.nose_right .ray {
+    right: 42.5px;
+}
+
+.nose_center {
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #DA3C0C;
+}
+
+.nose_center .ray {
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+}
+
+.mouths {
+    position: absolute;
+    z-index: 0;
+    top: 300px;
+    left: 120px;
+    width: 260px;
+    height: 150px;
+}
+
+.mouth_bottom {
+    position: absolute;
+    z-index: 1;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #AF5C5D;
+    border-radius: 50%;
+}
+
+.mouth_top {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 150px;
+}

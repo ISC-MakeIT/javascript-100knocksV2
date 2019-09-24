@@ -1,0 +1,17 @@
+#images{
+    display: grid;
+    grid-template-columns: 200px 200px;
+}
+#dt1{
+    grid-row: 1; grid-column: 1;
+    margin-bottom: 20px;
+}
+#dd1 {
+    grid-row: 1; grid-column: 2;
+}
+#dt2 {
+    grid-row: 2; grid-column: 2;
+} 
+#dd2 {
+    grid-row: 2; grid-column: 1;
+}
