@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+</head>
+
+<body>
+   <html>
+
+   <body>
+      <p id="RealtimeClockArea2"></p>
+      <script>
+         function set2fig(num) {
+            var ret;
+            if (num < 10) { ret = "0" + num; }
+            else { ret = num; }
+            return ret;
+         }
+         function showClock2() {
+            var nowTime = new Date();
+            var nowHour = set2fig(nowTime.getHours());
+            var nowMin = set2fig(nowTime.getMinutes());
+            var nowSec = set2fig(nowTime.getSeconds());
+            var msg = "現在時刻は、" + nowHour + ":" + nowMin + ":" + nowSec + " です。";
+            document.getElementById("RealtimeClockArea2").innerHTML = msg;
+         }
+         setInterval('showClock2()', 1000);
+      </script>
+   </body>
+
+   </html>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <html>
+
+    <body>
+        <form>
+            <input type="button" value="ランダム" onclick="ramdomchgback()">
+        </form>
+        <script>
+            function rangeRandom(num1, num2) {
+                if ((num1 - num2) > 0) {
+                    var big = num1
+                    var small = num2
+                }
+                else {
+                    var big = num2
+                    var small = num1
+                }
+                var range = big - small + 1
+                var number = Math.floor(Math.random() * range) + small
+                return (number)
+            }
+
+            function toHex(dec) {
+                hexChar = "0123456789ABCDEF"
+                var i = dec % 16
+                var j = (dec - i) / 16
+                result = hexChar.charAt(j)
+                result += hexChar.charAt(i)
+                return result
+            }
+
+
+
+
+            function ramdomchgback() {
+                var backcolor = '#'
+                for (var i = 0; i < 3; i++) {
+                    backcolor += toHex(rangeRandom(0, 255))
+                }
+                document.bgColor = backcolor
+            }
+        </script>
+    </body>
+
+    </html>
+</body>
+
+</html>

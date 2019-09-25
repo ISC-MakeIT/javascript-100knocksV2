@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <html>
+
+    <body>
+        <form name="math">
+            <input type="text" name="" value="">：元の数字<br>
+            <input type="text" name="" value="">：16進数<br>
+            <input type="button" value="変換" onclick="sinsu()"><br>
+        </form>
+        <script>
+            function sinsu() {
+                var suji = parseInt(document.math.elements[0].value);
+                document.math.elements[1].value = suji.toString(16);
+            }
+        </script>
+    </body>
+
+    </html>
+</body>
+
+</html>

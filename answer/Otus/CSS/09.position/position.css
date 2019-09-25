@@ -1,0 +1,57 @@
+.wrapper {
+    padding: 300px;
+    height: 200vh;
+    width: 200vw;
+}
+
+.sticky {
+    background-color: #009688;
+    width: 50vw;
+    height: 100vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+body {
+    padding: 40px;
+    width: 400vw;
+    height: 400vh;
+}
+
+.A {
+    background-color: #00FFFF;
+    height: 1000px;
+    width: 348px;
+    left: 0px;
+    top: 0px;
+    position: fixed;
+}
+
+.B {
+    background-color: blue;
+    height: 348px;
+    width: 868px;
+    left: 348px;
+    top: 0;
+    position: absolute;
+}
+
+.D {
+    background-color: red;
+    top: 348px;
+    height: 1701px;
+    width: 100px;
+    left: 1116px;
+    position: absolute;
+}
+
+.E {
+    background-color: yellow;
+    top: 1701px;
+    height: 1800px;
+    width: 868px;
+    left: 348px;
+    position: absolute;
+}
