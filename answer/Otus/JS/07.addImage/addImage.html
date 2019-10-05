@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="addImage" onclick="getImage()">
+    <div id="wrapper">
+        <script>
+            function getImage() {
+                var img = document.createElement('img');
+                img.src = './IMG_4350.JPG';
+                document.getElementById('wrapper').appendChild(img);
+                img.height = 100;
+                img.width = 100;
+            }
+        </script>
+    </div>
+</body>
+
+</html>
