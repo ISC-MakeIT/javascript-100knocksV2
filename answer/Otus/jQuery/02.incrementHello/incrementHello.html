@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.4.4.min.js"></script>
+</head>
+
+<body>
+    <button id="btn" type="button">Hello</button>
+    <div id="counter">1</div>
+    <script>
+        $('#btn').click(function () {
+            $("#counter").html(function (i, val) {
+                return val * 1 + 1
+            });
+        });
+    </script>
+</body>
+
+</html>

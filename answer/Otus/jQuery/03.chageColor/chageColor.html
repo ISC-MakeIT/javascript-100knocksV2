@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.4.4.min.js"></script>
+</head>
+
+<body>
+    <h1 id="a">class a</h1>
+    <h1 id="b">class b</h1>
+    <h1 id="c">class c</h1>
+    <script>
+        $('#a').click(function () {
+            $("#a").css("backgroundColor", "red");
+        });
+        $('#b').click(function () {
+            $("#b").css("backgroundColor", "yellow");
+        });
+        $('#c').click(function () {
+            $("#c").css("backgroundColor", "green");
+        });
+    </script>
+</body>
+
+</html>

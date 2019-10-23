@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.4.4.min.js"></script>
+</head>
+
+<body>
+    <button id="a">アマガミ</button>
+    <div id="b"></div>
+    <script>
+        $("#a").click(function () {
+            if ($("#b img").append('<img src="images.jpg">').length <= 3) {
+                ($("#b").append('<img src="images.jpg">'));
+            }
+        });
+    </script>
+</body>
+
+</html>
