@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <select id="number">
+    </select>
+    <script>
+        (function () {
+            optionLoop = function (start, end, id, number) {
+                var i, opt;
+
+                opt = null;
+                for (i = start; i <= end; i++) {
+                    if (i === number) {
+                        opt += "<option value='" + i + "' selected>" + i + "</option>";
+                    } else {
+                        opt += "<option value='" + i + "'>" + i + "</option>";
+                    }
+                }
+                return document.getElementById(id).innerHTML = opt;
+            };
+
+            optionLoop(0, 200, 'number', 0);
+
+        })();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var ary = ['晴れ', '雨', '曇り', '槍'];
+        function wather() {
+            var i = parseInt(Math.random() * 4);
+
+            if (i == 1) {
+                console.log('今日の天気は ' + ary[0] + ' です');
+            }
+            else if (i == 2) {
+                console.log('今日の天気は ' + ary[1] + ' です');
+            }
+            else if (i == 3) {
+                console.log('今日の天気は ' + ary[2] + ' です');
+            }
+            else {
+                console.log('今日の天気は ' + ary[3] + ' です');
+            }
+
+        }
+        wather();
+        wather();
+        wather();
+        wather();
+    </script>
+</body>
+
+</html>

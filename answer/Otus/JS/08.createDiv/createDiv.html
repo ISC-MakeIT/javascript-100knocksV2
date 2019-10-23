@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="createDiv.css">
+    <input type="button" value="addDiv" onclick="getImage()">
+    <div id="wrapper">
+        <script>
+            function getImage() {
+                var div = document.createElement('div');
+                div.className = 'sample';
+                document.getElementById('wrapper').appendChild(div);
+            }
+        </script>
+    </div>
+</body>
+
+</html>
