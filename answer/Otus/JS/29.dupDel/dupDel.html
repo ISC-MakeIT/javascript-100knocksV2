@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="number">
+    <input type="button" value="duplicate" id="button">
+
+
+    <script>
+        let array = [];
+        let textId = document.getElementById("number");
+        let buttonId = document.getElementById("button");
+
+        array = array_sort(array);
+        console.log(array);
+        array = array_splice(textId, buttonId, array);
+
+
+        function array_splice(textId, buttonId, array) {
+            buttonId.addEventListener("click", () => {
+                let value = textId.value;
+                if (array.includes(Number(value))) {
+                    let array_index = array.indexOf(Number(value));
+                    array.splice(array_index, 1);
+                }
+                console.log(array);
+
+            });
+            return array;
+
+        }
+
+        function array_sort(array) {
+            array = [];
+            let i = 0;
+            while (i < 25) {
+                let random = Math.floor(Math.random() * 75 + 1);
+                if (array.includes(random)) {
+                    console.log("かぶった" + random);
+                    continue;
+
+                } else {
+                    array[i] = random;
+                    i += 1;
+                }
+            }
+
+            array.sort(
+                function (a, b) {
+                    return (a < b ? -1 : 1);
+                }
+            );
+            return array;
+        }
+    </script>
+</body>
+
+</html>
