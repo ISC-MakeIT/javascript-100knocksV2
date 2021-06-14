@@ -18,7 +18,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 # HTML
 1. ## helloTable 
     3x3の表を画面に表示して下さい。コンテンツはすべて「こんにちは」。一番左の列は縦に３つ結合してください。
-    ![helloTable](./img/helloTable.png)
+    ![helloTable](./source/img/helloTable.png)
 
 
 2. ## anchor
@@ -41,7 +41,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     formタグの属性にmethod="get"を追加すること
     必須項目が入力されていない場合、入力を促すような仕組みにすること
     ```    
-    ![form](./img/form.gif)
+    ![form](./source/img/form.gif)
 
 
 ---
@@ -50,13 +50,13 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 # CSS
 1. ## centerDiv
     300px四方のdivを画面の上部中央に表示してください。色は赤、画面幅が変わっても中心に移動するようにして下さい。
-    ![centerDiv](./img/centerDiv.gif)
+    ![centerDiv](./source/img/centerDiv.gif)
 
 
 1. ## shadow
     hover時box-shadowでハイライトするようにして下さい。
 
-    ![shadow](./img/shadow.gif)
+    ![shadow](./source/img/shadow.gif)
 
 
 1. ## nav
@@ -66,12 +66,12 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     コンテンツはの6つ
     マスオーバーした際に色が変わること
     ```
-    ![nav](./img/nav.gif)
+    ![nav](./source/img/nav.gif)
 
 
 1. ## onImage
     画面に画像を表示し、その画像の上に一回り縮小させた同じ画像を重ねて表示、その縮小画像の上に「AAAA」と表示してください。一番大きな画像の外下側中央に画像のタイトルを設置してください。画像のタイトルだけかっこいいフォントを使ってください。
-    ![onImage](./img/onImage.PNG)
+    ![onImage](./source/img/onImage.PNG)
 
 
 1. ## new
@@ -85,27 +85,27 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
       </ul>
     ```
     出力例  
-    ![newContents](./img/new.png)
+    ![newContents](./source/img/new.png)
 
 1. ## float
     floatを使い、100px四方のdiv群を以下のように並べてください。  
-    ![float](./img/float.PNG)
+    ![float](./source/img/float.PNG)
 
 1. ## flexbox
     flexboxを使い、100px四方のdiv群を以下のように並べてください。  
-    ![flexbox](./img/flexbox.PNG)
+    ![flexbox](./source/img/flexbox.PNG)
 
 1. ## CSS Grid
     CSS Gridを使い、以下のようなレイアウトを作りなさい。文字・画像は任意で。
-    ![grid](./img/grid.PNG)
+    ![grid](./source/img/grid.PNG)
 
 1. ## position
     スクロールしても動かないdivと、途中から途中まで固定されるdivを作ってください。
-    ![position](./img/position.gif)
+    ![position](./source/img/position.gif)
 
 1. ## drawing
     CSSを使ってキャラクターを1人描いてください。皆さんの力作をお待ちしております。ドット絵は無しでお願いします。  
-    ![drawing](./img/drawing.PNG)
+    ![drawing](./source/img/drawing.PNG)
 
 ---
 
@@ -113,7 +113,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 # JS
 1. ## wTime
     現在の時刻を取得して出力してください。画面は自動で更新するように。  
-    ![wTime](./img/wTime.gif)
+    ![wTime](./source/img/wTime.gif)
 
 
 1. ## add
@@ -147,12 +147,12 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 1. ## bored
     画面中央に表示された「I'm so bored」の文字をクリックすると「AWESOME!」に書き換わるプログラムを作成してください。「AWESOME」は大きさ128px、色黒以外。
 
-    ![bored](./img/bored.gif)
+    ![bored](./source/img/bored.gif)
 
 
 2. ## addImage
     ボタンを押す事に画像が追加されるようにしてください。
-    ![addImage](./img/addImage.gif)
+    ![addImage](./source/img/addImage.gif)
 
 
 1. ## createDiv
@@ -165,12 +165,12 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 1. ## switch
     switch caseを使い、ランダムに数種類の画像が現れるボタンを作ってください。
-    ![switch](./img/switch.gif)
+    ![switch](./source/img/switch.gif)
 
 1. ## 3sec
     3秒後にalert()を実行するボタンを作ってください。
 
-    ![3sec](./img/3sec.gif)
+    ![3sec](./source/img/3sec.gif)
 
 
 1. ## isSame
@@ -186,7 +186,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 1. ## storage
     互いに遷移しても、選択しているプルダウンが残るHTMLファイルを2作りなさい。
-    ![storage](./img/storage.gif)
+    ![storage](./source/img/storage.gif)
 
 
 1. ## fizzbuzz
@@ -372,7 +372,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
 
 1. ## partOfTable
     25マスのテーブルを用意し、それぞれのマス目に1～75の数字を割り当ててください。数字は昇順で重複がないようにしてください。
-    ![partOfTable](./img/partOfTable.PNG)
+    ![partOfTable](./source/img/partOfTable.PNG)
 
 
 1. ## whichPlace
@@ -399,7 +399,7 @@ HTML、CSS、JavaScriptの基礎が理解でき、扱えること
     画面に要素を3つ配置しクリックすると背景色が変わるようにしてください。  
     それぞれjqueryを使って実装してください。  
     やり方は一つとは限りません。それぞれ別の実装方法で実現してみて下さい。
-    ![changeColor](./img/changeColor.gif)
+    ![changeColor](./source/img/changeColor.gif)
 
 
 1. ## addImageJq
