@@ -9,9 +9,9 @@
 <body>
     <a href="https://isc-makeit.github.io/Make-IT-homepage/">リンク</a>
     <a href="https://isc-makeit.github.io/Make-IT-homepage/" target="_brank">リンク</a>
-    <a href="https://isc-makeit.github.io/Make-IT-homepage/" onclick="open">リンク</a>
+    <span id="link" onclick="open">リンク</span>
     <script>
-        const open = () => {
+        document.getElementById("link").onclick = function(){
             window.open("https://isc-makeit.github.io/Make-IT-homepage/");
         }
     </script>
