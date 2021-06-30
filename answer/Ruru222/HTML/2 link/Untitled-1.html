@@ -1,2 +1,24 @@
-
-
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">   
+        <title>リンク作成</title>
+    </head>
+<body>
+    <a href="https://isc-makeit.github.io/Make-IT-homepage/" target="_blank">Make-IT-homepage</a><br>
+    <a href="https://isc-makeit.github.io/Make-IT-homepage/">Make-IT-homepage</a><br>
+    <button onclick="newtab()">Make-IT-homepage</button><br>
+    <br>
+    <button onclick="newwindow()">Make-IT-homepage</button><br>
+    <script type="text/javascript">
+    var window_A,window_b;
+    function newtab() {
+    window_A = window.open("https://isc-makeit.github.io/Make-IT-homepage/", "google");
+    }
+    function newwindow() {
+    window_b = window.open("https://isc-makeit.github.io/Make-IT-homepage/", "google", "width=500,height=500");
+    }
+    </script>
+</body>
+   
+</html>
