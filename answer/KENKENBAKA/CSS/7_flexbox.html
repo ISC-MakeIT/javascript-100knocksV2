@@ -6,22 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
         .box {
-            width: 100px;
+            width: 50%;
             height: 100px;
             text-align: center;
             font-size: 30px;
         }
 
-        .box1, .box3, .box5{
-            float:left;
-            clear: both;
-        }
-
-        .box2, .box4, .box6 {
-            float:left;
-        }
-        
         .box1{
             background: #ff0000;
         }
@@ -46,14 +38,21 @@
             background: #00ffff;
         }
 
+        .container {
+            display: flex;
+            flex-wrap: wrap-reverse;
+            width: 200px;
+        }
     </style>
 </head>
 <body>
-    <div class="box box1">1</div>
-    <div class="box box2">2</div>
-    <div class="box box3">3</div>
-    <div class="box box4">4</div>
-    <div class="box box5">5</div>
-    <div class="box box6">6</div>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+    </div>
 </body>
 </html>
