@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            position: relative;
+        }
+
+        .abs-center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            margin-left: -50px;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body id="body" class="body">
+    <img id="img" class="abs-center" src="src/giphy.gif" style="display:none;">
+    <div id="touch" class="abs-center">I'm so bored</div>
+    <script>
+        function makehappy() {
+            awesome = document.getElementById("touch");
+            awesome.textContent = "AWESOME";
+            awesome.style.fontSize = "128px";
+            awesome.style.color = "green";
+            awesome.style.fontFamily = 'Josefin Sans';
+            img = document.getElementById("img");
+            img.style.display = "block";
+        }
+        const touch = document.getElementById("touch");
+        touch.onclick = makehappy;
+    </script>
+</body>
+
+</html>
