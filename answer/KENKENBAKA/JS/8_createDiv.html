@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #content-area {
+            font-size: 0;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #00ff00;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="addimg">push</button>
+    <div id="content-area"></div>
+    <script>
+        let button = document.getElementById("addimg");
+        button.addEventListener('click', addbox);
+
+        function addbox() {
+            let box_element = document.createElement('div');
+            box_element.className = "box";
+            let body_element = document.getElementById("content-area");
+            body_element.appendChild(box_element);
+        }
+    </script>
+</body>
+
+</html>
