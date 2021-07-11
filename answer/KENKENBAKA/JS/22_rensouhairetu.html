@@ -11,7 +11,8 @@
 <body>
     <script>
         ary = { 'color': 'red', 'size': '100' };
-        ary.count = '5';
+        ary_temp = { 'count': '5' };
+        ary = Object.assign(ary, ary_temp);
         for (const [key, value] of Object.entries(ary)) {
             console.log('keyは:' + key + ' valueは:' + value);
         }
