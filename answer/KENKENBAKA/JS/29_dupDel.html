@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input type="number" id="num">
+    </form>
+    <button id="button">push</button>
+
+
+    <script>
+        let ary = [];
+        for (let i = 1; i <= 75; i++) {
+            ary.push(i);
+        }
+
+        let temp = [];
+        for (let i = 0; i < 25; i++) {
+            let num = Math.floor(Math.random() * (75 - i));
+            temp.push(ary[num]);
+            ary.splice(num, 1);
+        }
+
+        ary = temp;
+
+        ary.sort(function (a, b) {
+            return a - b;
+        });
+
+        console.log(ary);
+
+        let button = document.getElementById("button");
+        button.addEventListener('click', function () {
+            deleteNum(ary);
+        });
+
+
+        function deleteNum(ary) {
+            num = document.getElementById("num").value;
+            if (ary.indexOf(Number(num)) < 0) {
+                console.log("error: Can't deleted");
+            } else {
+                ary.splice(ary.indexOf(Number(num)), 1);
+                console.log(ary);
+            }
+        }
+
+    </script>
+</body>
+
+</html>
