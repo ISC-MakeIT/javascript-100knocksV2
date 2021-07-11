@@ -62,14 +62,17 @@
             ary.push(i);
         }
 
-        let temp = [];
-        for (let i = 0; i < 25; i++) {
-            let num = Math.floor(Math.random() * (75 - i));
-            temp.push(ary[num]);
-            ary.splice(num, 1);
+        function get25Num(ary) {
+            let temp = [];
+            for (let i = 0; i < 25; i++) {
+                let num = Math.floor(Math.random() * (75 - i));
+                temp.push(ary[num]);
+                ary.splice(num, 1);
+            }
+            return temp;
         }
 
-        ary = temp;
+        ary = get25Num(ary);
 
         ary.sort(function (a, b) {
             return a - b;
@@ -81,13 +84,17 @@
             table.rows[i % 5].cells[Math.floor(i / 5)].innerText = ary[i];
         }
 
-        let cellElements = Array.from(document.getElementsByClassName("cell"))
-        console.log(cellElements);
-        for (let i = 0; i < cellElements.length; i++) {
-            cellElements[i].addEventListener('click', function () {
-                alert(cellElements[i].innerText);
-            });
+        function addEventToCells() {
+            let cellElements = Array.from(document.getElementsByClassName("cell"))
+            console.log(cellElements);
+            for (let i = 0; i < cellElements.length; i++) {
+                cellElements[i].addEventListener('click', function () {
+                    alert(cellElements[i].innerText);
+                });
+            }
         }
+
+        addEventToCells();
 
     </script>
 </body>
