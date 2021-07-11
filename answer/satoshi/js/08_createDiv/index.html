@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: inline-block;
+        }
+
+        div{
+            background-color: #74992e;
+            width: 100px;
+            height: 100px;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <input type="submit" value="click" onclick="create_div()">
+
+    
+
+    <script>
+
+        function create_div(){
+            document.body.appendChild(document.createElement("div"));
+        }
+
+
+    </script>
+</body>
+</html>

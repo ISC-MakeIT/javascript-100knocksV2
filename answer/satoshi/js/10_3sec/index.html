@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+
+            background-color: chocolate;
+            border-radius: 300px;
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            line-height: 150px;
+        }
+
+        h1{color: white; }
+    </style>
+</head>
+<body>
+    <div onclick="alertsystem()">
+        <input type="button" id="but" onclick="sutee()" value="押すなよ">
+    </div>
+    <script>
+        const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+        function sutee(){
+            sleep(3000).then(() => alert("押すなって言ったやろ。ばか"));
+        }
+        
+             
+    </script>
+</body>
+</html>
