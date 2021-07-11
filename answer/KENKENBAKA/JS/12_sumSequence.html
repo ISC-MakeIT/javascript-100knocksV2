@@ -15,25 +15,22 @@
 
 <body>
     <form name="isSame">
-        <input type="number" name="num1" id="num1">
-        <input type="number" name="num2" id="num2">
+        <input type="number" name="num" id="num">
     </form>
     <button id="button">push</button>
 
+
     <script>
         let button = document.getElementById("button");
-        button.addEventListener('click', isSame);
+        button.addEventListener('click', sum);
 
-        function isSame() {
-            if (
-                document.getElementById('num1').value
-                === document.getElementById('num2').value
-            ) {
-                alert("True");
-            } else {
-                alert("false");
+        function sum() {
+            let max = document.getElementById("num").value;
+            let sum = 0;
+            for (let i = 0; i <= max; i++) {
+                sum += i;
             }
-
+            console.log(sum);
         }
     </script>
 </body>
