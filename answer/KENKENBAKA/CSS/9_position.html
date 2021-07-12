@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            overflow: visible;
+        }
+
+        body {
+            height: 350vh;
+        }
+
+        .boxa {
+            background: #00FFFF;
+            width: 30%;
+            min-height:100vh;
+            position: fixed;
+        }
+
+        .boxb {
+            background: #0000FF;
+            width: 70%;
+            min-height:100vh;
+            position: absolute;
+            left: 30%;
+        }
+
+        .container-c {
+            width: 30%;
+            height: 300vh;
+            position: absolute;
+            left: 30%;
+            top: 100vh;
+        }
+
+        .boxc {
+            background: #FF77FF;
+            width: 100%;
+            min-height:100vh;
+            position: -webkit-sticky;
+            position: sticky;
+            left: 30%;
+            top: 0vh;
+        }
+
+        .boxd {
+            background: #6666FF;
+            width: 40%;
+            min-height: 300vh;
+            position: absolute;
+            left: 60%;
+            top: 100vh;
+            
+        }
+
+        .boxe {
+            background: #ffff00;
+            width: 70%;
+            min-height:50vh;
+            position: absolute;
+            top: 400vh;
+            left: 30%;
+        }
+
+        .box {
+            font-size: 200px;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="box boxa">A</div>
+    <div class="box boxb">B</div>
+    <div class="container-c">
+        <div class="box boxc">C</div>
+    </div>
+    <div class="box boxd">D</div>
+    <div class="box boxe">E</div>
+</body>
+</html>

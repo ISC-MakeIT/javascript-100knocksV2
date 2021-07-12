@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            width: 1400px;
+            display: grid;
+            grid-template-columns: repeat(7,200px);
+            grid-template-rows: repeat(3,200px);
+        }
+        
+        img {
+            width: 200px;
+        }
+
+        .box1, .box2, .box3 {
+            grid-row-start: 1;
+        }
+
+        .box4, .box5, .box6, .box7, .box8, .box9, .box10 {
+            grid-row-start: 2;
+        }
+
+        .box11, .box12, .box13 {
+            grid-row-start: 3;
+        }
+
+        .box2 {
+            grid-column-start: 2;
+            grid-column-end: 7;
+        }
+
+        .box12 {
+            grid-column-start: 3;
+            grid-column-end: 6;
+        }
+        
+        .box13 {
+            grid-column-start: 7;
+            grid-column-end: 8;
+        }
+
+        .text {
+            font-size: 80px;
+            text-align: center;
+            color: red;
+        }
+
+        .wrapper > div {
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box1" ><img src="src/wraith.png" class="onebox"></div>
+        <div class="box2 text">PLAY WITH US</div>
+        <div class="box3"><img src="src/path.png" class="onebox"></div>
+        <div class="box4 text">A</div>
+        <div class="box5"><img src="src/season7.jpg" class="twobox"></div>
+        <div class="box6 text">P</div>
+        <div class="box7"><img src="src/logo.png" class="onebox"></div>
+        <div class="box8 text">E</div>
+        <div class="box9"><img src="src/season6.jpg" class="twobox"></div>
+        <div class="box10 text">X</div>
+        <div class="box11"><img src="src/gibby.jpg" class="onebox"></div>
+        <div class="box12 text">LEGENDS</div>
+        <div class="box13"><img src="src/bloth.jpg" class="onebox"></div>
+    </div>
+</body>
+</html>
