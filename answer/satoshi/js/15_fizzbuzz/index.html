@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="fizzbuzz()">
+
+
+    <script>
+
+        // 複重している処理の場合は優先度の高い方を上の方に書かないと処理されない。
+        const fizzbuzz = () =>{
+            for(let i = 0; i <= 99; i++){
+                if (i % 15 === 0){
+                    console.log("fizzbuzz");
+                } else if(i % 5 === 0){
+                    console.log("buzz");
+                } else if (i % 3 === 0){
+                    console.log('fizz');
+                }else{
+                    console.log(i);
+                }
+            }
+
+        }
+    </script>
+    
+</body>
+</html>

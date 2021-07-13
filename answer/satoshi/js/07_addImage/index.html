@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: inline-block;
+        }
+
+        .imgkasutamu{
+            width: 200px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <input type="submit" onclick="imgpop()" value="add">
+
+    <div id="kokoniirero"></div>
+    
+    <script>
+
+        function imgpop(){
+            var imgdayo = document.createElement('img');
+            imgdayo.src = 'img/marina.jpg';
+            imgdayo.classList.add('imgkasutamu');
+
+            var div_area = document.getElementById('kokoniirero');
+            div_area.appendChild(imgdayo);
+
+            
+        
+        }
+
+
+
+
+    </script>
+
+</body>
+</html>

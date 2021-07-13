@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <input type="text" id="intvalue" onkeyup="action()"> 
+    <input type="submit" onclick="action()" value="click">
+        
+
+   
+    
+    
+
+
+
+    <p id="koko"></p>
+    <script>
+
+        
+
+        const action = function(){
+            var textData = parseInt(document.getElementById("intvalue").value;
+            console.log(textData);
+            var aqq = textData.toString(2);
+    
+            
+            console.log(aqq);
+            document.getElementById("koko").innerText = aqq;
+            
+            const ul = document.querySelector("ul");
+            ul.appendChild(li);
+    
+            
+        }
+        
+        // var newBut = document.getElementById("but");
+        // newBut.addEventListener("click", action);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=¥, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="time"></p>
+
+    <script>
+
+        function clock(){
+            var add_zero = function system(num){
+                var result;
+                if(num < 10){
+                    result = "0" + num;
+                }else{
+                    result = num;
+                };
+                return result
+            }
+
+            var weeks = new Array("Sun","Mon","Thu","Wed","Thr","Fri","Sat");
+
+            var now = new Date();
+
+            var year = now.getFullYear();
+            var month = add_zero(now.getMonth() + 1);
+            var day = add_zero(now.getDate());
+            var week = weeks[now.getDay()];
+            var hour = add_zero(now.getHours());
+            var minute = add_zero(now.getMinutes());
+            var second = add_zero(now.getSeconds());
+
+            document.getElementById("time").innerText = year + "/" + month + "/" + day + "/" + week + "/" + hour + "/" + minute + "/" + second;
+        };
+        setInterval(clock, 1000);
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
