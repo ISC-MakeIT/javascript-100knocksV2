@@ -16,8 +16,19 @@
             for (let i = 0; i < crypto.length / 3; i++) {
                 temp.push(crypto[i * 3 + j]);
             }
-            console.log(temp);
+            console.log(temp.join(''));
         }
+        //3の倍数を抽出
+        for (let j = 0; j < 3; j++) {
+            let temp = [];
+            for (let i = 0; i < crypto.length; i++) {
+                if ((i + j) % 3 != 0) {
+                    temp.push(crypto[i]);
+                }
+            }
+            console.log(temp.join(''));
+        }
+        //3の倍数以外を抽出
     </script>
 </body>
 
