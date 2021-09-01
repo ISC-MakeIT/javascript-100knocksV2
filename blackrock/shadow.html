@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #back{
+            background-color: darkgray;
+            width: 620px;
+            height: 220px;
+            margin: 0 auto;
+        }
+
+        ul li{
+            display:table-cell;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            top:10px;
+            right:10px;
+        }
+
+        ul li:hover{
+            box-shadow:0 0 10px white;
+        }
+
+        #no0{
+            background-color: red;
+        }
+
+        #no1{
+            background-color: green;
+        }
+
+        #no2{
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    
+     <div id="back">
+         <ul>
+             <li id="no0"></li>
+             <li id="no1"></li>
+             <li id="no2"></li>
+         </ul>
+     </div>
+
+     <script>
+         'use strict';
+
+         let roulette = Math.floor(Math.random() * 3);
+
+         console.log(roulette);
+
+         document.getElementById(`no${roulette}`).onclick = function() {
+             location.href = 'nav.html';
+        }
+     </script>
+
+</body>
