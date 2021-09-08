@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li{
+            display: table-cell;
+            font-size: 10px;
+            width: 190px;
+            height: 20px;
+            background-color: dimgray;
+            color: floralwhite;
+        }
+
+        ul li:hover{
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li class="unavailable">onimage</li>
+        <li class="unavailable">glid</li>
+        <li class="unavailable">new</li>
+        <li class="unavailable">float</li>
+        <li class="unavailable">flex</li>
+        <li class="available"><a href="centerDiv.html">back to the top</a></li>
+    </ul>
+
+    <p id="information"></p>
+
+    <script>
+        'use strict';
+
+        var lock = document.getElementsByClassName('unavailable');
+        var unlock = document.getElementById('information');
+        for(let i = 0; i <= lock.length; i++){
+            lock[i].addEventListener('mouseenter', function(event){
+                unlock.textContent = 'COMING SOON!';
+            }, false );
+            lock[i].addEventListener('mouseleave', function(event){
+                unlock.textContent = null;
+            }, false );
+            lock[i].onclick = function(){
+                location.href = `${lock[i]}.html`;
+            }
+        }
+        
+    </script>
+
+</body>
