@@ -1,10 +1,10 @@
 window.onload = function () {
-  "abc".split('').forEach((element, i) => setOnClickToButtons("." + element, eval("randomColor" + (i + 1))))
+  "abc".split('').forEach((element, i) => setOnClickToButtons("." + element + "-btn", eval("randomColor" + (i + 1))))
 }
 
 function setOnClickToButtons(selector, randomColorFunc) {
   $(selector).on("click", function () {
-    $(this).css("background-color", randomColorFunc())
+    $(this).parent().css("background-color", randomColorFunc())
   })
 }
 
