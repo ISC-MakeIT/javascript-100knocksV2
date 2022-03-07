@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="addimg">push</button>
+    <div id="content-area"></div>
+    <script>
+        let button = document.getElementById("addimg");
+        button.addEventListener('click', addimg);
+
+        function addimg() {
+            let img_element = document.createElement('img');
+            img_element.src = 'src/giphy.gif';
+            img_element.width = 120;
+            let body_element = document.getElementById("content-area");
+            body_element.appendChild(img_element);
+        }
+    </script>
+</body>
+
+</html>

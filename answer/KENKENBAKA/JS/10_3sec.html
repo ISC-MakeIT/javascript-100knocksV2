@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,
+        *:before,
+        *:after {
+            -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+        }
+
+        html {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            font-size: 62.5%;
+        }
+
+        .btn,
+        a.btn,
+        button.btn {
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1.5;
+            position: relative;
+            display: inline-block;
+            padding: 1rem 4rem;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
+            text-align: center;
+            vertical-align: middle;
+            text-decoration: none;
+            letter-spacing: 0.1em;
+            color: #212529;
+            border-radius: 0.5rem;
+        }
+
+        div.btn--yellow {
+            color: #000;
+            background-color: #fff100;
+            border-bottom: 5px solid #ccc100;
+        }
+
+        div.btn--yellow:hover {
+            margin-top: 3px;
+            color: #000;
+            background: #fff20a;
+            border-bottom: 2px solid #ccc100;
+        }
+
+        div.btn--circle {
+            border-radius: 50%;
+            line-height: 100px;
+            width: 100px;
+            height: 100px;
+            padding: 0;
+            -webkit-box-shadow: 0 5px 0 #e6d900;
+            box-shadow: 0 5px 0 #e6d900;
+        }
+
+        div.btn--circle:hover {
+            -webkit-transform: translate(0, 3px);
+            transform: translate(0, 3px);
+            -webkit-box-shadow: 0 2px 0 #e6d900;
+            box-shadow: 0 2px 0 #e6d900;
+        }
+
+        /*ボタンレイアウトはネットから丸パクリしました*/
+    </style>
+</head>
+
+<body>
+    <div id="button" class="btn btn--yellow btn--circle">押すな！</div>
+    <script>
+        let button = document.getElementById("button");
+        button.addEventListener('click', alertAfter3s);
+
+        async function alertAfter3s() {
+            await sleep(3000);
+            alert("（#^ω^）＜押すな");
+        };
+
+        function sleep(msec) {
+            return new Promise(function (resolve) {
+                setTimeout(function () { resolve() }, msec);
+            })
+        }
+
+    </script>
+</body>
+
+</html>

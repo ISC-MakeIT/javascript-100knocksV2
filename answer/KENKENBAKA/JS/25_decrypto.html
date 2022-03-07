@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const crypto = 'やくこみがんきいばていんるよは'
+        for (let j = 0; j < 3; j++) {
+            let temp = [];
+            for (let i = 0; i < crypto.length / 3; i++) {
+                temp.push(crypto[i * 3 + j]);
+            }
+            console.log(temp.join(''));
+        }
+        //3の倍数を抽出
+        for (let j = 0; j < 3; j++) {
+            let temp = [];
+            for (let i = 0; i < crypto.length; i++) {
+                if ((i + j) % 3 != 0) {
+                    temp.push(crypto[i]);
+                }
+            }
+            console.log(temp.join(''));
+        }
+        //3の倍数以外を抽出
+    </script>
+</body>
+
+</html>

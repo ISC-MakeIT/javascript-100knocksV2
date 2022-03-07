@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="isSame">
+        <input type="number" name="num1" id="num1">
+        <input type="number" name="num2" id="num2">
+    </form>
+    <button id="button">push</button>
+
+    <script>
+        let button = document.getElementById("button");
+        button.addEventListener('click', isSame);
+
+        function isSame() {
+            if (
+                document.getElementById('num1').value
+                === document.getElementById('num2').value
+            ) {
+                alert("True");
+            } else {
+                alert("false");
+            }
+
+        }
+    </script>
+</body>
+
+</html>
