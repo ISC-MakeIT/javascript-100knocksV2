@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex{
+            width: 200px;
+            height:300px;
+            display: flex;
+            flex-wrap: wrap-reverse;
+        }
+        
+        .item{
+            width:100px;
+            height:100px;
+            color:white;
+            font-size: 70px;
+            text-align: center;
+        }
+        
+        #block1{
+            background-image: url(../imgContainment/UsetoGrid1.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #block2{
+            background-image: url(../imgContainment/UsetoGrid2.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #block3{
+            background-image: url(../imgContainment/UsetoGrid3.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #block4{
+            background-image: url(../imgContainment/UsetoGrid4.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #block5{
+            background-image: url(../imgContainment/UsetoGrid5.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #block6{
+            background-image: url(../imgContainment/PR.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #tonav{
+            position: absolute;
+            right: 0;
+            bottom: 15px;
+        }
+
+        #tocenterdiv{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+    <body>
+        <div class="flex">
+            <div id=block1 class="item">1</div>
+            <div id=block2 class="item">2</div>
+            <div id=block3 class="item">3</div>
+            <div id=block4 class="item">4</div>
+            <div id=block5 class="item">5</div>
+            <div id=block6 class="item">6</div>
+        </div>
+
+        <p id="tonav"><a href="nav.html">back to menu</a></p>
+        <p id="tocenterdiv"><a href="centerDiv.html">back to the top</a></p>
+       
+    </body>
