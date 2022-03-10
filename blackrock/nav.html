@@ -23,34 +23,26 @@
 
 <body>
 
-    <ul>
-        <li class="unavailable">onimage</li>
-        <li class="unavailable">glid</li>
-        <li class="unavailable">new</li>
-        <li class="unavailable">float</li>
-        <li class="unavailable">flex</li>
+    <ul id="lock">
         <li class="available"><a href="centerDiv.html">back to the top</a></li>
     </ul>
 
-    <p id="information"></p>
-
     <script>
         'use strict';
-
-        var lock = document.getElementsByClassName('unavailable');
-        var unlock = document.getElementById('information');
-        for(let i = 0; i <= lock.length; i++){
-            lock[i].addEventListener('mouseenter', function(event){
-                unlock.textContent = 'COMING SOON!';
-            }, false );
-            lock[i].addEventListener('mouseleave', function(event){
-                unlock.textContent = null;
-            }, false );
-            lock[i].onclick = function(){
-                location.href = `${lock[i]}.html`;
+       
+        window.onload = function() {
+            let conteiner = document.getElementById('lock');
+            let availarray = ['onimage','glid','new','float','flex'];
+            for(let i = 0;i < 5; i++) {
+                let newli = document.createElement('li');
+                newli.className = 'unavailable';
+                let newpipe = document.createElement('a');
+                newpipe.textContent = availarray[i];
+                newpipe.href = `${availarray[i]}.html`;
+                newli.appendChild(newpipe);
+                conteiner.appendChild(newli);           
             }
-        }
-        
+        }    
     </script>
 
 </body>
