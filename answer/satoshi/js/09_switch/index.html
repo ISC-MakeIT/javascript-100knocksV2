@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="submit" onclick="imgSystem()"><br>
+    <img src="" id="randomImg">
+    <script>
+
+        function imgSystem(){
+            var img = document.getElementById("randomImg");
+            var judgment_img = Math.floor(Math.random()* 5)+ 1;
+            switch(judgment_img){
+                case 1:
+                    img.src = "img/hiyori.jpg";
+                    break;
+                case 2:
+                    img.src = "img/hiyori1.jpg";
+                    break;
+                case 3:
+                    img.src = "img/hiyori2.jpg";
+                    break;
+                case 4:
+                    img.src = "img/momo1.jpg";
+                    break;
+                case 4:
+                    img.src = "img/momo2.jpg";
+                    break;
+                default:
+                    console.log("エラー");
+            }
+        }
+
+
+
+    </script>
+</body>
+</html>

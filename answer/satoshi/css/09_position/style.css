@@ -1,0 +1,52 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+
+
+
+#content{
+    display: flex;
+    width: 100%;
+}
+
+aside{
+    width: 25%;
+    height: 100vh;
+    background-color: brown;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+
+}
+main{
+    /* background-color: brlywood; */
+    width: 75%;
+}
+
+#b_area{
+    height: 100vh;
+    background: darkcyan;
+}
+
+#one_labor{
+    display: flex;
+    height: 100vh;
+}
+#c_area{
+    width: 50%;
+    background-color: darkgreen;
+}
+#d_area{
+    width: 50%;
+    background-color: darkmagenta;
+}
+#e_area{
+    height: 100vh;
+    background-color: darkorange;
+}
+
+
+

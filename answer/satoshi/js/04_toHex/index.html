@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <input type="text" id="intvalue" onkeyup="action()">
+    <input type="submit" onclick="action()" value="送信"> 
+    <p id="two"></p>
+    <p id="twelve"></p>
+        
+
+   
+    
+    
+
+
+
+    
+    <script>
+
+        
+
+        const action = function(){
+            var datas = parseInt(document.getElementById("intvalue").value);
+            console.log(datas);
+            
+            var a = datas.toString(2);
+            var b = datas.toString(16);
+            console.log(a);
+            console.log(b);
+            document.getElementById("two").innerText = a;
+            document.getElementById("twelve").innerText = b;
+            
+    
+            
+        }
+        
+        // var newBut = document.getElementById("but");
+        // newBut.addEventListener("click", action);
+
+
+    </script>
+</body>
+</html>
