@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+        }
+        #timeOutput {
+            color: red;
+            font-size: 60px;
+            font-family: 'Oswald', sans-serif;
+        }
+    </style>
+    <script>
+        'use strict';
+        window.onload = () => {
+            const dayConfig = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+            const setTime = () => {
+                const now = new Date();
+                const timeGet = {
+                    year: now.getFullYear(),
+                    month: now.getMonth(),
+                    date: now.getDate(),
+                    day: now.getDay(),
+                    hours: now.getHours(),
+                    minutes: now.getMinutes(),
+                    seconds: now.getSeconds(),
+                    Mseconds: now.getMilliseconds(),
+                }
+                const timeContainer = 
+                    `${timeGet.year}/${timeGet.month}/${timeGet.date}/${dayConfig[timeGet.day]}/${timeGet.hours}/${timeGet.minutes}/${timeGet.seconds}/${timeGet.Mseconds}`;
+                const timeOutputID = document.getElementById('timeOutput');
+                timeOutputID.textContent = timeContainer;
+            }
+            setInterval(() => {setTime()}, 1);
+        }
+    </script>
+</head>
+
+<body>
+    <h1 id="timeOutput"></h1>
+</body>
+
+</html>
