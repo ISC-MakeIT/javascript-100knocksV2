@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper {
+            min-height: 100vh;
+        }
+    </style>
+    <script>
+        'use strict';
+        window.onload = function() {
+            const body = document.getElementById('wrapper');
+            const colorChange = document.getElementById('colorChangeID')
+            const colorPart = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'];
+            let color;
+            colorChange.addEventListener('click', function() {
+                color = '#';
+                while(color.split("").length <= 6) {
+                    color += colorPart[Math.floor(Math.random() * colorPart.length)];
+                }
+                console.log(color);
+                body.style.backgroundColor = color;
+            }, false);
+        }
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <button id="colorChangeID">PUSH</button>
+    </div>
+</body>
+
+</html>
