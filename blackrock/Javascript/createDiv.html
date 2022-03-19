@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #divWrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+        }
+        .childDiv {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+    </style>
+    <script>
+        'use strict';
+        window.onload = () => {
+            const createDivButtonID = document.getElementById('createDivButton');
+            const divWrap = document.getElementById('divWrapper');
+            createDivButtonID.addEventListener('click', function() {
+                const newDiv = document.createElement('div');
+                newDiv.classList.add('childDiv');
+                divWrap.appendChild(newDiv);
+            }, false)
+        }
+    </script>
+</head>
+
+<body>
+    <button id = "createDivButton">PAINT 1-BLOCK</button>
+    <div id = "divWrapper"></div>
+</body>
+
+</html>

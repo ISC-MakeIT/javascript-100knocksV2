@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+    <script>
+        'use strict';
+        window.onload = () => {
+            const wrap = document.getElementById('wrapper');
+            const newForm = document.createElement('form');
+            newForm.action = '#';
+            newForm.method = 'get';
+            const newSubmit = document.createElement('input');
+            newSubmit.type = 'submit';
+            newSubmit.value = 'SUBMIT';
+            newForm.appendChild(newSubmit);
+            const newPulldown = document.createElement('select');
+            newPulldown.name = 'toUrl';
+            for(let i = 0; i < 201; i++) {
+                const newOption = document.createElement('option');
+                newOption.value = `toUrl${i}`;
+                newOption.textContent = i;
+                newPulldown.appendChild(newOption);
+            }
+            newForm.appendChild(newPulldown);
+            wrap.appendChild(newForm);
+        }
+    </script>
+</head>
+
+<body>
+    <div id="wrapper"></div>
+</body>
+
+</html>
