@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #imageWrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+        }
+    </style>
+    <script>
+        'use strict';
+        window.onload = () => {
+            const addImageButtonID = document.getElementById('addImageButton');
+            const imageWrap = document.getElementById('imageWrapper');
+            addImageButtonID.addEventListener('click', function() {
+                const newImg = document.createElement('img');
+                newImg.src = '../../imgContainment/sledback.jpg';
+                newImg.width = 100;
+                newImg.height = 100;
+                newImg.alt = 'added';
+                imageWrap.appendChild(newImg);
+            }, false);
+        }
+    </script>
+</head>
+
+<body>
+    <button id="addImageButton">ADD</button>
+    <div id="imageWrapper"></div>
+</body>
+
+</html>

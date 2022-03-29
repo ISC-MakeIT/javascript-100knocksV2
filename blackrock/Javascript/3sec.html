@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+    <style>
+        #wrapper {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align:center;
+            margin: auto;
+        }
+        #push {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            color: azure;
+            font-size: 30px;
+            border: 5px solid gray;
+            border-radius: 50%;
+            box-shadow: none;
+            font-family: 'Orbitron', sans-serif;
+            text-align: center;
+            box-shadow: inset 0 25px 10px 0 rgba(194, 0, 0, 0.719);
+        }
+        #push:hover {
+            color: yellow;
+            cursor: pointer;
+            box-shadow: 0 10px 25px 0 rgba(122, 122, 122, 0.842);
+        }
+        #message {
+            font-family: serif;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        'use strict';
+        window.onload = () => {
+            const pushID = document.getElementById('push');
+            pushID.addEventListener('click', () => {
+                setTimeout(() => {alert('You are cursed.');}, 3000);
+            }, false);
+        }
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <h2 id="message">絶対に押すなよ・・・。</h2>
+        <button id="push">DANGER!</button>
+    </div>
+</body>
+
+</html>

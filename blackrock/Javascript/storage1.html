@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        
+        h1 {
+            color: azure;
+        }
+    </style>
+    <script>
+        'use strict';
+        window.onload = () => {
+            const element = document.getElementById('storage');
+            if (sessionStorage.getItem('option2') !== null) {
+                let storageItem = sessionStorage.getItem('option2')
+                console.log(storageItem);
+                element.querySelector(`option[value=${storageItem}]`).selected = true;
+            } else {
+                sessionStorage.setItem('option2', '0');
+                let storageItem = sessionStorage.getItem('option2')
+                console.log(storageItem);
+            }
+            element.onchange = () => {
+                let selectedNum = element.selectedIndex;
+                let selectedStr = element.options[selectedNum].value;
+                sessionStorage.setItem('option1', selectedStr);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>ページ1だよ</h1>
+    <form action="" method="post">
+        <select id="storage">
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="Javascript">Javascript</option>
+    </select>
+        <a href="./storage2.html" id="submit">ページ2へ</a>
+    </form>
+</body>
+
+</html>

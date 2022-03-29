@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        p{
+            color: azure;
+        }
+    </style>
+    <script>
+        'use strict';
+        window.onload = () => {
+            let num = 0;
+            const add = () => {
+                const newP = document.createElement("p")
+                const addContainID = document.getElementById('addContain');
+                num++;
+                newP.textContent = num;
+                addContainID.appendChild(newP);
+            }
+            add();
+            add();
+            add();
+        }
+    </script>
+</head>
+
+<body>
+    <div id="addContain"></div>
+</body>
+
+</html>

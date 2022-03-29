@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .introducing {
+            width: 45%;
+            height: 45%;
+        }
+    </style>
+    <script>
+        'use strict';
+        window.onload = () => {
+            const switchButtonID = document.getElementById('switchButton');
+            const imgWrap = document.getElementById('imgWrapper');
+            switchButtonID.addEventListener('click', () => {
+                let randomNum = Math.floor(Math.random() * 5);
+                switch (randomNum) {
+                    case 0:
+                        addImage(1);
+                        break;
+                    case 1:
+                        addImage(2);
+                        break;
+                    case 2:
+                        addImage(3);
+                        break;
+                    case 3:
+                        addImage(4);
+                        break;
+                    case 4:
+                        addImage(5);
+                        break;
+                }
+            }, false);
+            function removeImg () {
+                const introducingClass = document.getElementsByClassName('introducing');
+                for(let i = 0; i < introducingClass.length; i++) {
+                    imgWrap.removeChild(introducingClass[i]);
+                }
+            }
+            function addImage(i) {
+                removeImg();
+                const newImg = document.createElement('img');
+                newImg.src = `../../imgContainment/UsetoGrid${i}.png`;
+                newImg.alt = `Introducing${i}`;
+                newImg.classList.add('introducing');
+                imgWrap.appendChild(newImg);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button id="switchButton">INTRODUCE</button>
+    <div id="imgWrapper"></div>
+</body>
+
+</html>
