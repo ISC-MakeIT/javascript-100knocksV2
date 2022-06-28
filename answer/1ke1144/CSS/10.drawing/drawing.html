@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+	<style>
+        .face{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: rgb(183, 183, 113);
+            border: 1px black solid;
+        }
+        .eye{
+            position: absolute;
+            width: 20px;
+            height: 30px;
+            background-color: black;
+            border-radius: 50%;
+        }
+        .left_eye{
+            top: 60px;
+            left: 60px;
+        }
+        .right_eye{
+            top: 60px;
+            left: 140px;
+        }
+        .red{
+            position: absolute;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background-color: red;
+            border: 1px black solid;
+        }
+        .red_left{
+            top: 95px;
+            left: 35px;
+            border-color: black  black  black transparent ;
+        }
+        .red_center{
+            top: 95px;
+            left: 85px;
+        }
+        .red_right{
+            top: 95px;
+            left: 135px;
+            border-color: black transparent black  black;
+        }
+
+        .mouse{
+            width: 150px;
+            height: 150px;
+            border: 1px black solid;
+            border-color: transparent transparent black transparent;
+            border-radius: 50%;
+            position: absolute;
+            top: 19px;
+            left: 30px;
+        }
+
+        .eyebrows{
+            width: 70px;
+            height: 80px;
+            border: 1px black solid;
+            border-color: black transparent transparent transparent;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .eyebrows_left{
+            top: 45px;
+            left: 30px;
+        }
+
+        .eyebrows_right{
+            top: 45px;
+            left: 120px;
+            
+        }
+
+	</style>
+    </head>
+    <body>
+        <div class="face"></div>
+        <div class="eye left_eye"></div>
+        <div class="eye right_eye"></div>
+        <div class="red red_right"></div>
+        <div class="red red_center"></div>
+        <div class="red red_left"></div>
+        <div class="mouse"></div>
+        <div class="eyebrows eyebrows_left"></div>
+        <div class="eyebrows eyebrows_right"></div>
+    </body>
+</html>

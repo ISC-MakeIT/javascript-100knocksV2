@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <form method="get">
+        <dl>
+        <dt>name:</dt>
+        <dd><input type="text" required></dd>
+        <dt>email:</dt>
+        <dd><input type="text"></dd>
+        <dt>password:</dt>
+        <dd><input type="password"></dd>
+        <dt>age:</dt>
+        <dd>
+            <select id="select1">
+                
+            </select>
+        </dd>
+        <dt>sex:</dt>
+        <dd>
+            <label><input type="radio" name="test" >Male</label>
+            <label><input type="radio" name="test">Female</label>
+        </dd>
+        <input type="submit" value="送信する">
+        </dl>
+    </form>
+</body>
+<script>
+    var list = document.getElementById('select1');
+    for(let i=0;i<=200;i++){
+        var op = document.createElement('option');
+        op.innerHTML = i;
+        list.appendChild(op);
+    }
+</script>
+</html>

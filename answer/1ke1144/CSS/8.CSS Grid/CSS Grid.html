@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+	<style>
+        .wrapper{
+            width: 700px;
+            display: grid;
+            grid-template-columns:  100px 100px 100px 100px 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            text-align: center;
+            font-size: 4em;
+            letter-spacing: 20px;
+            border: 1px black solid;
+            padding: 0;
+        }
+
+        .box{
+            border: 1px black solid;
+            width: 100px;
+            height: 100px;
+        }
+        .item2{
+            text-align: center;
+            grid-column-start: 2;
+            grid-column-end: 7;
+        }
+        .item5{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            height: 200px;
+            object-fit: cover;
+        }
+        .item9{
+            grid-column-start: 6;
+            grid-column-end: 7;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .item12{
+            grid-column-start: 3;
+            grid-column-end: 6;
+        }
+        .item13{
+            grid-column-start: 7;
+            grid-column-end: 8;
+        }
+	</style>
+    </head>
+    <body>
+    <div class="wrapper">
+        <img class="box " src="img/rikka.jpg">
+        <div class="item2 ">CSSSS.</div>
+        <img class="box " src="img/akane.jpg">
+        <div class="box">G</div>
+        <img class="box item5" src="img/mainimg.jpg">
+        <div class="box">R</div>
+        <img class="box " src="img/jc.jpg">
+        <div class="box">I</div>
+        <img class="box item9" src="img/set.png">
+        <div class="boder">D</div>
+        <img class="box" src="img/yuta.jpg">
+        <div class="item12 ">MAN</div>
+        <img class="box item13" src="img/utsumi.jpg">
+    </div>
+    </body>
+</html>

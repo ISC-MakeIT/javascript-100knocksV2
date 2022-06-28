@@ -1,0 +1,63 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+	<style>
+     .float{
+        float:left;
+     }
+     .clear{
+        clear: both;
+     }
+     .none{
+         clear: none;
+     }
+     .box{
+        text-align: center;
+        font-size: 3em;
+        width: 100px;
+        height: 100px;
+    }
+    .float{
+        float: left;
+    }
+    .red{
+        background-color: red;
+    }
+    .green{
+        background-color: rgb(7, 222, 7);
+    }
+    .blue{
+        background-color: blue;
+    }
+    .yellow{
+        background-color: yellow;
+    }
+    .pink{
+        background-color: pink;
+    }
+    .aqua{
+        background-color: aqua;
+    }
+	</style>
+    </head>
+    <body>
+            <div>
+                <div class="float box red">1</div>
+                <div class="float box green">2</div>
+            </div>
+            <div class="clear">
+                <div class="float box blue">3</div>
+                <div class="float box yellow">4</div>
+            </div>
+            <div class="clear">
+                <div class="float box pink">5</div>
+                <div class="float box aqua">6</div>
+            </div>
+    </body>
+</html>
