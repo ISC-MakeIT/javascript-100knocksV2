@@ -1,0 +1,30 @@
+body {
+    background-color: gray;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+div:hover {
+    box-shadow: 0px 0px 20px white;
+    cursor: pointer;
+}
+
+#Red {
+    background-color: red;
+}
+
+#Green {
+    background-color: green;
+}
+
+#Blue {
+    background-color: blue;
+}
+
+.left {
+    float: left;
+}
